@@ -9,6 +9,9 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+        <!-- Latest font awesome CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
         {{ "main.css" | asset_url | stylesheet_tag }}
 
         <!-- Style block allowing child pages to inject their own styles -->
@@ -20,6 +23,8 @@
             {% include "header-inner" %}
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
+
+            {% include "footer" %}
 
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}

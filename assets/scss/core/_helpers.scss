@@ -35,6 +35,10 @@
   color:$white;
 }
 
+.text-gold{
+  color:$gold;
+}
+
 .gold-bg{
   background-color:$gold;
 }
@@ -44,11 +48,11 @@
 }
 
 .tan-bg{
-  background-color:#ddd1c5;
+  background-color:$tan;
 }
 
-.text-gold{
-  color:$gold;
+.blue-bg{
+  background-color:$polaris-blue;
 }
 
 // TODO: Make gradient class more modular

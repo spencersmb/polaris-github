@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #001e7e;
+  color: #070d3f;
 }
 a:hover {
   text-decoration: none;
@@ -24,6 +24,14 @@ a:hover {
 .psn-container {
   margin-top: 96px;
   padding: 0;
+}
+
+.psn-container-lg {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .psn-container-outer {
@@ -42,7 +50,7 @@ a:hover {
 h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #001e7e;
+  color: #070d3f;
   font-size: 18px;
   letter-spacing: 10px;
   font-weight: 600;
@@ -59,6 +67,14 @@ p {
 .intro-text {
   padding: 0 60px;
   margin-bottom: 60px;
+}
+
+.psn-content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .text-hide {
@@ -85,6 +101,10 @@ p {
   color: #fff;
 }
 
+.text-gold {
+  color: #a99781;
+}
+
 .gold-bg {
   background-color: #a99781;
 }
@@ -97,8 +117,8 @@ p {
   background-color: #ddd1c5;
 }
 
-.text-gold {
-  color: #a99781;
+.blue-bg {
+  background-color: #070d3f;
 }
 
 .gradient-top {
@@ -173,21 +193,103 @@ p {
   border-width: 0 0 5px;
 }
 
+footer {
+  padding: 40px 0;
+}
+
+.footer-logo {
+  padding: 24px 64px 64px;
+}
+.footer-logo img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer-contact {
+  color: #fff;
+}
+.footer-contact a {
+  color: #fff;
+}
+.footer-contact .contact-wrapper {
+  text-align: center;
+}
+
+.footer-contact {
+  display: block;
+}
+.footer-contact .phone, .footer-contact .location, .footer-contact .fax {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+}
+.footer-contact .fa {
+  padding-right: 10px;
+}
+.footer-contact .fax {
+  border-right: 0;
+}
+
+.newsletter-signup {
+  color: #fff;
+  width: 100%;
+  display: block;
+}
+.newsletter-signup label {
+  font-weight: 300;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.newsletter-signup input {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px soild #fff;
+  font-weight: 300;
+  font-size: 24px;
+}
+.newsletter-signup input:focus {
+  outline: 0;
+  box-shadow: 0;
+  border-color: #a99781;
+}
+
+.social-footer-wrapper {
+  margin-top: 80px;
+}
+
+.copyright {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
+
 .overlap-above {
-  padding-bottom: 280px;
+  padding-bottom: 40px;
+}
+
+.overlap-bottom-wrapper {
+  height: auto;
+  position: relative;
 }
 
 .overlap-below {
   padding: 5px 0;
-  top: -240px;
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .below-content {
   padding: 0 60px;
+  top: 0;
+  position: relative;
 }
 
 .inner-wrapper {
@@ -199,7 +301,7 @@ p {
 }
 .doctor-wrapper .doctor-portrait {
   padding-bottom: 30px;
-  color: #001e7e;
+  color: #070d3f;
 }
 .doctor-wrapper .doctor-portrait img {
   max-width: 180px;
@@ -308,12 +410,32 @@ p {
 }
 
 @media (min-width: 768px) {
+  .overlap-bottom-wrapper {
+    height: auto;
+    position: relative;
+  }
+
   .psn-group .psn-panel-img img {
     max-width: 167%;
     left: -125px;
   }
 }
 @media (min-width: 992px) {
+  .overlap-above {
+    padding-bottom: 280px;
+  }
+
+  .below-content {
+    padding: 0 60px;
+    top: -215px;
+    position: absolute;
+  }
+
+  .overlap-bottom-wrapper {
+    height: 625px;
+    position: relative;
+  }
+
   .psn-group .psn-panel-img img {
     max-width: 131%;
     left: -54px;

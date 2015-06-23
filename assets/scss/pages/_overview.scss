@@ -1,20 +1,28 @@
 
 //overlap effect setup
 .overlap-above{
-	padding-bottom:280px;
+	padding-bottom:40px;
+}
+
+.overlap-bottom-wrapper{
+	height:auto;
+	position:relative;
 }
 
 .overlap-below{
 	padding: 5px 0;
-	top:-240px;
+	// top:-240px;
 	position:relative;
 	width:100%;
 	max-width:900px;
 	margin:0 auto;
+	height:100%;
 }
-
+ 
 .below-content{
 	padding:0 60px;
+	top:0;
+	position:relative;
 }
 
 .inner-wrapper{
@@ -157,6 +165,11 @@
 
 @include breakpoint(tablet){
 
+	.overlap-bottom-wrapper{
+		height:auto;
+		position:relative;
+	}
+
 	.psn-group{
 		.psn-panel-img{
 			
@@ -169,6 +182,21 @@
 }
 
 @include breakpoint(laptop){
+
+	.overlap-above{
+		padding-bottom:280px;
+	}
+
+	.below-content{
+		padding:0 60px;
+		top:-215px;
+		position:absolute;
+	}
+
+	.overlap-bottom-wrapper{
+		height:625px;
+		position:relative;
+	}
 
 	.psn-group{
 		.psn-panel-img{

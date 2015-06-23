@@ -20,6 +20,14 @@ a{
 	padding:0;
 }
 
+.psn-container-lg{
+	position:relative;
+	width:100%;
+	max-width:1200px;
+	height:100%;
+	margin:0 auto;
+}
+
 .psn-container-outer{
 	width:100%;
 	max-width:900px;
@@ -54,4 +62,12 @@ p{
 .intro-text{
 	padding:0 60px;
 	margin-bottom:60px;
+}
+
+.psn-content-wrapper{
+	position:relative;
+	width:100%;
+	max-width:900px;
+	margin:0 auto;
+	height:100%;
 }
