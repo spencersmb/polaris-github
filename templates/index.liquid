@@ -1,0 +1,25 @@
+{% layout "homepage-tmpl" %}
+
+{% block content %}
+
+	<div class="container-fluid">
+		<div class="psn-container text-center">
+			<ul class="psn-nav-content">
+				<li><a href="">Why Polaris</a></li>
+				<li class="has-children">
+					<a href="">What we do</a>
+					<ul class="psn-secondary-nav is-hidden">
+						<li class="go-back"><a href="#">Go back</a></li>
+						<li>Sub item 1</li>
+						<li>Sub item 2</li>
+					</ul>
+				</li>
+				<li><a href="">My first visit</a></li>
+				<li><a href="">Doctors</a></li>
+				<li><a href="">Second Opinions</a></li>
+				<li><a href="">Patient Stories</a></li>
+			</ul>
+		</div>
+	</div>
+	
+{% endblock %}

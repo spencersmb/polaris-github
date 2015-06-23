@@ -1,0 +1,182 @@
+
+//overlap effect setup
+.overlap-above{
+	padding-bottom:280px;
+}
+
+.overlap-below{
+	padding: 5px 0;
+	top:-240px;
+	position:relative;
+	width:100%;
+	max-width:900px;
+	margin:0 auto;
+}
+
+.below-content{
+	padding:0 60px;
+}
+
+.inner-wrapper{
+	margin-bottom:50px;
+}
+
+.doctor-wrapper{
+	display:table;
+
+	.doctor-portrait{
+		padding-bottom:30px;
+		color:$polaris-blue;
+
+		img{
+			max-width: 180px;
+			margin:0 auto;
+		}
+
+		h4{
+			margin-top: 15px;
+			font-weight: 600;
+		}
+
+		span{
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+///Accordian styles
+.psn-group{
+	margin-bottom:0;
+	background-color:transparent;
+
+	.psn-panel{
+		border-radius: 0;
+		border:none;
+	}
+
+	.psn-heading{
+		background-color:$gold;
+		border-radius:0;
+		color:$white;
+		text-transform: uppercase;
+		position: relative;
+		height: 37px;
+	}
+
+	.psn-title{
+		font-weight: 400;
+		letter-spacing: 4px;
+
+		span{
+			padding:0 20px;
+		}
+
+		a{
+			display: block;
+			position:absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			padding: 8px 0 0 10px;
+
+			&:focus{
+				text-decoration: none;
+				outline:5px auto $tan;
+			}
+
+			&::before, &::after{
+				content:'';
+				color:$white;
+				position:absolute;
+				top:50%;
+				margin-top:-1px;
+				height:1px;
+				width:20px;
+				right:15px;
+				background:$white;
+				@include transition(transform 0.3s 0s);
+			}
+		}
+		.collapsed{
+
+			&::after{
+				@include transform(rotate(90deg));
+			}
+		}
+	}
+
+	.psn-body{
+		padding:0;
+		overflow: hidden;
+		border-top:none !important;
+	}
+
+	.psn-panel-img{
+		position:relative;
+
+
+		img{
+			position: absolute;
+			max-width: 131%;
+			left:-54px;
+			//tablet
+			// max-width: 167%;
+			// left:-125px;
+		}
+	}
+
+	.psn-panel-desc{
+		background-color:$white;
+		padding:0 40px;
+
+		.title{
+			color:$gold;
+			text-transform:uppercase;
+			font-size: 18px;
+			padding:20px 0;
+		}
+
+		p{
+			font-size: 14px;
+			line-height: 21px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.affiliate-wrapper{
+	padding:0 20px;
+	img{
+		margin:0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+@include breakpoint(tablet){
+
+	.psn-group{
+		.psn-panel-img{
+			
+			img{
+				max-width: 167%;
+				left:-125px;
+			}
+		}
+	}
+}
+
+@include breakpoint(laptop){
+
+	.psn-group{
+		.psn-panel-img{
+			
+			img{
+				max-width: 131%;
+				left:-54px;
+			}
+		}
+	}
+}

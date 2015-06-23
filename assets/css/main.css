@@ -1,0 +1,321 @@
+/*********************************************************
+
+Project Name: Website Bootstrap boilerplate
+Project Description:
+File Name: Master Sass file
+Author: Spencer Bigum, Casey Jardin
+Author URL:
+Version: 1.0.0
+
+*********************************************************/
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic");
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #001e7e;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.psn-container {
+  margin-top: 96px;
+  padding: 0;
+}
+
+.psn-container-outer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.psn-container-inner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #001e7e;
+  font-size: 18px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.intro-text {
+  padding: 0 60px;
+  margin-bottom: 60px;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.gold-bg {
+  background-color: #a99781;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.tan-bg {
+  background-color: #ddd1c5;
+}
+
+.text-gold {
+  color: #a99781;
+}
+
+.gradient-top {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+  height: 200px;
+  top: 0;
+}
+
+.gradient-bottom {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+  height: 200px;
+  bottom: 0;
+}
+
+.gradient-bottom-projects {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+  height: 33%;
+  bottom: 0;
+}
+
+.psn-header {
+  background-color: #27459b;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF27459B', endColorstr='#FF121540');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iIzI3NDU5YiIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjMTIxNTQwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(7%, #27459b), color-stop(90%, #121540));
+  background-image: -moz-linear-gradient(left bottom, #27459b 7%, #121540 90%);
+  background-image: -webkit-linear-gradient(left bottom, #27459b 7%, #121540 90%);
+  background-image: linear-gradient(to right top, #27459b 7%, #121540 90%);
+}
+
+.psn-header-wrapper a {
+  display: table;
+  margin: 0 auto;
+}
+
+.psn-title {
+  color: #fff;
+}
+
+.psn-logo img {
+  margin: 0 auto;
+}
+
+.psn-nav-home {
+  background-color: transparent;
+}
+
+.psn-nav-content {
+  list-style: none;
+}
+.psn-nav-content .psn-secondary-nav {
+  list-style: none;
+}
+
+.psn-nav {
+  background-color: #fff;
+}
+
+.psn-border {
+  border-color: #a99781;
+  border-width: 0 0 5px;
+}
+
+.overlap-above {
+  padding-bottom: 280px;
+}
+
+.overlap-below {
+  padding: 5px 0;
+  top: -240px;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.below-content {
+  padding: 0 60px;
+}
+
+.inner-wrapper {
+  margin-bottom: 50px;
+}
+
+.doctor-wrapper {
+  display: table;
+}
+.doctor-wrapper .doctor-portrait {
+  padding-bottom: 30px;
+  color: #001e7e;
+}
+.doctor-wrapper .doctor-portrait img {
+  max-width: 180px;
+  margin: 0 auto;
+}
+.doctor-wrapper .doctor-portrait h4 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+.doctor-wrapper .doctor-portrait span {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.psn-group {
+  margin-bottom: 0;
+  background-color: transparent;
+}
+.psn-group .psn-panel {
+  border-radius: 0;
+  border: none;
+}
+.psn-group .psn-heading {
+  background-color: #a99781;
+  border-radius: 0;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  height: 37px;
+}
+.psn-group .psn-title {
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.psn-group .psn-title span {
+  padding: 0 20px;
+}
+.psn-group .psn-title a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 8px 0 0 10px;
+}
+.psn-group .psn-title a:focus {
+  text-decoration: none;
+  outline: 5px auto #ddd1c5;
+}
+.psn-group .psn-title a::before, .psn-group .psn-title a::after {
+  content: '';
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 1px;
+  width: 20px;
+  right: 15px;
+  background: #fff;
+  -webkit-transition: transform 0.3s 0s;
+  -o-transition: transform 0.3s 0s;
+  transition: transform 0.3s 0s;
+}
+.psn-group .psn-title .collapsed::after {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.psn-group .psn-body {
+  padding: 0;
+  overflow: hidden;
+  border-top: none !important;
+}
+.psn-group .psn-panel-img {
+  position: relative;
+}
+.psn-group .psn-panel-img img {
+  position: absolute;
+  max-width: 131%;
+  left: -54px;
+}
+.psn-group .psn-panel-desc {
+  background-color: #fff;
+  padding: 0 40px;
+}
+.psn-group .psn-panel-desc .title {
+  color: #a99781;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px 0;
+}
+.psn-group .psn-panel-desc p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.affiliate-wrapper {
+  padding: 0 20px;
+}
+.affiliate-wrapper img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .psn-group .psn-panel-img img {
+    max-width: 167%;
+    left: -125px;
+  }
+}
+@media (min-width: 992px) {
+  .psn-group .psn-panel-img img {
+    max-width: 131%;
+    left: -54px;
+  }
+}

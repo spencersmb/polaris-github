@@ -1,0 +1,86 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--roboto: 'http://fonts.googleapis.com/css?family=Roboto:400,300,500,700';
+$font-url--gentium: 'http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic';
+
+$roboto    : 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Gentium Basic', Georgia, Serif;
+$heading-font: $roboto;
+
+
+// Font Weights
+
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+$letter-space: 1px;
+
+
+// Descriptive Base Colors
+
+$white     : #fff;
+$black     : #0b0b0b;
+$grey      : #797e83;
+
+
+//color palette modifiers
+//dual Nested array
+$palettes: (
+
+        grey: (
+                xx-light: lighten($grey,43%),
+                x-light: lighten($grey,35%),
+                light: lighten($grey,12%),
+                base: $grey,
+                dark: darken($grey, 8%),
+                x-dark: darken($grey, 16%)
+        ),
+        black:(
+                light: lighten($black, 10%),
+                base: $black,
+                dark: darken($black, 10%)
+        )
+
+);
+
+$apple-gold        : #a99781;
+$dark-blue         : #001e7e;
+$light-gold        : #ddd1c5;
+$fiord             : #3b5568;//warnings
+$hippie-blue       : #6694b4;//info
+$elephant		   : #143446;
+
+
+// Color Usage
+
+$gold              : $apple-gold;
+$polaris-blue      : $dark-blue;
+$tan               : $light-gold;
+// $quote-color       : $curious-blue;
+$h2-blue		   : $hippie-blue;
+$link-hover        : palettes(grey);
+
+$shadow-color      : rgba($black, .2);
+
+
+// //color map
+// //single nested array
+// $ui-colors:(
+// 	default: $fountain-blue,
+// 	success: $emerald,
+// 	error: $sunglo,
+// 	warning: $coral,
+// 	info: $purple
+// 	);
+
+
+$base__font-size: 16px;
+$base__line: 21px; //was 24
+
+//typography settings
+$letterspace: 10px;

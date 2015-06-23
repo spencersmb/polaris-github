@@ -1,0 +1,23 @@
+//Home page nav
+.psn-nav-home{
+	background-color:transparent;
+}
+
+.psn-nav-content{
+	list-style:none;
+
+	.psn-secondary-nav{
+		list-style:none;
+	}
+}
+
+
+//Inner Nav
+.psn-nav{
+	background-color:#fff;
+}
+
+.psn-border{
+	border-color:$gold;
+	border-width:0 0 5px;
+}

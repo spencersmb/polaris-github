@@ -1,0 +1,25 @@
+.psn-header{
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: #27459b; // Old browsers
+	@include filter-gradient(#27459b, #121540, horizontal); // IE6-8 fallback on horizontal gradient
+	// IE9 SVG, needs conditional override of 'filter' to 'none'
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(left bottom, #27459b 7%,#121540 90%));
+}
+
+.psn-header-wrapper{
+	a{
+		display: table;
+		margin:0 auto;
+	}
+}
+
+.psn-title{
+	color:#fff;
+}
+
+.psn-logo{
+	img{
+		margin:0 auto;
+	}
+}

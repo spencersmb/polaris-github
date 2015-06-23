@@ -1,0 +1,57 @@
+// ==========================================================================
+// Global Base Settings override
+// ==========================================================================
+
+body{
+font-family:$roboto;
+}
+
+a{
+	
+	color:$polaris-blue;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.psn-container{
+	margin-top:96px;
+	padding:0;
+}
+
+.psn-container-outer{
+	width:100%;
+	max-width:900px;
+	margin:0 auto;
+}
+
+.psn-container-inner{
+	width:100%;
+	max-width:900px;
+	margin:0 auto;
+	padding:0 60px;
+}
+
+h2{
+	text-transform:uppercase;
+	letter-spacing:2px;
+	color:$polaris-blue;
+	font-size:18px;
+	letter-spacing:$letterspace;
+	font-weight:600;
+	margin-top:35px;
+	margin-bottom:40px;
+}
+
+
+p{
+	font-size:$base__font-size;
+	font-weight:300;
+	line-height:21px;
+}
+
+.intro-text{
+	padding:0 60px;
+	margin-bottom:60px;
+}
