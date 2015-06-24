@@ -38,7 +38,7 @@ a{
 	width:100%;
 	max-width:900px;
 	margin:0 auto;
-	padding:0 60px;
+	padding:0;
 }
 
 h2{
@@ -50,6 +50,7 @@ h2{
 	font-weight:600;
 	margin-top:35px;
 	margin-bottom:40px;
+	line-height:28px;
 }
 
 
@@ -60,7 +61,7 @@ p{
 }
 
 .intro-text{
-	padding:0 60px;
+	padding:0 30px;
 	margin-bottom:60px;
 }
 
@@ -70,4 +71,35 @@ p{
 	max-width:900px;
 	margin:0 auto;
 	height:100%;
+}
+
+.inner-wrapper{
+	margin-bottom:50px;
+	padding:0;
+}
+
+
+@include breakpoint(tablet){
+
+	.psn-container-inner{
+		padding:0 60px;
+	}
+
+	.intro-text{
+		padding:0 60px;
+		margin-bottom:60px;
+	}
+
+	.inner-wrapper{
+		margin-bottom:50px;
+	}
+
+
+
+}
+
+@include breakpoint(laptop){
+
+	
+
 }

@@ -7,6 +7,7 @@
 .overlap-bottom-wrapper{
 	height:auto;
 	position:relative;
+	padding: 0;
 }
 
 .overlap-below{
@@ -23,10 +24,6 @@
 	padding:0 60px;
 	top:0;
 	position:relative;
-}
-
-.inner-wrapper{
-	margin-bottom:50px;
 }
 
 .doctor-wrapper{
@@ -124,7 +121,7 @@
 
 	.psn-panel-img{
 		position:relative;
-
+		display:none;
 
 		img{
 			position: absolute;
@@ -164,10 +161,16 @@
 }
 
 @include breakpoint(tablet){
+.psn-group{
+	.psn-panel-img{
+		display: block;
+	}
+}
 
 	.overlap-bottom-wrapper{
 		height:auto;
 		position:relative;
+		padding:0 15px;
 	}
 
 	.psn-group{
