@@ -1,8 +1,8 @@
 {% block content %}
 <!-- video block -->
-<div class="container psn-container">
+<div class="psn-container-nav">
 
-	<div class="row">
+	<div class="row no-margin">
 
 		<div class="col-xs-12 no-padding">
 					
@@ -17,9 +17,9 @@
 </div>
 
 <!-- about overlap top -->
-<div class="container-fluid psn-wrapper gold-bg">
+<div class="container-fluid psn-wrapper gold-bg no-padding">
 
-		<div class="col-xs-12 overlap-above ">
+		<div class="col-xs-12 overlap-above no-padding">
 
 			<div class="psn-container-inner">
 				
@@ -41,9 +41,9 @@
 
 </div>
 <!-- about overlap bottom -->
-<div class="container-fluid tan-bg">
+<div class="container-fluid tan-bg overlap-bottom-wrapper ">
 
-	<div class="row overlap-below">
+	<div class="row psn-content-wrapper">
 
 		<div class="col-xs-12 below-content no-padding">
 
@@ -113,8 +113,16 @@
 				</div>
 			</div>
 			<!-- end team block -->
+		</div>
 
-			<!-- accordian -->
+	</div><!-- end row -->
+
+</div><!-- end overlap bottom -->
+
+<div class="container-fluid tan-bg">
+	<div class="psn-content-wrapper">
+
+		<!-- accordian -->
 			<div class="col-xs-12 inner-wrapper no-padding">
 				
 				<div class="panel-group psn-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -252,7 +260,7 @@
 
 					<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
 				</div>
-				<div class="affiliate-wrapper">
+				<div class="affiliate-wrapper row">
 					<div class="col-xs-12 col-sm-4">
 						<img class="img-responsive" src="{{ 'northside-logo.jpg' | asset_url }}" alt="">
 					</div>
@@ -266,13 +274,9 @@
 			</div>
 			<!-- end hospitals -->
 
-		</div>
-		
-		
-		
-	</div><!-- end row -->
-
-</div><!-- end overlap bottom -->
-
-
+	</div>
+	<!-- end content wapper -->
+	
+</div>
+<!-- end container fluid -->
 {% endblock %}
