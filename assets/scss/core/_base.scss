@@ -15,9 +15,17 @@ a{
 	}
 }
 
+
 .psn-container{
-	margin-top:96px;
-	padding:0;
+	max-width:1170px;
+	margin:0 auto;
+}
+
+.psn-container-nav{
+	// margin-top:96px;
+	padding:96px 0 0 0;
+	max-width:1170px;
+	margin:0 auto;
 }
 
 .psn-container-lg{
@@ -35,10 +43,9 @@ a{
 }
 
 .psn-container-inner{
-	width:100%;
 	max-width:900px;
 	margin:0 auto;
-	padding:0;
+	padding:0 30px;
 }
 
 h2{
@@ -51,6 +58,12 @@ h2{
 	margin-top:35px;
 	margin-bottom:40px;
 	line-height:28px;
+}
+
+h3{
+	font-size:36px;
+	font-weight:300;
+	margin-bottom:25px;
 }
 
 

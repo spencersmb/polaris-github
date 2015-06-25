@@ -1,7 +1,12 @@
 
 //overlap effect setup
 .overlap-above{
-	padding-bottom:40px;
+	// padding-bottom:40px;
+	p{
+		&:nth-last-child(1){
+			padding-bottom:40px;
+		}
+	}
 }
 
 .overlap-bottom-wrapper{
@@ -43,10 +48,6 @@
 			font-weight: 600;
 		}
 
-		span{
-			font-weight: 400;
-			text-transform: uppercase;
-		}
 	}
 }
 
@@ -153,7 +154,7 @@
 }
 
 .affiliate-wrapper{
-	padding:0 20px;
+	
 	img{
 		margin:0 auto;
 		margin-bottom: 30px;
@@ -161,11 +162,11 @@
 }
 
 @include breakpoint(tablet){
-.psn-group{
-	.psn-panel-img{
-		display: block;
+	.psn-group{
+		.psn-panel-img{
+			display: block;
+		}
 	}
-}
 
 	.overlap-bottom-wrapper{
 		height:auto;
@@ -187,7 +188,12 @@
 @include breakpoint(laptop){
 
 	.overlap-above{
-		padding-bottom:280px;
+		
+		p{
+			&:nth-last-child(1){
+				padding-bottom:280px;
+			}
+		}
 	}
 
 	.below-content{

@@ -1,0 +1,71 @@
+
+
+.header-image{
+	position:relative;
+	max-height:780px;
+}
+
+.doctor-name{
+	position:absolute;
+	left:0;
+	bottom:0;
+	display:block;
+	width:80%;
+
+	////background gradient
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: #ffa519; // Old browsers
+	@include filter-gradient(#ffa519, #ff1e1e, horizontal); // IE6-8
+	// IE9 SVG, needs conditional override of 'filter' to 'none'
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(left,  #ffa519 1%,#ff1e1e 100%));
+
+	h2{
+		margin:0;
+		padding:20px 0;
+		color:$white;
+		font-size: 18px;
+		margin-left: 30px;
+	}
+
+}
+
+.info-block{
+	border-top:1px solid lighten($blue, 60%);
+	margin-bottom:30px;
+	display:table;
+
+	.desc{
+		margin-bottom:30px;
+	}
+
+	.video-desc{
+		margin:30px 0;
+	}
+}
+
+@include breakpoint(tablet){
+
+	.doctor-name{
+		position:absolute;
+		left:0;
+		bottom:0;
+		display:block;
+		width:80%;
+
+		h2{
+			margin:0;
+			padding:20px 0;
+			color:$white;
+			font-size: 24px;
+			margin-left: 60px;
+		}
+
+	}
+
+}
+
+@include breakpoint(laptop){
+
+
+}

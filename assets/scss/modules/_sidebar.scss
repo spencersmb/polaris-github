@@ -1,0 +1,38 @@
+.psn-sidebar-wrapper{
+	position:relative;
+
+	.sidebar-title{
+		text-align: center;
+		color:$blue;
+	}
+
+	h2{
+		margin:60px auto;
+		color:$blue;
+	}
+
+	a{
+		display:block;
+		padding:20px 0;
+		text-align:center;
+		border-top:2px solid lighten($gold, 15%);
+		font-size:18px;
+		font-weight: 600;
+		color:$blue;
+		@include transition(all 0.3s ease);
+
+		&:hover{
+			color:$white;
+			background-color: $gold;
+		}
+	}
+}
+
+@include breakpoint(tablet){
+
+}
+
+@include breakpoint(laptop){
+
+	
+}

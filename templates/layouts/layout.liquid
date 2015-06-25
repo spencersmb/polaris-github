@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
         {{ "main.css" | asset_url | stylesheet_tag }}
+        {{ "jquery.min.js" | asset_url | script_tag }}
+        {{ "bootstrap.js" | asset_url | script_tag }}
 
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
@@ -27,8 +29,17 @@
             {% include "footer" %}
 
         <!-- Script block allowing child pages to inject their own scripts -->
-        {% block scripts %}{% endblock %}
-        {{ "jquery.min.js" | asset_url | script_tag }}
-        {{ "bootstrap.js" | asset_url | script_tag }}
+        {% block scripts %}
+        <script>
+        (function(){
+            $('.dropdown-submenu').on('click', function(evt){
+                evt.preventDefault();
+                $(this).parent('ul').parent('li').addClass('open');
+                $(this).toggleClass('open');
+            });
+        })();
+        </script>
+        {% endblock %}
+        
     </body>
 </html>
