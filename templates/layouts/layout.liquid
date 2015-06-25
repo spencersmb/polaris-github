@@ -11,7 +11,7 @@
 
         <!-- Latest font awesome CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+        {{ "component.css" | asset_url | stylesheet_tag }}
         {{ "main.css" | asset_url | stylesheet_tag }}
         {{ "jquery.min.js" | asset_url | script_tag }}
         {{ "bootstrap.js" | asset_url | script_tag }}
@@ -27,17 +27,39 @@
             {% block content %}{% endblock %}
 
             {% include "footer" %}
-
+        
+        {{ "jquery.dlmenu.js" | asset_url | script_tag }}
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}
         <script>
-        (function(){
-            $('.dropdown-submenu').on('click', function(evt){
-                evt.preventDefault();
-                $(this).parent('ul').parent('li').addClass('open');
-                $(this).toggleClass('open');
-            });
-        })();
+            (function(){
+
+                function closeNav(){
+                    $('.psn-dropdown').parent('li').removeClass('open');
+                }
+
+                $('.psn-dropdown').on('click', function(evt){
+                    evt.preventDefault();
+                    var $this = $(this);
+                    // $(this).parent('ul').parent('li').addClass('open');
+                    if($this.parent('li').hasClass('open')){
+                        closeNav();
+                    }else{
+                        $this.parent('li').addClass('open');
+                    }
+                    
+                });
+                $('.psn-dropdown > ul').children('li').on('click', function(evt){
+                    evt.preventDefault();
+                    // $(this).toggleClass('open');
+                });
+                
+                $('.dropdown-submenu').on('click', function(evt){
+                    evt.preventDefault();
+                    $(this).parent('ul').parent('li').addClass('open');
+                    $(this).toggleClass('open');
+                });
+            })();
         </script>
         {% endblock %}
         
