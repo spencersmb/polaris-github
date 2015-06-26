@@ -1,29 +1,72 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
     <head>
         <!-- Title block allowing child pages to override -->
-        <title>Empty</title>
+        <title>Polairs</title>
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         <!-- Styles -->
-        <link href="/assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Latest font awesome CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link href="/assets/css/main.min.css" rel="stylesheet" type="text/css" media="all"/>
+
         <!-- Style block allowing child pages to inject their own styles -->
         
     </head>
     <body>
-        <div id="wrapper">
+
             <!-- Include -->
-            <header>
-	<h1>Empty</h1>
+            <header class="psn-header">
+	<div class="psn-header-wrapper">
+		<a href="#">
+			<div class="psn-logo">
+				<img class="img-responsive" src="/assets/images/logo/starburst.png" alt="">
+			</div>
+			<div class="psn-title text-center">
+				<h1>Polaris</h1>
+				<h3>Spine & Neurosurgery Center</h3>
+			</div>
+		</a>
+	</div>
+
+	<nav class="navbar navbar-default psn-nav-home psn-border">
+		<div class="container-fluid text-center">
+			<img src="/assets/images/placeholder/homepage-nav.png" alt="">
+		</div>
+	</nav>
 </header>
             <!-- Content block, child page inject content -->
-             
-	<p>An empty, simple boilerplate for a fresh start.</p>     
-	<!-- TODO: Create my project :-) -->
+            
 
-        </div>
+	<div class="container-fluid">
+		<div class="psn-container text-center">
+			<ul class="psn-nav-content">
+				<li><a href="">Why Polaris</a></li>
+				<li class="has-children">
+					<a href="">What we do</a>
+					<ul class="psn-secondary-nav is-hidden">
+						<li class="go-back"><a href="#">Go back</a></li>
+						<li>Sub item 1</li>
+						<li>Sub item 2</li>
+					</ul>
+				</li>
+				<li><a href="">My first visit</a></li>
+				<li><a href="">Doctors</a></li>
+				<li><a href="">Second Opinions</a></li>
+				<li><a href="">Patient Stories</a></li>
+			</ul>
+		</div>
+	</div>
+	
+
+
         <!-- Script block allowing child pages to inject their own scripts -->
         
-                <script src="/assets/scripts/jquery.min.js"></script>
-        <script src="/assets/scripts/bootstrap.js"></script>
+        <script src="/assets/scripts/jquery.min.js"></script>
+        <script src="/assets/scripts/bootstrap.min.js"></script>
     </body>
 </html>

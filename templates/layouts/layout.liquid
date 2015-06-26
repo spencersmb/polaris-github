@@ -11,10 +11,14 @@
 
         <!-- Latest font awesome CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
         {{ "component.css" | asset_url | stylesheet_tag }}
         {{ "main.css" | asset_url | stylesheet_tag }}
-        {{ "jquery.min.js" | asset_url | script_tag }}
-        {{ "bootstrap.js" | asset_url | script_tag }}
+
+        <script src="assets/scripts/modernizr.custom.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
 
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
@@ -28,40 +32,104 @@
 
             {% include "footer" %}
         
-        {{ "jquery.dlmenu.js" | asset_url | script_tag }}
+        
+        <div class="overlay"></div>
         <!-- Script block allowing child pages to inject their own scripts -->
+        
+        {{ "jquery.dlmenu.js" | asset_url | script_tag }}
+        {{ "bootstrap.js" | asset_url | script_tag }}
         {% block scripts %}
         <script>
+            // $(function() {
+            //     $( '#dl-menu' ).dlmenu();
+            // });
+
             (function(){
 
                 function closeNav(){
                     $('.psn-dropdown').parent('li').removeClass('open');
+                    $('.overlay').removeClass('active');
                 }
 
+                //Close nav on overlay click
+                $('.overlay').on('click', function(){
+                    if($('.navbar-nav').children('li').hasClass('open')){
+                        console.log('true');
+                        $('.navbar-nav').children('li').removeClass('open');
+                        $('.overlay').removeClass('active');
+                    }else{
+                        console.log('false');
+                    }
+                });
+
+                //open nav
                 $('.psn-dropdown').on('click', function(evt){
                     evt.preventDefault();
+
                     var $this = $(this);
-                    // $(this).parent('ul').parent('li').addClass('open');
+                    
+                    //check if its already open
                     if($this.parent('li').hasClass('open')){
                         closeNav();
+
                     }else{
+                        //enable overlay
+                        $('.overlay').addClass('active');
+
+                        //close other top tier navs already open
+                        $this.parent('li').parent('ul').children('li').removeClass('open');
+
+                        //reset subnav elements
+                        $this.next('.dropdown-menu').children('li').removeClass('subNav-open').removeClass('open');
+
+                        //remove 2nd tier subnav elements
+                        $this.next('.dropdown-menu').find('.dropdown-submenu').find('.sub-link').removeClass('subNav-open').parent('li')
+                            .find('.dropdown-menu').children('li').removeClass('subNav-open').removeClass('open');
+
+                        //open the current nav element
                         $this.parent('li').addClass('open');
                     }
                     
                 });
+
+                
                 $('.psn-dropdown > ul').children('li').on('click', function(evt){
                     evt.preventDefault();
                     // $(this).toggleClass('open');
                 });
                 
-                $('.dropdown-submenu').on('click', function(evt){
+                $('.dropdown-submenu').on('click', 'a.sub-link', function(evt){
                     evt.preventDefault();
-                    $(this).parent('ul').parent('li').addClass('open');
-                    $(this).toggleClass('open');
+                    
+                    if(!$(this).hasClass('subNav-open')){
+                        console.log('no-class');
+                            //hide parent li's
+                        $(this).parent('li').parent('ul').children('li').addClass('subNav-open');
+                        $(this).parent('li').removeClass('subNav-open').addClass('open');
+
+                        // $(this).next('ul').addClass('open');
+
+                        $(this).addClass('subNav-open');
+
+                    } else{
+                        console.log('has-class');
+                    }
+
                 });
+
+                //back btn
+                $('.back').on('click', function(evt){
+                    evt.preventDefault();
+                    $(this).parent('li').parent('ul').parent('li').children('a').removeClass('subNav-open').parent('li').removeClass('open').parent('ul').children('li').removeClass('subNav-open');
+                });
+
             })();
+
         </script>
         {% endblock %}
+         
+
+       
         
     </body>
 </html>
