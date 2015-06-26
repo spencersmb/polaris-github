@@ -42,8 +42,21 @@
         {% block scripts %}
         <script>
 
-            
+            (function(){
 
+              //change height of content to set offset paragraph correctly
+              var belowContent = $('.below-content');
+              var contentHeight = belowContent.height();
+              var offset = parseInt(belowContent.css('top'));
+              console.log(offset);
+            //Use addition here because the offset is negative value
+              var overlapHeight = contentHeight + offset;
+              console.log(overlapHeight);
+              //Set overlap height
+              $('.overlap-bottom-wrapper').height(overlapHeight);
+
+            })();
+            
         </script>
         {% endblock %}
 
