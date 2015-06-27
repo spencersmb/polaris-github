@@ -436,7 +436,7 @@ footer {
 }
 .newsletter-signup input:focus {
   outline: 0;
-  box-shadow: 0;
+  box-shadow: none;
   border-color: #a99781;
 }
 
