@@ -23,7 +23,6 @@
        }
    });
 
-
    //DO I NEED TO PLACE THIS FOR LAPTOP AND DESKTOP MODE ONLY??
    $('.navbar-default').on('click', function(){
 
