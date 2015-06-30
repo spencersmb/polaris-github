@@ -1,4 +1,4 @@
-$(function(){
+(function(){
 
 // ==========================================================================
 // Primary Navigation
@@ -12,13 +12,30 @@ $(function(){
 
    //Close nav on overlay click
    $('.overlay').on('click', function(){
+
        if($('.navbar-nav').children('li').hasClass('open')){
-           console.log('true');
+
            $('.navbar-nav').children('li').removeClass('open');
            $('.overlay').removeClass('active');
+
        }else{
-           console.log('false');
+
        }
+   });
+
+   //DO I NEED TO PLACE THIS FOR LAPTOP AND DESKTOP MODE ONLY??
+   $('.navbar-default').on('click', function(){
+
+      //check if element is hovered or not
+      var isHovered = $(".navbar-nav").find("li:hover").length;
+      console.log(isHovered);
+
+
+      if($('.navbar-nav').children('li').hasClass('open') && isHovered ){
+          //do nothing because the user is hovering over an item
+      }else{
+        closeNav();
+      }
    });
 
    //open nav
@@ -32,6 +49,7 @@ $(function(){
            closeNav();
 
        }else{
+
            //enable overlay
            $('.overlay').addClass('active');
 

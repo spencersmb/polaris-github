@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
     <head>
         <!-- Title block allowing child pages to override -->
@@ -11,150 +11,491 @@
 
         <!-- Latest font awesome CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href="assets/css/component.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="assets/css/main.min.css" rel="stylesheet" type="text/css" media="all"/>
+        
+        <link href="/assets/css/component.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="assets/scripts/modernizr.custom.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         
 
         <!-- Style block allowing child pages to inject their own styles -->
-        <script src="js/modernizr.custom.js"></script>
+        
     </head>
     <body>
-<div class="container demo-1">	
-			<!-- Codrops top bar -->
-			<div class="codrops-top clearfix">
-				<a href="http://tympanus.net/Tutorials/AppShowcase/"><strong>&laquo; Previous Demo: </strong>App Showcase</a>
-				<span class="right"><a href="http://tympanus.net/codrops/?p=14753"><strong>Back to the Codrops Article</strong></a></span>
-			</div><!--/ Codrops top bar -->
-			<header class="clearfix">
-				<h1>Responsive Multi-Level Menu <span>Space-saving drop-down menu with subtle effects</span></h1>	
-				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-					<a href="index4.html">Demo 4</a>
-					<a href="index5.html">Demo 5</a>
-				</nav>
-			</header>
-			<div class="main clearfix">
-				<div class="column">
-					<p>The submenu of this menu will slide and fade in from the right while the previous level rotates slightly and disappears in the back.</p>
+
+            <!-- Include -->
+            <header>
+	<nav class="navbar navbar-default navbar-fixed-top psn-nav psn-border">
+		<div class="container-fluid psn-container no-padding">
+
+			
+			<div class="navbar-header">
+
+			<!-- responsive hamburger -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button> 
+
+			<!-- nav-logo -->
+	      <a class="navbar-brand" href="#">
+	        <img alt="Polaris" src="/assets/images/logo/polaris--logo-h.png">
+	      </a>
+	    </div>
+
+	    <!-- nav-contents -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+
+						<li class="dropdown">
+
+              <a href="#" class="psn-dropdown" >About <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+
+            </li>
+
+            <li class="dropdown">
+
+              <a href="#" class="psn-dropdown" >Services <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+
+            </li>
+
+            <li class="dropdown">
+
+              <a href="#" class="psn-dropdown">Education <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li class="dropdown-submenu">
+                    <a class="sub-link" tabindex="-1" href="#">More options</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="back" href="#back">back</a></li>
+                      <li><a tabindex="-1" href="#">Second level</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="sub-link" href="#">More..</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="back" href="#back">back</a></li>
+                          <li><a href="#">3rd level</a></li>
+                          <li><a href="#">3rd level</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Second level</a></li>
+                      <li><a href="#">Second level</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Something else here</a></li>
+                <li class="dropdown-submenu">
+                    <a class="sub-link" tabindex="-1" href="#">More options2</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="back" href="#back">back</a></li>
+                      <li><a tabindex="-1" href="#">Second level 2</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="sub-link" href="#">More..</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">3rd level</a></li>
+                          <li><a href="#">3rd level</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Second level</a></li>
+                      <li><a href="#">Second level</a></li>
+                    </ul>
+                </li>
+
+                
+              </ul>
+
+            </li>
+
+            <li class="dropdown">
+
+              <a href="#" class="psn-dropdown" >Connect <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-submenu">
+                    <a class="sub-link" tabindex="-1" href="#">More options</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Second level</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="sub-link" href="#">More..</a>
+                        <ul class="dropdown-menu">
+                        	<li><a href="#">3rd level</a></li>
+                        	<li><a href="#">3rd level</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Second level</a></li>
+                      <li><a href="#">Second level</a></li>
+                    </ul>
+                </li>
+              </ul>
+
+            </li>
+
+          </ul>
+
+        </div>
+		</div>
+	</nav>
+</header>
+            <!-- Content block, child page inject content -->
+            
+<!-- video block -->
+<div class="psn-container-nav">
+	<div class="row no-margin">
+		<div class="col-xs-12 no-padding">
+					<!-- 16:9 aspect ratio -->
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n9BoK-gtM1o"></iframe>
 				</div>
-				<div class="column">
-					<div id="dl-menu" class="dl-menuwrapper">
-						<button class="dl-trigger">Open Menu</button>
-						<ul class="dl-menu">
-							<li>
-								<a href="#">Fashion</a>
-								<ul class="dl-submenu">
-									<li>
-										<a href="#">Men</a>
-										<ul class="dl-submenu">
-											<li><a href="#">Shirts</a></li>
-											<li><a href="#">Jackets</a></li>
-											<li><a href="#">Chinos &amp; Trousers</a></li>
-											<li><a href="#">Jeans</a></li>
-											<li><a href="#">T-Shirts</a></li>
-											<li><a href="#">Underwear</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Women</a>
-										<ul class="dl-submenu">
-											<li><a href="#">Jackets</a></li>
-											<li><a href="#">Knits</a></li>
-											<li><a href="#">Jeans</a></li>
-											<li><a href="#">Dresses</a></li>
-											<li><a href="#">Blouses</a></li>
-											<li><a href="#">T-Shirts</a></li>
-											<li><a href="#">Underwear</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Children</a>
-										<ul class="dl-submenu">
-											<li><a href="#">Boys</a></li>
-											<li><a href="#">Girls</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Electronics</a>
-								<ul class="dl-submenu">
-									<li><a href="#">Camera &amp; Photo</a></li>
-									<li><a href="#">TV &amp; Home Cinema</a></li>
-									<li><a href="#">Phones</a></li>
-									<li><a href="#">PC &amp; Video Games</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Furniture</a>
-								<ul class="dl-submenu">
-									<li>
-										<a href="#">Living Room</a>
-										<ul class="dl-submenu">
-											<li><a href="#">Sofas &amp; Loveseats</a></li>
-											<li><a href="#">Coffee &amp; Accent Tables</a></li>
-											<li><a href="#">Chairs &amp; Recliners</a></li>
-											<li><a href="#">Bookshelves</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Bedroom</a>
-										<ul class="dl-submenu">
-											<li>
-												<a href="#">Beds</a>
-												<ul class="dl-submenu">
-													<li><a href="#">Upholstered Beds</a></li>
-													<li><a href="#">Divans</a></li>
-													<li><a href="#">Metal Beds</a></li>
-													<li><a href="#">Storage Beds</a></li>
-													<li><a href="#">Wooden Beds</a></li>
-													<li><a href="#">Children's Beds</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Bedroom Sets</a></li>
-											<li><a href="#">Chests &amp; Dressers</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Home Office</a></li>
-									<li><a href="#">Dining &amp; Bar</a></li>
-									<li><a href="#">Patio</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Jewelry &amp; Watches</a>
-								<ul class="dl-submenu">
-									<li><a href="#">Fine Jewelry</a></li>
-									<li><a href="#">Fashion Jewelry</a></li>
-									<li><a href="#">Watches</a></li>
-									<li>
-										<a href="#">Wedding Jewelry</a>
-										<ul class="dl-submenu">
-											<li><a href="#">Engagement Rings</a></li>
-											<li><a href="#">Bridal Sets</a></li>
-											<li><a href="#">Women's Wedding Bands</a></li>
-											<li><a href="#">Men's Wedding Bands</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /dl-menuwrapper -->
+		</div>
+	</div>
+</div>
+<!-- about overlap top -->
+<div class="container-fluid psn-wrapper gold-bg no-padding">
+		<div class="col-xs-12 overlap-above no-padding">
+			<div class="psn-container-inner">
+				<div class="inner-content text-white">
+					<h2 class="text-center">About Polaris</h2>
+					<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
+					<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
+					<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
 				</div>
 			</div>
-		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.dlmenu.js"></script>
-		<script>
-			$(function() {
-				$( '#dl-menu' ).dlmenu();
-			});
-		</script>
+		</div>
+</div>
+<!-- about overlap bottom -->
+<div class="container-fluid tan-bg overlap-bottom-wrapper ">
+	<div class="row psn-content-wrapper">
+		<div class="col-xs-12 below-content no-padding">
+			<!-- our team -->
+			<div class="col-xs-12 inner-wrapper white-bg">
+				<div class="intro-text text-gold">
+					<h2 class="text-center">Meet Our Team</h2>
+					<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
+				</div>
+				<div class="doctor-wrapper no-padding">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="doctor-portrait text-center">
+							<a href="">
+							<img class="img-circle img-responsive" src="/assets/images/doctors/doctor-thumbnail.jpg" alt="">
+							<h4>Max Steuer, <span>MD.</span></h4>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="doctor-portrait text-center">
+							<a href="">
+							<img class="img-circle img-responsive" src="/assets/images/doctors/doctor-thumbnail.jpg" alt="">
+							<h4>Max Steuer, <span>MD.</span></h4>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="doctor-portrait text-center">
+							<a href="">
+							<img class="img-circle img-responsive" src="/assets/images/doctors/doctor-thumbnail.jpg" alt="">
+							<h4>Max Steuer, <span>MD.</span></h4>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="doctor-portrait text-center">
+							<a href="">
+							<img class="img-circle img-responsive" src="/assets/images/doctors/doctor-thumbnail.jpg" alt="">
+							<h4>Max Steuer, <span>MD.</span></h4>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="doctor-portrait text-center">
+							<a href="">
+							<img class="img-circle img-responsive" src="/assets/images/doctors/doctor-thumbnail.jpg" alt="">
+							<h4>Max Steuer, <span>MD.</span></h4>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="doctor-portrait text-center">
+							<a href="">
+							<img class="img-circle img-responsive" src="/assets/images/doctors/doctor-thumbnail.jpg" alt="">
+							<h4>Max Steuer, <span>MD.</span></h4>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end team block -->
+		</div>
+	</div><!-- end row -->
+</div><!-- end overlap bottom -->
+<div class="container-fluid tan-bg">
+	<div class="psn-content-wrapper">
+		<!-- accordian -->
+			<div class="col-xs-12 inner-wrapper no-padding">
+				<div class="panel-group psn-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default psn-panel">
+				    <div class="panel-heading psn-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title psn-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          <span>PA-C</span> carter cooper
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body psn-body">
+				      	<div class="col-xs-12 col-sm-6 psn-panel-img no-padding">
+				      		<img class="img-responsive" src="/assets/images/doctors/assistant.jpg" alt="">
+				      	</div>
+				      	<div class="col-xs-12 col-sm-6 psn-panel-desc">
+				      		<div class="title">Matt Sartorio</div>
+				      		<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default psn-panel">
+				    <div class="panel-heading psn-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title psn-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          <span>PA-C</span> carter cooper
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				       <div class="panel-body psn-body">
+				      	<div class="col-xs-12 col-sm-6 psn-panel-img no-padding">
+				      		<img class="img-responsive" src="/assets/images/doctors/assistant.jpg" alt="">
+				      	</div>
+				      	<div class="col-xs-12 col-sm-6 psn-panel-desc">
+				      		<div class="title">Matt Sartorio</div>
+				      		<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default psn-panel">
+				    <div class="panel-heading psn-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title psn-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          <span>PA-C</span> carter cooper
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				       <div class="panel-body psn-body">
+				      	<div class="col-xs-12 col-sm-6 psn-panel-img no-padding">
+				      		<img class="img-responsive" src="/assets/images/doctors/assistant.jpg" alt="">
+				      	</div>
+				      	<div class="col-xs-12 col-sm-6 psn-panel-desc">
+				      		<div class="title">Matt Sartorio</div>
+				      		<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<!-- end accordian -->
+			<!-- office slider -->
+			<div class="col-xs-12 inner-wrapper white-bg no-padding">
+					<div class="intro-text text-gold">
+						<h2 class="text-center">Office</h2>
+						<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
+					</div>
+					<!-- slider -->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  </ol>
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="/assets/images/doctors/office-1.jpg" alt="...">
+					     <!--  <div class="carousel-caption">
+					        ...
+					      </div> -->
+					    </div>
+					    <div class="item">
+					      <img src="/assets/images/doctors/office-1.jpg" alt="...">
+					     <!--  <div class="carousel-caption">
+					        ...
+					      </div> -->
+					    </div>
+					    <div class="item">
+					      <img src="/assets/images/doctors/office-1.jpg" alt="...">
+					     <!--  <div class="carousel-caption">
+					        ...
+					      </div> -->
+					    </div>
+					  </div>
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+			</div>
+			<!-- end office slider -->
+			<!-- hospitals -->
+			<div class="col-xs-12 inner-wrapper white-bg no-padding">
+				<div class="intro-text text-gold">
+					<h2 class="text-center">Hospitals</h2>
+					<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
+				</div>
+				<div class="affiliate-wrapper row">
+					<div class="col-xs-12 col-sm-4">
+						<img class="img-responsive" src="/assets/images/affiliates/northside-logo.jpg" alt="">
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<img class="img-responsive" src="/assets/images/affiliates/piedmont-logo.jpg" alt="">
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<img class="img-responsive" src="/assets/images/affiliates/saint-joseph-logo.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- end hospitals -->
+	</div>
+	<!-- end content wapper -->
+</div>
+<!-- end container fluid -->
+
+
+            <footer class="container-fluid blue-bg ">
+	
+	<!-- info bar -->
+	<div class="footer-info-bar">
+
+		<div class="psn-container-lg">
+			<a href="" class="appointment">
+				<i class="fa fa-calendar fa-lg"></i>
+				<p>Make an Appointment</p>
+			</a>
+			<a href="" class="request-info">
+				<i class="fa fa-info-circle fa-lg"></i>
+				<p>Request Insurance Info</p>
+			</a>
+			<a href="" class="bill-pay">
+				<i class="fa fa-credit-card fa-lg"></i>
+				<p>Online Bill Pay</p>
+			</a>
+		</div>
 		
+	</div>
+
+	<!-- footer -->
+	<div class="row psn-container-lg footer-wrapper">
+			<!-- left -->
+			<div class="col-xs-12 col-md-6">
+				<div class="footer-logo">
+					<img class="img-responsive" src="/assets/images/logo/footer-logo.jpg" alt="">
+				</div>
+
+				<div class="footer-contact">
+					<div class="contact-wrapper">
+						<a href="" class="phone">
+							<i class="fa fa-phone fa-lg"></i>
+							<p>Phone: 404-444-4444</p>
+						</a>
+						<a href="" class="location">
+							<i class="fa fa-map-marker fa-lg"></i>
+							<p>Our Location</p>
+						</a>
+						<a href="" class="fax">
+							<i class="fa fa-fax fa-lg"></i>
+							<p>Fax: 404-444-4444</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- right -->
+			<div class="col-xs-12 col-md-6">
+				<div class="newsletter-signup">
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Sign up for our newsletter</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your Email">
+					  </div>
+					</form>
+				</div>
+				
+				<div class="social-footer-wrapper">
+
+					<div class="col-xs-12 col-sm-6 no-padding">
+						<div class="social">
+							<a href=""><img src="/assets/images/icons/facebook.jpg" alt=""></a>
+							<a href=""><img src="/assets/images/icons/facebook.jpg" alt=""></a>
+							<a href=""><img src="/assets/images/icons/facebook.jpg" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="copyright">
+							&copy; Copyright 2015 Polaris
+						</div>
+					</div>
+					
+				</div>
+				
+
+			</div>
+
+	</div>
+</footer>
+        
+        
+        <div class="overlay"></div>
         <!-- Script block allowing child pages to inject their own scripts -->
         
+        <script src="/assets/scripts/jquery.dlmenu.min.js"></script>
+        <script src="/assets/scripts/bootstrap.min.js"></script>
+        <script src="/assets/scripts/main-nav.min.js"></script>
         
-        
+ <script>
+	(function(){
+		//change height of content to set offset paragraph correctly
+		var belowContent = $('.below-content');
+		var contentHeight = belowContent.height();
+		var offset = parseInt(belowContent.css('top'));
+		//Use addition here because the offset is negative value
+		var overlapHeight = contentHeight + offset;
+		//Set overlap height
+		$('.overlap-bottom-wrapper').height(overlapHeight);
+	})();
+</script>
+
+
     </body>
 </html>
