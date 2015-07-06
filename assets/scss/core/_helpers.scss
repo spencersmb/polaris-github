@@ -112,3 +112,19 @@
   bottom:0;
   // margin:0 .75rem .75rem .75rem;
 }
+
+// ==========================================================================
+// Button Classes
+// ==========================================================================
+
+.btn-primary {
+  color: #fff;
+  background-color: $gold;
+  border-color: $gold;
+
+  &:hover, &.active {
+    background-color: $tan;
+    border-color: $tan;
+    box-shadow: none;
+  }
+}
