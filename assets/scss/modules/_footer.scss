@@ -7,10 +7,11 @@ footer{
 }
 
 .footer-logo{
-	max-width:433px;
+
 	padding:24px 64px 30px;
 	margin:0 auto;
 	img{
+		max-width:200px;
 		margin:0 auto;
 	}
 }
@@ -63,7 +64,6 @@ footer{
 	color:$white;
 	width:100%;
 	display: block;
-	margin-top:40px;
 	text-align: center;
 
 	label{
@@ -151,6 +151,16 @@ footer{
 
 	.footer-wrapper{
 		padding:40px 30px 0;
+
+		.social{
+			text-align:left;
+			margin-bottom:0;
+
+			a{
+				padding-right:20px;
+			}
+		}
+
 	}
 
 	.footer-info-bar{
@@ -162,22 +172,18 @@ footer{
 		}
 	}
 
-	.newsletter-signup{
-		margin-top:70px
-	}
 	.footer-logo{
-		padding:24px 64px 64px;
+		padding:24px 64px 40px;
 	}
 
 	.footer-contact{
 		display:block;
-		padding-top:5px;
+		margin:35px 0 50px 0;
 
 		.phone, .location, .fax{
 			display: inline-block;
 			text-align: center;
 			padding: 0 20px;
-			margin-bottom:15px;
 			border-right:1px solid $white;
 		}
 
@@ -192,24 +198,13 @@ footer{
 		}
 	}
 
-	.social-footer-wrapper{
-		margin-top:80px;
-
-		a{
-			margin: 0 15px 0 0;
-		}
-
-		.social{
-			text-align:left;
-			margin-bottom:0;
-		}
+	.newsletter-signup{
+		margin-top:20px;
 	}
 
 	.copyright{
+		margin-top:5px;
 		text-align:right;
-		color:$white;
-		font-size:12px;
-		font-weight:300;
 	}
 
 }
@@ -218,16 +213,106 @@ footer{
 
 	.footer-wrapper{
 		padding:40px 0 0;
+
+		.social{
+			text-align:left;
+			margin-bottom:0;
+
+			a{
+				display: block;
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	.footer-logo{
+		padding:24px 64px 15px;
+	}
+
+	.footer-contact{
+		margin:0;
+
+		.contact-wrapper{
+			padding:15px 0 0 80px;
+			text-align: left;
+		}
+
+		.phone, .location, .fax{
+			display:block;
+			text-align: left;
+			padding: 0 20px;
+			margin-bottom:15px;
+			border-right:0;
+		}
+
+		.fa{
+			display: inline-block;
+			padding-right:10px;
+			padding-bottom:0;
+		}
+
 	}
 
 	.newsletter-signup{
 		text-align: left;
-		margin-top:40px;
+		margin-top:33px;
+		padding-left: 100px;
 
 		input{
 			text-align: left;
 		}
 	}
 
+	.copyright{
+		text-align:center;
+		margin: 20px 0 0;
+	}
 
+
+}
+
+@include breakpoint(desktop){
+	.footer-contact{
+		margin-top:54px;
+
+		.contact-wrapper{
+			padding:0;
+			text-align: right;
+		}
+
+		.phone, .location, .fax{
+			display: inline-block;
+			text-align: center;
+			border-right:1px solid $white;
+		}
+
+		.fax{
+			border-right:0;
+			padding-right:0;
+		}
+	}
+
+	.newsletter-signup{
+		margin-top:0;
+		padding-left:0;
+	}
+
+	.footer-wrapper{
+		.social{
+			text-align:right;
+			margin-top:20px;
+			a{
+				display: inline-block;
+				padding-left:20px;
+				padding-right:0;
+			}
+		}
+	}
+
+
+
+	.copyright{
+		text-align:left;
+		margin-top:36px;
+	}
 }
