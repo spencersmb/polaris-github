@@ -24,7 +24,7 @@
 	margin:0 auto;
 	height:100%;
 }
- 
+
 .below-content{
 	padding:0 60px;
 	top:0;
@@ -154,7 +154,7 @@
 }
 
 .affiliate-wrapper{
-	
+
 	img{
 		margin:0 auto;
 		margin-bottom: 30px;
@@ -176,7 +176,7 @@
 
 	.psn-group{
 		.psn-panel-img{
-			
+
 			img{
 				max-width: 167%;
 				left:-125px;
@@ -188,7 +188,7 @@
 @include breakpoint(laptop){
 
 	.overlap-above{
-		
+
 		p{
 			&:nth-last-child(1){
 				padding-bottom:280px;
@@ -209,7 +209,7 @@
 
 	.psn-group{
 		.psn-panel-img{
-			
+
 			img{
 				max-width: 131%;
 				left:-54px;
