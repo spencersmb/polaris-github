@@ -1,0 +1,143 @@
+{% block content %}
+<!-- logo header -->
+<div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
+	<div class="header-starburst">
+		<img class="img-responsive" src="{{'starburst-header.png' | asset_url'}}" alt="" />
+	</div>
+	<h2>Insurance Information</h2>
+</div>
+
+<div class="container-fluid white-bg psn-content-wrapper">
+
+	<div class="row">
+		<div class="col-xs-12 psn-fluid-inner">
+
+			<div class="intro-text">
+				<p>Our surgeons are active members of the American Association of Neurological Surgeons, as well as other societies and associations promoting the advancement of methods to treat patients with neurological disorders and illnesses. Our physicians’ assistants are equally as involved and qualified within their field and provide patients with unsurpassed care and treatment support.</p>
+			</div>
+
+			<div class="form-wrapper">
+
+				<div class="row">
+					<!-- form -->
+					<form>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="firstName">First Name</label>
+								<input type="text" class="form-control" id="inputFirstName">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+						    <label for="lastName">Last Name</label>
+						    <input type="text" class="form-control" id="inputLastName">
+						  </div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="firstName">First Name</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Your email address">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+						    <label for="phone">Phone</label>
+						    <input type="text" class="form-control" id="inputPhone" placeholder="333-333-3333">
+						  </div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="insurance">Name of insurance</label>
+								<input type="text" class="form-control" id="inputInsurance">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="ID">ID# / Group#</label>
+								<input type="text" class="form-control" id="inputID">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group insurance-type">
+								<label class="btn-insurance">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio1" value="PPO">
+									PPO
+								</label>
+								<label class="btn-insurance">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio2" value="PPO">
+									POS
+								</label>
+								<label class="btn-insurance">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio3" value="PPO">
+									EPO
+								</label>
+								<label class="btn-insurance">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio4" value="PPO">
+									HMO
+								</label>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="DOB">Date of birth</label>
+								<input type="text" class="form-control" id="inputDOB">
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<div class="form-group psn-form-group">
+								<label for="comments">Comments</label>
+								<textarea class="form-control" id="inputComments" rows="4"></textarea>
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<button type="submit" class="btn btn-default ">Submit</button>
+						</div>
+
+					</form>
+					<!-- end form -->
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- end psn fluid inner -->
+</div>
+<!-- end container fluid -->
+{% endblock %}
+{% block scripts %}
+ <script>
+ (function(){
+
+	var form = $('.insurance-type input');
+
+	//remove active from other elements
+	function selectRadio(elem){
+
+		$(elem).parent('label').parent('.insurance-type').children('label').each( function(index, el){
+		 $(el).removeClass('active');
+		});
+		//add class
+		$(elem).parent('label').addClass('active');
+
+	}
+
+	form.change(function(event) {
+		selectRadio(this);
+	});
+
+ })();
+</script>
+{% endblock %}

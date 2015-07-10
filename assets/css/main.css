@@ -38,6 +38,7 @@ a:hover {
 
 .psn-fluid-inner {
   margin: 60px 0;
+  padding: 0;
 }
 
 .psn-container-lg {
@@ -122,6 +123,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  color: #826c4c;
 }
 
 .intro-text {
@@ -722,6 +724,96 @@ footer {
 .psn-sidebar-wrapper a:hover {
   color: #fff;
   background-color: #a99781;
+}
+
+.form-wrapper {
+  padding: 0 60px;
+}
+
+.psn-form-group {
+  margin-bottom: 30px;
+}
+.psn-form-group label {
+  color: #00237d;
+  font-weight: 300;
+  font-size: 14px;
+  height: 45px;
+  line-height: 32px;
+}
+.psn-form-group textarea {
+  height: auto;
+  line-height: 24px;
+}
+.psn-form-group .form-control {
+  border: none;
+  border-bottom: 1px solid #00237d;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 22px;
+  font-weight: 300;
+}
+.psn-form-group .form-control::-webkit-input-placeholder {
+  color: #cacddc;
+  font-weight: 300;
+  font-size: 25px;
+}
+.psn-form-group .form-control::-moz-placeholder {
+  color: #cacddc;
+  font-weight: 300;
+  font-size: 25px;
+}
+.psn-form-group .form-control:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: #cacddc;
+  font-weight: 300;
+  font-size: 25px;
+}
+.psn-form-group .form-control:-ms-input-placeholder {
+  color: #cacddc;
+  font-weight: 300;
+  font-size: 25px;
+}
+.psn-form-group .insurance-radio {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.insurance-type {
+  position: relative;
+  padding-top: 40px;
+}
+.insurance-type label {
+  color: #826c4c;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.insurance-type::before {
+  content: "Type";
+  position: absolute;
+  font-weight: 300;
+  top: 0;
+  left: 0;
+}
+
+.btn-insurance {
+  color: #00237d;
+  border: 1px solid #D5D5D5;
+  border-left: 0;
+  display: inline;
+  border-radius: 0;
+  padding: 7px 26.75px;
+}
+.btn-insurance:nth-child(1) {
+  border-left: 1px solid #D5D5D5;
+}
+.btn-insurance:nth-last-child(1) {
+  border-left: 0;
+}
+.btn-insurance.active {
+  background-color: #d5dcff;
+  color: #070d3f;
 }
 
 #nav_why {
@@ -1379,4 +1471,23 @@ label .glyphicon {
 .office-links a:nth-last-child(1) {
   border-right: 0;
   padding-right: 0;
+}
+
+.hospital-wrapper {
+  padding: 0 60px;
+  margin-bottom: 40px;
+}
+
+.hospital-desc {
+  padding-left: 25px;
+}
+
+.hospital-logo-container {
+  width: inherit;
+}
+
+@media (min-width: 992px) {
+  .hospital-logo-container {
+    width: 30%;
+  }
 }

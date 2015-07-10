@@ -1,0 +1,110 @@
+
+.form-wrapper{
+  padding:0 60px;
+}
+
+.psn-form-group{
+  margin-bottom:30px;
+
+  label{
+    color:$blue;
+    font-weight: 300;
+    font-size: 14px;
+    height:45px;
+    line-height: 32px;
+  }
+
+  textarea{
+    height:auto;
+    line-height: 24px;
+  }
+
+  .form-control{
+    border:none;
+    border-bottom:1px solid $blue;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 22px;
+    font-weight: 300;
+
+    &::-webkit-input-placeholder {
+    	color: #cacddc;
+      font-weight: 300;
+      font-size: 25px;
+    }
+    &::-moz-placeholder {
+      color: #cacddc;
+      font-weight: 300;
+      font-size: 25px;
+    }
+    &:-moz-placeholder {   /* Older versions of Firefox */
+      color: #cacddc;
+      font-weight: 300;
+      font-size: 25px;
+    }
+    &:-ms-input-placeholder {
+      color: #cacddc;
+      font-weight: 300;
+      font-size: 25px;
+    }
+
+    //AutoFIll styles
+
+  }
+
+  .insurance-radio{
+    position:absolute;
+    clip:rect(0,0,0,0);
+    pointer-events:none;
+  }
+}
+
+.insurance-type{
+  position: relative;
+  padding-top:40px;
+
+  label{
+    color:$dk-gold ;
+    font-size: 18px ;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &::before{
+    content:"Type";
+    position: absolute;
+    font-weight: 300;
+    top:0;
+    left:0;
+  }
+}
+.btn-insurance{
+  color:$blue;
+  border:1px solid #D5D5D5;
+  border-left:0;
+  display: inline;
+  border-radius: 0;
+  padding:7px 26.75px;
+
+
+  &:nth-child(1){
+    border-left:1px solid #D5D5D5;
+  }
+
+  &:nth-last-child(1){
+    border-left:0;
+  }
+
+  &.active{
+    background-color: #d5dcff;
+    color:$polaris-blue;
+  }
+}
+
+@include breakpoint(tablet){
+
+}
+
+@include breakpoint(laptop){
+
+}
