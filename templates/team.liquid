@@ -12,9 +12,7 @@
 	<div class="col-xs-12 psn-fluid-inner">
 
 		<div class="intro-text text-gold">
-
 			<p>At Atlanta Spine Surgery, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
-
 		</div>
 
 		<div class="doctor-wrapper no-padding">
@@ -22,76 +20,59 @@
 			<div class="col-xs-12 col-sm-4">
 				<div class="doctor-portrait text-center">
 					<a href="/doctor-details">
-					<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
-					<h4>Max Steuer, <span>MD.</span></h4>
+						<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
+						<h4>Max Steuer, <span>MD.</span></h4>
 					</a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="doctor-portrait text-center">
 					<a href="/doctor-details">
-					<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
-					<h4>Max Steuer, <span>MD.</span></h4>
+						<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
+						<h4>Max Steuer, <span>MD.</span></h4>
 					</a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="doctor-portrait text-center">
 					<a href="/doctor-details">
-					<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
-					<h4>Max Steuer, <span>MD.</span></h4>
-					</a>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4">
-				<div class="doctor-portrait text-center">
-					<a href="/doctor-details">
-					<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
-					<h4>Max Steuer, <span>MD.</span></h4>
+						<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
+						<h4>Max Steuer, <span>MD.</span></h4>
 					</a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="doctor-portrait text-center">
 					<a href="/doctor-details">
-					<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
-					<h4>Max Steuer, <span>MD.</span></h4>
+						<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
+						<h4>Max Steuer, <span>MD.</span></h4>
 					</a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="doctor-portrait text-center">
 					<a href="/doctor-details">
-					<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
-					<h4>Max Steuer, <span>MD.</span></h4>
+						<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
+						<h4>Max Steuer, <span>MD.</span></h4>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="doctor-portrait text-center">
+					<a href="/doctor-details">
+						<img class="img-circle img-responsive" src="{{ 'doctor-thumbnail.jpg' | asset_url }}" alt="">
+						<h4>Max Steuer, <span>MD.</span></h4>
 					</a>
 				</div>
 			</div>
 
 		</div>
+		<!-- end doctor wrapepr -->
+
 	</div>
 	<!-- end team block -->
 </div>
 <!-- end container fluid -->
 {% endblock %}
 {% block scripts %}
- <script>
-
-	(function(){
-
-		//change height of content to set offset paragraph correctly
-		var belowContent = $('.below-content');
-		var contentHeight = belowContent.height();
-		var offset = parseInt(belowContent.css('top'));
-
-		//Use addition here because the offset is negative value
-		var overlapHeight = contentHeight + offset;
-
-		//Set overlap height
-		$('.overlap-bottom-wrapper').height(overlapHeight);
-
-	})();
-
-</script>
 {% endblock %}
