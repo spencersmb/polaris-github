@@ -1,0 +1,33 @@
+#psn-faq {
+	margin-bottom: 0 !important;
+
+	// Accordion Styles
+	.panel {
+		border-radius: 0;
+
+		.panel-heading {
+			border: none;
+			
+			.panel-title {
+				color: #000;
+			}
+		}
+
+		.panel-body {
+			border: none;
+			background-color: $light-gold;
+		}
+	}
+
+	.panel-active > .panel-heading {
+		background-color: $light-gold;
+	}
+
+	.panel+.panel {
+		margin-top: 0;
+	}
+	// Make the whole panel heading clickable
+	.panel-title > a {
+		display: block;
+	}
+}

@@ -2,10 +2,10 @@
 
 .psn-container {
  .row {
- 	background-color: #ddd1c5;
+ 	background-color: $light-gold;
 
  	.psn-container-inner {
- 		background-color: #fff;
+ 		background-color: $white;
  	}
  }
 }
@@ -26,10 +26,10 @@
 	h4 {
 		font-size: 18px;
 		font-weight: bold;
-		color: #00237d;
+		color: $blue;
 		letter-spacing: initial;
-		border-top: 1px solid #e5e5e5;
-		border-bottom: 1px solid #e5e5e5;
+		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
 		margin: 30px 0;
 	}
 
@@ -39,18 +39,18 @@
 	}
 
 	td {
-		background-color: #d1d1d1;
-		border: 10px solid #fff;
-		color: #00237d;
+		background-color: $med-gray;
+		border: 10px solid $white;
+		color: $blue;
 		font-weight: bold;
 		line-height: 40px !important;
 
 		&:hover {
-			background-color: #e5e5e5;
+			background-color: $light-gray;
 		}
 
 		a {
-			color: #00237d;
+			color: $blue;
 			display: block;
 
 			&:active, &:focus {

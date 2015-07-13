@@ -41,8 +41,9 @@
         {{ "jquery.dlmenu.js" | asset_url | script_tag }}
         {{ "bootstrap.js" | asset_url | script_tag }}
         {{ "main-nav.js" | asset_url | script_tag }}
-        {% block scripts %}
+        {{ "faq.js" | asset_url | script_tag }}
 
+        {% block scripts %}
         {% endblock %}
 
     </body>
