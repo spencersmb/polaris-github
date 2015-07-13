@@ -1,16 +1,104 @@
 {% block content %}
-<!-- logo header -->
-<div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
-	<div class="header-starburst">
-		<img class="img-responsive" src="{{'starburst-header.png' | asset_url'}}" alt="" />
+<div class="psn-container-nav">
+	<div class="header-image">
+		<img class="img-responsive" src="{{ 'doctor-lg.jpg' | asset_url }}" alt="">
+		<div class="doctor-name">
+			<h2>Dr. Shance Mangrum, MD</h2>
+		</div>
 	</div>
-	<h2>Conditions Template</h2>
 </div>
 
-<div class="container-fluid white-bg psn-content-wrapper">
- content coming
+<div class="psn-container">
+	<div class="row no-margin">
+
+		<!-- main content -->
+		<div class="col-xs-12 col-sm-12 col-md-9 col-md-push-3 no-headline psn-container-inner">
+
+			<!-- Education -->
+			<div class="text-gold">
+
+				<div class="desc">
+					
+					<h2>education</h2>
+					<h3>Spine Conditions</h3>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, tempora? Commodi expedita sed veniam nam perspiciatis est, laudantium quod iure iusto illo cupiditate distinctio quidem quae veritatis rem ipsum? Explicabo.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga, repellendus aspernatur. Fugit rerum doloremque, quaerat accusamus, commodi necessitatibus dolorum debitis vitae quam non facilis ut temporibus, est similique nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, expedita veniam id, dolore officiis ut provident cum facere optio asperiores, rem? Veritatis officia, earum facilis quaerat aliquid soluta ipsum atque.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita asperiores accusantium.</p>
+
+				</div> <!-- /desc -->
+			</div> <!-- /text-gold -->
+
+			<!-- Conditions Table -->
+			<div class="conditions-table">
+
+				<!-- Table Title -->
+				<h4>Spine-related conditions</h4>
+
+			  <table class="table">
+
+			  	<tbody>
+				  	<tr>
+					  	<td class="col-xs-4">
+					  		<a href="#">Back pain</a>
+					  	</td>
+					  	<td class="col-xs-4">
+					  		<a href="#">Scoliosis</a>
+					  	</td>
+					  	<td class="col-xs-4">
+					  		<a href="#">Spainal Stenosis</a>
+					  	</td>
+				  	</tr>
+				  	<tr>
+					  	<td class="col-xs-4">
+					  		<a href="#">Herniated Discs</a>
+					  	</td>
+					  	<td class="col-xs-4">
+					  		<a href="#">Spinal Fractures</a>
+					  	</td>
+					  	<td class="col-xs-4">
+					  		<a href="#">Spinal Tumors</a>
+					  	</td>
+				  	</tr>
+				  	<tr>
+					  	<td class="col-xs-4">
+					  		<a href="#">Radicular Problems</a>
+					  	</td>
+					  	<td class="col-xs-4">
+					  		<a href="#">Spinal Instability</a>
+					  	</td>
+					  	<td class="col-xs-4">
+					  		<a href="#">Spondylosis</a>
+					  	</td>
+				  	</tr>
+				  	<tr>
+					  	<td class="col-xs-4">
+					  		<a href="#">Sciatica</a>
+					  	</td>
+				  	</tr>
+			  	</tbody>
+			  </table>
+			</div>
+
+
+		</div> <!-- /psn-container-inner -->
+
+		<!-- sidebar -->
+		<div class="col-xs-12 col-sm-12 col-md-3 col-md-pull-9 tan-bg no-padding">
+			<div class="psn-sidebar-wrapper">
+				<div class="sidebar-title">
+					<h2>Area of focus</h2>
+				</div>
+				<div class="sidebar-names">
+					<a href="" class="active">Spine</a>
+					<a href="">Brain</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- end container fluid -->
 {% endblock %}
 {% block scripts %}
 

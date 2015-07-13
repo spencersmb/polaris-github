@@ -1,0 +1,61 @@
+// Conditions Specific Styles
+
+.psn-container {
+ .row {
+ 	background-color: #ddd1c5;
+
+ 	.psn-container-inner {
+ 		background-color: #fff;
+ 	}
+ }
+}
+
+.desc{
+	h2 {
+		letter-spacing: initial;
+		margin: 0;
+	}
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.conditions-table {
+	text-align: center;
+	
+	h4 {
+		font-size: 18px;
+		font-weight: bold;
+		color: #00237d;
+		letter-spacing: initial;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+		margin: 30px 0;
+	}
+
+	th { 
+		text-align: center; 
+		text-transform: uppercase;
+	}
+
+	td {
+		background-color: #d1d1d1;
+		border: 10px solid #fff;
+		color: #00237d;
+		font-weight: bold;
+		line-height: 40px !important;
+
+		&:hover {
+			background-color: #e5e5e5;
+		}
+
+		a {
+			color: #00237d;
+			display: block;
+
+			&:active, &:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}
