@@ -78,6 +78,11 @@ a:hover {
   padding: 0 60px;
 }
 
+.blue-border {
+  padding-top: 10px;
+  border-top: 1px solid #7da1ff;
+}
+
 .header-starburst {
   margin: 0 auto;
   width: 100%;
@@ -187,6 +192,10 @@ p {
 }
 
 .text-gold {
+  color: #a99781;
+}
+
+.text-dk-gold {
   color: #826c4c;
 }
 
@@ -1490,4 +1499,21 @@ label .glyphicon {
   .hospital-logo-container {
     width: 30%;
   }
+}
+.todo-item {
+  clear: both;
+  margin-bottom: 20px;
+  display: table;
+}
+.todo-item .img {
+  width: 12%;
+  float: left;
+}
+.todo-item .content {
+  width: 85%;
+  float: left;
+}
+.todo-item li {
+  font-weight: 300;
+  margin-bottom: 10px;
 }

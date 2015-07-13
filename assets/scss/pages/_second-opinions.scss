@@ -1,0 +1,28 @@
+.todo-item{
+	clear:both;
+	margin-bottom:20px;
+	display:table;
+
+	.img{
+		width:12%;
+		float:left;
+	}
+
+	.content{
+		width:85%;
+		float:left;
+	}
+
+	li{
+		font-weight: 300;
+		margin-bottom:10px;
+	}
+}
+
+@include breakpoint(tablet){
+
+}
+
+@include breakpoint(laptop){
+
+}
