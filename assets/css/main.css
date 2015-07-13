@@ -181,7 +181,7 @@ p {
 }
 
 .no-headline {
-  margin-top: 63px;
+  padding-top: 63px;
 }
 
 .doc-md {
@@ -194,10 +194,6 @@ p {
 }
 
 .text-gold {
-  color: #a99781;
-}
-
-.text-dk-gold {
   color: #826c4c;
 }
 
@@ -845,15 +841,95 @@ footer {
   display: none;
 }
 
+.panel.panel-horizontal {
+  display: table;
+  width: 100%;
+  max-width: 615px;
+  margin: 0 auto;
+}
+
+.panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+  display: table-cell;
+}
+
+.panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+  width: 200px;
+  height: 200px;
+  border: 0;
+  vertical-align: middle;
+}
+
+.panel.panel-horizontal > .panel-heading {
+  border-right: 1px solid #ddd;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+}
+
+.panel.panel-horizontal > .panel-footer {
+  border-left: 1px solid #ddd;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 4px;
+}
+
+.panel-group > .panel {
+  color: #fff;
+  border: none;
+}
+
+.panel-group > .panel:nth-child(odd) {
+  background-color: #a3977f;
+}
+.panel-group > .panel:nth-child(odd) a {
+  color: #2a3253;
+}
+
+.panel-group > .panel:nth-child(even) {
+  background-color: #2a3253;
+}
+.panel-group > .panel:nth-child(even) a {
+  color: #a3977f;
+}
+
+.panel {
+  position: relative;
+}
+
+.panel a {
+  font-weight: 400;
+  font-size: 1.25em;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 25px;
+}
+
+.panel h3 {
+  font-size: 2.25em;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 25px;
+}
+
+.panel .btn-back {
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  background-color: #a3977f;
+  cursor: pointer;
+}
+.panel .btn-back:hover {
+  background-color: #ddd1c5;
+  color: #a3977f;
+  font-weight: bold;
+}
+
 #psn-nav-home {
   background: url("http://www.blogcdn.com/slideshows/images/slides/262/224/1/S2622241/slug/l/portrait-of-beautiful-young-nurse-smiling-holding-clipboard-with-medical-team-in-the-background-2.jpg");
   background-size: cover;
   padding: 5.2% 0;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 .btn-block + .btn-block {
