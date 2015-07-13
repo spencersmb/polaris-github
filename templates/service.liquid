@@ -1,3 +1,6 @@
+{% block styles %}
+<link rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+{% endblock %}
 {% block content %}
 <div class="pattern tan-bg">
 	<div class="psn-container-nav">
@@ -10,7 +13,12 @@
 		<div class="service-header-wrapper">
 			<div class="float-box-1 white-bg">
 				<div class="service-overview">
-					<h3>Spine Services</h3>
+					<select class="work-select" name="jobOffice" id="jobOffice">
+							<option value="">Select Office</option>
+							<option value="1">item 1</option>
+							<option value="2">item 2</option>
+							<option value="3">item 3</option>
+						</select>
 					<h5>We provide customized procedures to treat diverse conditions and illnesses affecting the spine.</h5>
 					<div class="desc">
 						<p>At Polaris, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
@@ -33,17 +41,44 @@
 <!-- end container fluid -->
 {% endblock %}
 {% block scripts %}
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
 	<script>
 	(function(){
 
-		//Adjust the height of the spine header depending on content length as well as on-resize
+		var selectBox = $("#jobOffice").selectBoxIt({
+			showFirstOption: false,
+			defaultText: "Choose Office",
+			nativeMousedown: false,
+			autowidth: true,
+			showEffect: "fadeIn",
+    	showEffectSpeed: 400,
+    	hideEffect: "fadeOut",
+    	hideEffectSpeed: 400
 
+		});
+
+		$("select#jobOffice").bind({
+		      "open": function() {
+				  console.log("click");
+		       $("#jobOfficeSelectBoxItOptions").slideDown(500, 'easeOutQuint');
+		      },
+
+		      "close": function() {
+				  console.log("cclose");
+		       $( "#jobOfficeSelectBoxItOptions").fadeOut( "fast");
+			  }
+		});
+
+		//Adjust the height of the spine header depending on content length
+		//TODO: add responsiveness window resize
 		var top = 80; //offset of content
 		var margin = 30; //margin of space between elements
 		var headerHeight = $('.float-box-1').height();
 		console.log(headerHeight);
 		//set service height
 		$('.service-header-wrapper').height(headerHeight - top + margin);
+
 	}());
 
 	</script>
