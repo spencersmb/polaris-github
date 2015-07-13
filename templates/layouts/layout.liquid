@@ -12,6 +12,9 @@
         <!-- Latest font awesome CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+
         {{ "component.css" | asset_url | stylesheet_tag }}
         {{ "main.css" | asset_url | stylesheet_tag }}
 
@@ -20,8 +23,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 
-        <!-- Style block allowing child pages to inject their own styles -->
-        {% block styles %}{% endblock %}
+
     </head>
     <body>
 

@@ -28,6 +28,139 @@
 	}
 }
 
+//SELECT BUTTONS using SELECTBOXIT
+
+.selectboxit-filters{
+	margin:20px auto;
+}
+
+.selectboxit-container{
+	width:100% !important;
+	display:block;
+	margin-bottom: 20px;
+	z-index:500;
+}
+.selectboxit-container .selectboxit {
+  width: 100% !important; /* Width of the dropdown button */
+  height:55px;
+  border-radius:0;
+}
+
+.selectboxit-container .selectboxit-options{
+	min-width:100% !important;
+	border-radius:0;
+}
+
+
+/* Height and Vertical Alignment of Text */
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+  height: 100%; /* Height of the drop down */
+  line-height: 55px; /* Vertically positions the drop down text */
+  display: block;
+  max-width: none !important;
+}
+
+.selectboxit-btn {
+	background-color:#c1c1c1;
+	background-image:none;
+	border:none;
+	@include transition(all .3s ease-out);
+}
+
+.selectboxit-text{
+	position:absolute;
+	text-align:center;
+	line-height:59px;
+	width:100%;
+	text-transform:uppercase;
+	color:#676767;
+	font-size:14.5px;
+}
+
+span.selectboxit-arrow-container{
+	position:absolute;
+	right:0;
+}
+
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow{
+	right:30px;
+	left:none;
+	top:48%;
+}
+.selectboxit-default-arrow{
+	border-top:6px solid $polaris-blue;
+	border-right:6px solid transparent;
+	border-left:6px solid transparent;
+}
+// .selectboxit-btn.selectboxit-open .selectboxit-options.selectboxit-list{
+// 	@include transform(translateY(-50%));
+// }
+.selectboxit-options.selectboxit-list{
+	// @include transition(all 2.4s ease-in-out);
+	@include transform(translateY(-0px));
+}
+
+.selectboxit-list{
+	max-height:1500px!important;
+	border:none;
+	-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12) !important;
+	-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12) !important;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12) !important;
+}
+
+.selectboxit-option-first{
+	border-top-right-radius:0;
+	border-top-left-radius:0;
+}
+
+.selectboxit-option-last{
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+}
+
+.select-open{
+	// @include transform(translate3d(0,80px,0));
+}
+
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor{
+	background-color:$polaris-blue;
+	background-image:none;
+}
+
+//SELECT BOX IT FORM BUTTONS
+#studio-applySelectBoxIt,#studio-selectSelectBoxIt{
+	height:3rem;
+	background-color:$polaris-blue;
+	margin-top:1rem;
+
+}
+
+#studio-applySelectBoxItText,#studio-selectSelectBoxItText{
+	line-height:44px;
+	color:$white;
+}
+
+#studio-applySelectBoxItArrow,#studio-selectSelectBoxItArrow{
+	border-top:6px solid #fff;
+}
+
+#studio-applySelectBoxItOptions, #studio-selectSelectBoxItOptions{
+	a{
+		color:$black;
+		background-color:#fff;
+		@include transition(all .3s ease-out-in);
+
+		&:hover{
+			background-color:#e6e6e6;
+		}
+	}
+}
+
+#studio-selectSelectBoxItText{
+	padding-left:10px;
+	text-align:left;
+}
+
 @include breakpoint(tablet){
 
 }
