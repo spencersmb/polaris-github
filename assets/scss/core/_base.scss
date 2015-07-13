@@ -76,6 +76,16 @@ a{
 	margin-bottom:50px;
 	padding:0;
 }
+
+.content-wrapper{
+  padding:0 60px;
+}
+
+.blue-border{
+	padding-top:10px;
+	border-top:1px solid lighten($blue, 50%);
+}
+
 //Header option 1
 .header-starburst{
 	margin:0 auto;
@@ -113,6 +123,8 @@ h3{
 	font-size:36px;
 	font-weight:300;
 	margin-bottom:25px;
+	line-height: 44px;
+	color:$gold;
 }
 
 h4{
