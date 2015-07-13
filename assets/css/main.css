@@ -74,6 +74,10 @@ a:hover {
   padding: 0;
 }
 
+.content-wrapper {
+  padding: 0 60px;
+}
+
 .header-starburst {
   margin: 0 auto;
   width: 100%;
@@ -724,10 +728,6 @@ footer {
 .psn-sidebar-wrapper a:hover {
   color: #fff;
   background-color: #a99781;
-}
-
-.form-wrapper {
-  padding: 0 60px;
 }
 
 .psn-form-group {
