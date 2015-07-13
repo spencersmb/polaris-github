@@ -1,17 +1,50 @@
 {% block content %}
-<!-- logo header -->
-<div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
-	<div class="header-starburst">
-		<img class="img-responsive" src="{{'starburst-header.png' | asset_url'}}" alt="" />
+<div class="pattern tan-bg">
+	<div class="psn-container-nav">
+		<div class="content-wrapper-970">
+			<img class="img-responsive" src="{{ 'service-header-lg.jpg' | asset_url }}" alt="">
+		</div>
 	</div>
-	<h2>Service template</h2>
-</div>
 
-<div class="container-fluid white-bg psn-content-wrapper">
- content coming
+	<div class="container-fluid content-wrapper-970">
+		<div class="service-header-wrapper">
+			<div class="float-box-1 white-bg">
+				<div class="service-overview">
+					<h3>Spine Services</h3>
+					<h5>We provide customized procedures to treat diverse conditions and illnesses affecting the spine.</h5>
+					<div class="desc">
+						<p>At Polaris, we work exclusively with patients experiencing an array of spinal conditions, ranging from mild issues – such as certain disc pains or bone spurs – to more serious conditions – such as spinal stenosis and degenerative disc disease. Our team of experts has decades of experience behind its members and strives tirelessly to stay current and skilled usintg the most up to date diagnostic equipment to pinpoint the root cause of your back pain. Regardless of the condition, we have the ability to locate and treat it as effectively as possible.</p>
+					</div>
+				</div>
+			</div>
+			<div class="float-box-2">
+				<div class="service-quote">
+					<blockquote>
+					  The spinal column is one of the most vital parts of the human body, supporting our trunks and making all of our movements possible.
+					</blockquote>
+				</div>
+			</div>
+		</div><!-- end service header-->
+		<div class="white-bg">
+			2nd content
+		</div>
+	</div><!-- end 970 wrapper -->
 </div>
 <!-- end container fluid -->
 {% endblock %}
 {% block scripts %}
+	<script>
+	(function(){
 
+		//Adjust the height of the spine header depending on content length as well as on-resize
+
+		var top = 80; //offset of content
+		var margin = 30; //margin of space between elements
+		var headerHeight = $('.float-box-1').height();
+		console.log(headerHeight);
+		//set service height
+		$('.service-header-wrapper').height(headerHeight - top + margin);
+	}());
+
+	</script>
 {% endblock %}
