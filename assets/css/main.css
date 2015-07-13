@@ -74,6 +74,15 @@ a:hover {
   padding: 0;
 }
 
+.content-wrapper {
+  padding: 0 60px;
+}
+
+.blue-border {
+  padding-top: 10px;
+  border-top: 1px solid #7da1ff;
+}
+
 .header-starburst {
   margin: 0 auto;
   width: 100%;
@@ -107,6 +116,8 @@ h3 {
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 25px;
+  line-height: 44px;
+  color: #a99781;
 }
 
 h4 {
@@ -726,8 +737,8 @@ footer {
   background-color: #a99781;
 }
 
-.form-wrapper {
-  padding: 0 60px;
+.newsletter-form {
+  margin-bottom: 100px;
 }
 
 .psn-form-group {
@@ -737,7 +748,7 @@ footer {
   color: #00237d;
   font-weight: 300;
   font-size: 14px;
-  height: 45px;
+  height: 38px;
   line-height: 32px;
 }
 .psn-form-group textarea {
@@ -814,6 +825,19 @@ footer {
 .btn-insurance.active {
   background-color: #d5dcff;
   color: #070d3f;
+}
+
+.psn-submit {
+  border-radius: 0;
+  background-color: #2b3153;
+  padding: 10px 45px;
+  color: #fff;
+  border: 0;
+}
+.psn-submit:hover {
+  color: #fff;
+  border: 0;
+  background-color: #f75b1e;
 }
 
 #nav_why {
@@ -1570,4 +1594,21 @@ label .glyphicon {
   .hospital-logo-container {
     width: 30%;
   }
+}
+.todo-item {
+  clear: both;
+  margin-bottom: 20px;
+  display: table;
+}
+.todo-item .img {
+  width: 12%;
+  float: left;
+}
+.todo-item .content {
+  width: 85%;
+  float: left;
+}
+.todo-item li {
+  font-weight: 300;
+  margin-bottom: 10px;
 }
