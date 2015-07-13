@@ -443,6 +443,29 @@ footer {
   padding: 0 0 40px 0 !important;
 }
 
+.footer-info-bar {
+  padding: 0;
+  display: block;
+  width: 100%;
+  background-color: #ddd1c5;
+  border-top: 3px solid #a99781;
+  text-align: center;
+}
+.footer-info-bar .appointment, .footer-info-bar .request-info, .footer-info-bar .bill-pay {
+  display: block;
+  padding: 15px 15px;
+  color: #746450;
+  border-bottom: 1px solid #a99781;
+}
+.footer-info-bar .appointment:hover, .footer-info-bar .request-info:hover, .footer-info-bar .bill-pay:hover {
+  color: #f75b1e;
+}
+.footer-info-bar .fa {
+  display: inline-block;
+  padding-right: 5px;
+  padding-bottom: 0;
+}
+
 .footer-wrapper {
   padding-top: 40px;
 }
@@ -462,6 +485,9 @@ footer {
 .footer-contact a {
   color: #fff;
 }
+.footer-contact p {
+  color: #fff;
+}
 .footer-contact .contact-wrapper {
   text-align: center;
 }
@@ -477,7 +503,7 @@ footer {
   border-right: 0;
 }
 .footer-contact .phone:hover, .footer-contact .location:hover, .footer-contact .fax:hover {
-  color: #a99781;
+  color: #f75b1e;
 }
 .footer-contact p {
   display: inline-block;
@@ -521,7 +547,7 @@ footer {
 .newsletter-signup input:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #a99781;
+  border-color: #f75b1e;
 }
 
 .social-footer-wrapper {
@@ -540,35 +566,6 @@ footer {
   color: #fff;
   font-size: 12px;
   font-weight: 300;
-}
-
-.footer-info-bar {
-  padding: 0;
-  display: block;
-  width: 100%;
-  background-color: #ddd1c5;
-  border-top: 3px solid #a99781;
-  text-align: center;
-}
-.footer-info-bar .appointment, .footer-info-bar .request-info, .footer-info-bar .bill-pay {
-  display: block;
-  padding: 15px 15px;
-  color: #746450;
-  border-bottom: 1px solid #a99781;
-}
-.footer-info-bar .appointment:hover, .footer-info-bar .request-info:hover, .footer-info-bar .bill-pay:hover {
-  color: #070d3f;
-}
-.footer-info-bar .appointment p, .footer-info-bar .request-info p, .footer-info-bar .bill-pay p {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 0;
-}
-.footer-info-bar .fa {
-  display: inline-block;
-  padding-right: 5px;
-  padding-bottom: 0;
 }
 
 @media (min-width: 768px) {
