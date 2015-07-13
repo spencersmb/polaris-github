@@ -116,6 +116,8 @@ h3 {
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 25px;
+  line-height: 44px;
+  color: #a99781;
 }
 
 h4 {
@@ -739,6 +741,10 @@ footer {
   background-color: #a99781;
 }
 
+.newsletter-form {
+  margin-bottom: 100px;
+}
+
 .psn-form-group {
   margin-bottom: 30px;
 }
@@ -746,7 +752,7 @@ footer {
   color: #00237d;
   font-weight: 300;
   font-size: 14px;
-  height: 45px;
+  height: 38px;
   line-height: 32px;
 }
 .psn-form-group textarea {
@@ -823,6 +829,19 @@ footer {
 .btn-insurance.active {
   background-color: #d5dcff;
   color: #070d3f;
+}
+
+.psn-submit {
+  border-radius: 0;
+  background-color: #2b3153;
+  padding: 10px 45px;
+  color: #fff;
+  border: 0;
+}
+.psn-submit:hover {
+  color: #fff;
+  border: 0;
+  background-color: #f75b1e;
 }
 
 #nav_why {

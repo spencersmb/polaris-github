@@ -1,5 +1,8 @@
 
-
+.newsletter-form{
+  margin-bottom:100px;
+  
+}
 .psn-form-group{
   margin-bottom:30px;
 
@@ -7,7 +10,7 @@
     color:$blue;
     font-weight: 300;
     font-size: 14px;
-    height:45px;
+    height:38px;
     line-height: 32px;
   }
 
@@ -95,6 +98,20 @@
   &.active{
     background-color: #d5dcff;
     color:$polaris-blue;
+  }
+}
+
+.psn-submit{
+  border-radius: 0;
+  background-color:$navy-blue;
+  padding:10px 45px;
+  color:$white;
+  border:0;
+
+  &:hover{
+    color:$white;
+    border:0;
+    background-color: $link-hover;
   }
 }
 
