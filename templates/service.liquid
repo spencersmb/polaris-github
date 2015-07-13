@@ -14,7 +14,7 @@
 			<div class="float-box-1 white-bg">
 				<div class="service-overview">
 					<select class="work-select" name="jobOffice" id="jobOffice">
-							<option value="">Select Office</option>
+							<option value="">Spine Services</option>
 							<option value="1">item 1</option>
 							<option value="2">item 2</option>
 							<option value="3">item 3</option>
@@ -33,8 +33,80 @@
 				</div>
 			</div>
 		</div><!-- end service header-->
-		<div class="white-bg">
-			2nd content
+
+		<!-- Precedures Table -->
+		<div class="conditions-table white-bg conditions-padding">
+
+			<!-- Table Title -->
+			<h4>Spine Procedures we offer</h4>
+
+			<table class="table">
+
+				<tbody>
+					<tr>
+						<td class="col-xs-4">
+							<a href="#">ACDF</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Artificial Disc/Arthroplasty: Cervical</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Artificial Disc/Arthroplasty: Lumbar</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Conditions Table -->
+		<div class="conditions-table white-bg conditions-padding">
+
+			<!-- Table Title -->
+			<h4>Spine-related conditions</h4>
+
+			<table class="table">
+
+				<tbody>
+					<tr>
+						<td class="col-xs-4">
+							<a href="#">Back pain</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Scoliosis</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Spainal Stenosis</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-xs-4">
+							<a href="#">Herniated Discs</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Spinal Fractures</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Spinal Tumors</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-xs-4">
+							<a href="#">Radicular Problems</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Spinal Instability</a>
+						</td>
+						<td class="col-xs-4">
+							<a href="#">Spondylosis</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-xs-4">
+							<a href="#">Sciatica</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div><!-- end 970 wrapper -->
 </div>
@@ -47,28 +119,28 @@
 	(function(){
 
 		var selectBox = $("#jobOffice").selectBoxIt({
-			showFirstOption: false,
-			defaultText: "Choose Office",
+			showFirstOption: true,
+			defaultText: "Spine Services",
+			downArrowIcon: "fa fa-chevron-down fa-2x",
 			nativeMousedown: false,
 			autowidth: true,
 			showEffect: "fadeIn",
     	showEffectSpeed: 400,
     	hideEffect: "fadeOut",
     	hideEffectSpeed: 400
-
 		});
 
 		$("select#jobOffice").bind({
 		      "open": function() {
-				  console.log("click");
+				  // console.log("click");
 		       $("#jobOfficeSelectBoxItOptions").slideDown(500, 'easeOutQuint');
 		      },
-
 		      "close": function() {
-				  console.log("cclose");
+				  // console.log("cclose");
 		       $( "#jobOfficeSelectBoxItOptions").fadeOut( "fast");
 			  }
 		});
+
 
 		//Adjust the height of the spine header depending on content length
 		//TODO: add responsiveness window resize
