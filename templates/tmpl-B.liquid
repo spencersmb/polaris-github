@@ -1,0 +1,59 @@
+{% block content %}
+
+<!-- VIDEO HEADER OPTIONAL -->
+<div class="psn-container-nav">
+
+	<div class="row no-margin">
+
+		<div class="col-xs-12 no-padding">
+
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n9BoK-gtM1o"></iframe>
+				</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- fallback blue header -->
+<div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
+	<div class="header-starburst">
+		<img class="img-responsive" src="{{'starburst-header.png' | asset_url'}}" alt="" />
+	</div>
+	<h2>Template A w/ Blue Starburst Header</h2>
+</div>
+
+<div class="psn-container">
+	<div class="row no-margin">
+
+		<!-- main container content -->
+		<div class="col-xs-12 col-sm-12 col-md-9 col-md-push-3 no-headline psn-container-inner sidebar-align-services">
+
+			main content Goes here
+
+		</div> <!-- /psn-container-inner -->
+
+		<!-- sidebar -->
+		<div class="col-xs-12 col-sm-12 col-md-3 col-md-pull-9 tan-bg no-padding">
+			<div class="psn-sidebar-wrapper">
+				<div class="sidebar-title">
+					<!-- Title for area -->
+					<h2>Service or Condition Title</h2>
+				</div>
+				<div class="sidebar-names">
+					<!-- list of conditions or procedures -->
+					<a class="sidebar-back" href=""><i class="fa fa-chevron-left"></i>view all services</a>
+					<a href="" class="active">Item 1</a>
+					<a href="">Item 2</a>
+					<a href="">Item 3</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
