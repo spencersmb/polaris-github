@@ -21,22 +21,54 @@ $(function(){
         // console.log(setHeight);
 
         // Go back to Home
-        if (choice == 0) {
-            getHeight;
+        // if (choice == 0) {
+        //     getHeight;
+        //     $('#nav_why').fadeOut();
+        //     $('#nav_0').fadeIn();
+        // }
+
+        $('.btn-back').click(function(){
             $('#nav_why').fadeOut();
+            $('#nav_what').fadeOut();
+            $('#nav_visit').fadeOut();
+            $('#nav_doctor').fadeOut();
+            $('#nav_opinions').fadeOut();
+            $('#nav_stories').fadeOut();
             $('#nav_0').fadeIn();
-        }
+        });
 
         // Why Polaris
         if (choice == 1) {
-            getHeight;
             $('#nav_0').fadeOut();
             $('#nav_why').fadeIn();
         }
 
-        // My First Visit
+        // What We Do
         if (choice == 2) {
-            alert('2');
+            $('#nav_0').fadeOut();
+            $('#nav_what').fadeIn();
+        }
+
+        // My First Visit
+        if (choice == 3) {
+            $('#nav_0').fadeOut();
+            $('#nav_visit').fadeIn();
+        }
+
+        // Doctors
+        if (choice == 4) {
+            window.location.href = "team";
+        }
+
+        // Second Opinions
+        if (choice == 5) {
+            $('#nav_0').fadeOut();
+            $('#nav_opinions').fadeIn();
+        }
+
+        // Patient Stories
+        if (choice == 6) {
+            window.location.href = "patient-stories";
         }
     });
 
