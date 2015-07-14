@@ -28,9 +28,7 @@
 	}
 }
 
-.conditions-padding{
-	padding:40px 80px;
-}
+
 
 //SELECT BUTTONS using SELECTBOXIT
 
@@ -214,6 +212,38 @@ span.selectboxit-arrow-container{
 	padding-left:10px;
 	text-align:left;
 }
+
+
+
+@include breakpoint(tablet){
+
+}
+
+@include breakpoint(laptop){
+
+}
+
+////////////////////////
+//service-details page
+///////////////////////
+
+
+.sidebar-align-services{
+  padding-top:37px;
+}
+.conditions-padding{
+	padding:40px 80px;
+}
+
+.condition-treatment{
+	margin-bottom:80px;
+
+	a{
+		padding-right:30px;
+	}
+}
+
+
 
 @include breakpoint(tablet){
 

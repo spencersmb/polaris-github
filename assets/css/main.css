@@ -19,6 +19,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #f75b1e;
 }
 
 .psn-container {
@@ -59,6 +60,16 @@ a:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 30px;
+}
+.psn-container-inner .desc h2 {
+  color: #00237d;
+  margin: 30px 0 10px;
+}
+.psn-container-inner .desc a {
+  color: #00237d;
+}
+.psn-container-inner .desc a:hover {
+  color: #f75b1e;
 }
 
 .psn-content-wrapper {
@@ -744,16 +755,17 @@ footer {
   color: #00237d;
 }
 .psn-sidebar-wrapper h2 {
-  margin: 60px auto;
+  margin: 40px auto;
+  padding: 0 20px;
   color: #00237d;
 }
 .psn-sidebar-wrapper a {
   display: block;
-  padding: 20px 0;
+  padding: 20px 15px;
   text-align: center;
   border-top: 2px solid #c8bdae;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   color: #00237d;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -762,6 +774,15 @@ footer {
 .psn-sidebar-wrapper a:hover {
   color: #fff;
   background-color: #a99781;
+}
+.psn-sidebar-wrapper i {
+  padding-right: 5px;
+}
+.psn-sidebar-wrapper .sidebar-back {
+  font-weight: 600;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 .newsletter-form {
@@ -1581,10 +1602,6 @@ label .glyphicon {
   font-size: 25px;
 }
 
-.conditions-padding {
-  padding: 40px 80px;
-}
-
 .selectboxit-filters {
   margin: 20px auto;
 }
@@ -1755,6 +1772,21 @@ span.selectboxit-arrow-container {
   text-align: left;
 }
 
+.sidebar-align-services {
+  padding-top: 37px;
+}
+
+.conditions-padding {
+  padding: 40px 80px;
+}
+
+.condition-treatment {
+  margin-bottom: 80px;
+}
+.condition-treatment a {
+  padding-right: 30px;
+}
+
 .office-wrapper {
   margin-bottom: 80px;
 }
@@ -1809,6 +1841,10 @@ span.selectboxit-arrow-container {
 }
 .desc h3 {
   margin-top: 0;
+}
+
+.sidebar-align-conditions {
+  padding-top: 10px;
 }
 
 .conditions-table {
