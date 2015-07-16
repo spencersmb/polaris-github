@@ -19,10 +19,10 @@
     "modelSource": null,
     "domain": null,
     "convertHtml": {
-        "relativePaths": false
+        "relativePaths": true
     },
     "customRuby": false,
-   
+
     "customRubyPath": "/Ruby21-x/lib/ruby/gems/2.1.0",
     "autoPrefixer": null,
     "useCompass": true,

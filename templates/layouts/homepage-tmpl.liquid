@@ -24,14 +24,17 @@
 
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
-            
+
             <!-- Footer -->
             {% include "footer" %}
+
+            <div class="overlay"></div>
 
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
         {{ "jquery.min.js" | asset_url | script_tag }}
         {{ "bootstrap.js" | asset_url | script_tag }}
+        {{ "main-nav.js" | asset_url | script_tag }}
         {{ "home-nav.js" | asset_url | script_tag }}
     </body>
 </html>

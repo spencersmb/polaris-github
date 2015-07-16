@@ -2,7 +2,7 @@
 
 // ==========================================================================
 // Primary Navigation
-// 
+//
 // ==========================================================================
 
    function closeNav(){
@@ -31,7 +31,7 @@
       console.log(isHovered);
 
 
-      if($('.navbar-nav').children('li').hasClass('open') && isHovered ){
+      if($('.navbar-nav').children('li').hasClass('open') && isHovered != 0 ){
           //do nothing because the user is hovering over an item
       }else{
         closeNav();
@@ -43,7 +43,7 @@
        evt.preventDefault();
 
        var $this = $(this);
-       
+
        //check if its already open
        if($this.parent('li').hasClass('open')){
            closeNav();
@@ -66,13 +66,13 @@
            //open the current nav element
            $this.parent('li').addClass('open');
        }
-       
+
    });
 
    //open submenu up
    $('.dropdown-submenu').on('click', 'a.sub-link', function(evt){
        evt.preventDefault();
-       
+
        //check if the item has subnava on it or not
        if(!$(this).hasClass('subNav-open')){
 
