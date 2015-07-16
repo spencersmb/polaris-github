@@ -391,6 +391,7 @@ p {
   box-shadow: none;
   padding: 0;
   text-align: center;
+  background-color: #f4f4f4 !important;
 }
 .psn-nav-homepage .dropdown-menu > li > a {
   padding: 15px 75px !important;
@@ -541,7 +542,7 @@ p {
   }
   .psn-nav-homepage .dropdown-menu {
     text-align: left;
-    background-color: transparent;
+    background-color: #fff;
   }
   .psn-nav-homepage .dropdown-menu > li > a {
     padding: 15px 25px !important;

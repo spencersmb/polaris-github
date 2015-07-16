@@ -60,6 +60,7 @@
 		box-shadow: none;
 		padding:0;
 		text-align: center;
+		background-color: rgba(244, 244, 244, 1) !important;
 
 		&>li{
 
@@ -256,7 +257,7 @@
 
 		.dropdown-menu{
 			text-align: left;
-			background-color: transparent;
+			background-color: $white;
 
 			&>li{
 
