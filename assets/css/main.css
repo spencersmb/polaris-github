@@ -1039,8 +1039,23 @@ footer {
 
 #psn-nav-home {
   background: url("http://www.blogcdn.com/slideshows/images/slides/262/224/1/S2622241/slug/l/portrait-of-beautiful-young-nurse-smiling-holding-clipboard-with-medical-team-in-the-background-2.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   padding: 5.2% 0;
+  position: relative;
+}
+#psn-nav-home .container {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#psn-nav-home .quiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 #psn-nav-home .panel.panel-horizontal {
   display: table;

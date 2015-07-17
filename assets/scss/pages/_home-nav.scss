@@ -7,8 +7,20 @@
 // Background Image
 #psn-nav-home {
     background: url('http://www.blogcdn.com/slideshows/images/slides/262/224/1/S2622241/slug/l/portrait-of-beautiful-young-nurse-smiling-holding-clipboard-with-medical-team-in-the-background-2.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
     padding: 5.2% 0;
+    position: relative;
+
+    .container{
+      @include transition( all .4s);
+    }
+
+    .quiz{
+      position: absolute;
+      top:50%;
+      left:50%;
+      @include transform(translateX(-50%) translateY(-50%));
+    }
 
     // READ MORE PANELS
 
@@ -16,7 +28,7 @@
         display:table;
         width:100%;
         max-width: 615px;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
     .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
         display:table-cell;
@@ -40,7 +52,7 @@
 
     // Alternate panel colors
 
-    .panel-group > .panel { 
+    .panel-group > .panel {
         color: #fff;
         border: none;
     }
@@ -58,7 +70,7 @@
     }
 
     // Panel Styles
-    .panel { 
+    .panel {
         position: relative;
     }
     .panel a {
