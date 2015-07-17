@@ -93,6 +93,7 @@
 	.psn-title{
 		font-weight: 400;
 		letter-spacing: 4px;
+		line-height: 22px;
 
 		span{
 			padding:0 20px;
@@ -110,6 +111,10 @@
 			&:focus{
 				text-decoration: none;
 				outline:5px auto $tan;
+			}
+
+			&:hover{
+				color:$blue;
 			}
 
 			&::before, &::after{

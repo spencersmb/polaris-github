@@ -216,6 +216,9 @@ p {
 .text-white {
   color: #fff;
 }
+.text-white p {
+  color: #fff;
+}
 
 .text-gold {
   color: #826c4c;
@@ -1565,6 +1568,7 @@ label .glyphicon {
 .psn-group .psn-title {
   font-weight: 400;
   letter-spacing: 4px;
+  line-height: 22px;
 }
 .psn-group .psn-title span {
   padding: 0 20px;
@@ -1581,6 +1585,9 @@ label .glyphicon {
 .psn-group .psn-title a:focus {
   text-decoration: none;
   outline: 5px auto #ddd1c5;
+}
+.psn-group .psn-title a:hover {
+  color: #00237d;
 }
 .psn-group .psn-title a::before, .psn-group .psn-title a::after {
   content: '';
