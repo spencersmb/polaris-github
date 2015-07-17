@@ -12,15 +12,34 @@
         <!-- Latest font awesome CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-        <!-- Style block allowing child pages to inject their own styles -->
-        
-
         <link href="assets/css/component.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
 
         <script src="assets/scripts/modernizr.custom.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+         <!-- Style block allowing child pages to inject their own styles -->
+        
+	<style type="text/css">
+	  #map-canvas { 
+	  	height: 450px; 
+	  	width: 100%; 
+	  	margin: 0 auto; 
+	  	padding: 50px 0;
+	  }
+	  .getDirections {
+	  	height: 75px;
+	  	font-size: 20px;
+	  	padding: 24px 0;
+	  	font-weight: bold;
+	  	text-transform: uppercase;
+	  }
+	</style>
+	<script type="text/javascript"
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHjfEAx3kun_6_SvIHIdSl04ayMBuRRi0">
+	</script>
+
 
     </head>
     <body>
@@ -170,9 +189,16 @@
 	</div>
 	<h2>Locations</h2>
 </div>
-<div class="container-fluid white-bg psn-content-wrapper">
- content coming
-</div>
+<!-- Location Controls -->
+<ul>
+	<li><a href="#" id="locationOne">Location #1</a></li>
+	<li><a href="#" id="locationTwo">Location #2</a></li>
+	<li><a href="#" id="locationThree">Location #3</a></li>
+	<li><a href="#" id="locationFour">Location #4</a></li>
+</ul>
+<!-- Google Map -->
+<div id="map-canvas"></div>
+<div class="btn btn-block btn-default getDirections">Get Directions</div>
 <!-- end container fluid -->
 
 
@@ -275,6 +301,7 @@
         <script src="assets/scripts/faq.min.js"></script>
 
         
+	<script src="assets/scripts/map.min.js"></script>
 
 
     </body>

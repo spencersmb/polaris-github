@@ -27,17 +27,10 @@ function initialize() {
             { "lightness": brightness_value },
             { "weight": weight_value }
           ]
-        },
-        {
-          featureType: "poi",
-          "stylers": [
-            { visibility: "off" }
-          ]   
         }
       ]
+
     };
-
-
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -138,52 +131,7 @@ function initialize() {
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(zoomControlDiv);
 
     // INFO WINDOWS - POPUP MODAL
-    // Atlanta Office Details
-    var atlantaDetails = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Atlanta Office</h1>'+
-      '<div id="bodyContent">'+
-      '<p>Perimeter Town Center' +
-      '<br>1150 Hammond Dr Bldg E'+
-      '<br>Suite 400'+
-      '<br>Atlanta, GA 30328'+
-      '<br>404.445.5581</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
-      '</div>'+
-      '</div>';
-
-    // Cumming Office Details
-    var cummingDetails = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Cumming Office</h1>'+
-      '<div id="bodyContent">'+
-      '<p>1100 Northside Forsyth Drive' +
-      '<br>Suite 345'+
-      '<br>Cumming, GA 30041'+
-      '<br>404.445.5581</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
-      '</div>'+
-      '</div>';
-    
-
-    // Buckhead Office Details
-    var buckheadDetails = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Buckhead Office</h1>'+
-      '<div id="bodyContent">'+
-      '<p>Effective February 3rd our Cherokee office will be located at:</p>' +
-      '<p>Northside Towne Lake'+
-      '<br>900 Towne Lake Parkway, Suite 302'+
-      '<br>Woodstock, Georgia 30189</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
-      '</div>'+
-      '</div>';
-
-    // Canton Office Details
-    var cantonDetails = '<div id="content">'+
+    var contentString4 = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">Canton/Cherokee Office</h1>'+
@@ -196,33 +144,24 @@ function initialize() {
       '</div>'+
       '</div>';
 
-    var atlanta = new google.maps.InfoWindow({
-        content: atlantaDetails
-    });
-    var cumming = new google.maps.InfoWindow({
-        content: cummingDetails
-    });
-    var buckhead = new google.maps.InfoWindow({
-        content: buckheadDetails
-    });
-    var canton = new google.maps.InfoWindow({
-        content: cantonDetails
+    var infowindow4 = new google.maps.InfoWindow({
+        content: contentString4
     });
 
     google.maps.event.addListener(marker1, 'click', function() {
-      atlanta.open(map,marker1);
+      infowindow.open(map,marker1);
     });
 
     google.maps.event.addListener(marker2, 'click', function() {
-      cumming.open(map,marker2);
+      infowindow.open(map,marker2);
     });
 
     google.maps.event.addListener(marker3, 'click', function() {
-      buckhead.open(map,marker3);
+      infowindow.open(map,marker3);
     });
 
     google.maps.event.addListener(marker4, 'click', function() {
-      canton.open(map,marker4);
+      infowindow4.open(map,marker4);
     });
 }
 

@@ -24,21 +24,97 @@
 	<div class="psn-header-wrapper">
 		<a href="#">
 			<div class="psn-logo">
-				<img class="img-responsive" src="assets/images/logo/starburst.png" alt="">
-			</div>
-			<div class="psn-title text-center">
-				<h1>Polaris</h1>
-				<h3>Spine & Neurosurgery Center</h3>
+				<img class="img-responsive" src="assets/images/logo/starburst-full-logo.png" alt="">
 			</div>
 		</a>
 	</div>
+	<nav class="navbar navbar-default psn-nav-homepage psn-border">
+		<div class="container-fluid psn-container no-padding">
 
-	<nav class="navbar navbar-default psn-nav-home psn-border">
-		<div class="container-fluid text-center">
-			<img src="assets/images/placeholder/homepage-nav.png" alt="">
+
+			<div class="navbar-header">
+
+			<!-- responsive hamburger -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<!-- nav-logo -->
+				<!-- <a class="navbar-brand" href="index.html">
+					<img alt="Polaris" src="assets/images/logo/polaris--logo-h.png">
+				</a> -->
+			</div>
+
+			<!-- nav-contents -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav">
+
+						<li class="dropdown">
+
+							<a href="#" class="psn-dropdown" >About <span class="caret"></span></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="about-overview.html">Overview</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="facilities.html">Facilities</a></li>
+								<li><a href="hosptials.html">Hospitals</a></li>
+							</ul>
+
+						</li>
+
+						<li class="dropdown">
+
+							<a href="#" class="psn-dropdown" >Services <span class="caret"></span></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Spine</a></li>
+								<li><a href="#">Brain</a></li>
+								<li><a href="#">Spine Wellness Center</a></li>
+								<li><a href="#">Outpatient Surgery Center</a></li>
+								<li><a href="#">Imaging</a></li>
+							</ul>
+
+						</li>
+
+						<li class="dropdown">
+
+							<a href="#" class="psn-dropdown">Education <span class="caret"></span></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="conditions.html">Conditions</a></li>
+								<li><a href="#">Anatomy of the Spine</a></li>
+								<li><a href="news.html">News</a></li>
+								<li><a href="patient-stories.html">Patient Stories</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							</ul>
+
+						</li>
+
+						<li class="dropdown">
+
+							<a href="#" class="psn-dropdown" >Connect <span class="caret"></span></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="locations.html">Locations</a></li>
+								<li><a href="insurance-info.html">Insurance Information</a></li>
+								<li><a href="second-opinions.html">Second Opinons</a></li>
+								<li><a href="newsletter.html">Newsletter</a></li>
+							</ul>
+
+						</li>
+
+					</ul>
+
+				</div>
 		</div>
 	</nav>
+
 </header>
+
 
             <!-- Content block, child page inject content -->
             
@@ -221,7 +297,7 @@
 		</div>
 	</div>
 
-            
+
             <!-- Footer -->
             <footer class="container-fluid gradient-bg-img" style="background-image:url('assets/images/gradient_backgrounds/g1.jpg');">
 
@@ -312,10 +388,13 @@
 </footer>
 
 
+            <div class="overlay"></div>
+
         <!-- Script block allowing child pages to inject their own scripts -->
         
         <script src="assets/scripts/jquery.min.js"></script>
         <script src="assets/scripts/bootstrap.min.js"></script>
+        <script src="assets/scripts/main-nav.min.js"></script>
         <script src="assets/scripts/home-nav.min.js"></script>
     </body>
 </html>
