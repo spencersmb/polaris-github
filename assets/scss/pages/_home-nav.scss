@@ -52,33 +52,69 @@
 
     // Alternate panel colors
 
+    .panel.panel-horizontal > .panel-body {
+      @include transition(all .3s);
+    }
+
     .panel-group > .panel {
         color: #fff;
         border: none;
-    }
-    .panel-group > .panel:nth-child(odd) {
-        background-color: #a3977f;
-        a {
-            color: #2a3253;
+        .panel-body{
+            background-color: #a3977f;
+            &:hover{
+              background-color: #ddd1c5;
+            }
         }
     }
+
+    .panel-group > .panel:nth-child(odd) {
+        // background-color: #a3977f;
+        a {
+            color: #2a3253;
+
+        }
+        .panel-body{
+            background-color: #a3977f;
+            &:hover{
+              background-color: $dk-gold;
+            }
+        }
+    }
+
     .panel-group > .panel:nth-child(even) {
-        background-color: #2a3253;
+        // background-color: #2a3253;
         a {
             color: #a3977f;
+        }
+        .panel-body{
+            background-color: #2a3253;
+            &:hover{
+              background-color: $polaris-blue;
+            }
         }
     }
 
     // Panel Styles
     .panel {
         position: relative;
+        background: transparent;
+        border:none;
+
+
+        .readMore{
+          font-weight: 400;
+          font-size: 1.25em;
+          position: absolute;
+          bottom: 0;
+          padding-bottom: 25px;
+        }
     }
     .panel a {
-        font-weight: 400;
-        font-size: 1.25em;
         position: absolute;
-        bottom: 0;
-        padding-bottom: 25px;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
     }
     .panel h3 {
         font-size: 2.25em;
@@ -97,8 +133,8 @@
         cursor: pointer;
 
         &:hover {
-            background-color: #ddd1c5;
-            color: #a3977f;
+            background-color: $dk-gold !important;
+            color: $white;
             font-weight: bold;
         }
     }
