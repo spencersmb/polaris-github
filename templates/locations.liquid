@@ -1,3 +1,24 @@
+{% block styles %}
+	<style type="text/css">
+	  #map-canvas { 
+	  	height: 450px; 
+	  	width: 100%; 
+	  	margin: 0 auto; 
+	  	padding: 50px 0;
+	  }
+	  .getDirections {
+	  	height: 75px;
+	  	font-size: 20px;
+	  	padding: 24px 0;
+	  	font-weight: bold;
+	  	text-transform: uppercase;
+	  }
+	</style>
+	<script type="text/javascript"
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHjfEAx3kun_6_SvIHIdSl04ayMBuRRi0">
+	</script>
+{% endblock %}
+
 {% block content %}
 <!-- logo header -->
 <div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
@@ -7,11 +28,23 @@
 	<h2>Locations</h2>
 </div>
 
-<div class="container-fluid white-bg psn-content-wrapper">
- content coming
-</div>
+<!-- Location Controls -->
+<ul>
+	<li><a href="#" id="locationOne">Location #1</a></li>
+	<li><a href="#" id="locationTwo">Location #2</a></li>
+	<li><a href="#" id="locationThree">Location #3</a></li>
+	<li><a href="#" id="locationFour">Location #4</a></li>
+</ul>
+
+<!-- Google Map -->
+<div id="map-canvas"></div>
+
+<div class="btn btn-block btn-default getDirections">Get Directions</div>
+
 <!-- end container fluid -->
 {% endblock %}
-{% block scripts %}
 
+
+{% block scripts %}
+	{{ "map.js" | asset_url | script_tag }}
 {% endblock %}
