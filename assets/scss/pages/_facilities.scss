@@ -1,51 +1,60 @@
 .office-wrapper{
 	margin-bottom: 80px;
-}
 
-.office-content{
-	width:100%;
-	max-width: 970px;
-	margin:20px auto 0;
-	padding-right:40px;
+	.office-content{
+		width:100%;
+		max-width: 970px;
+		margin:20px auto 0;
+		padding-right:40px;
 
-	.title{
+		.title{
+			text-align: right;
+			padding-left: 40px;
+		}
+	}
+	.office-header{
+		img{
+			margin:0 auto;
+		}
+	}
+
+	.office-desc{
+		li{
+			margin-bottom:10px;
+		}
+	}
+
+	.office-links{
+		margin-top: 20px;
 		text-align: right;
-		padding-left: 40px;
-	}
-}
-.office-header{
-	img{
-		margin:0 auto;
-	}
-}
 
-.office-links{
-	margin-top: 20px;
-	text-align: right;
-
-	i{
-		padding-top: 10px;
-	}
-
-	a{
-		display: inline-block;
-		padding: 0 20px;
-		border-right: 1px solid $gold;
-		line-height: 45px;
-		color:$grey;
-
-		&:hover{
-			color:$gold;
+		i{
+			padding-top: 10px;
 		}
 
-		&:nth-last-child(1){
-			border-right: 0;
-			padding-right:0;
+		a{
+			display: inline-block;
+			padding: 0 20px;
+			border-right: 1px solid $gold;
+			line-height: 45px;
+			color:$grey;
+
+			&:hover{
+				color:$gold;
+			}
+
+			&:nth-last-child(1){
+				border-right: 0;
+				padding-right:0;
+			}
 		}
+
+
 	}
 
-
 }
+
+
 
 @include breakpoint(tablet){
 
