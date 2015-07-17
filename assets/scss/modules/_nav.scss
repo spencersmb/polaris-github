@@ -1,3 +1,6 @@
+$dropdown-bg-mobile: #E8E8E8;
+
+
 //Home page nav
 .psn-nav-home{
 	background-color:transparent;
@@ -28,75 +31,7 @@
 			float:none;
 
 			&>a{
-				// color:$white;
-				padding:15px 25px 15px 25px;
-
-				&:focus{
-					// color:$white;
-				}
-				&:hover{
-					color:#333;
-				}
-			}
-		}
-	}
-
-	.dropdown{
-		@include transition(all .3s ease-in-out);
-
-		&:hover{
-			background-color: $white;
-		}
-	}
-
-	.psn-dropdown{
-		color:$white;
-	}
-
-	.dropdown-menu{
-		left:0;
-		top:55px;
-		border:none;
-		box-shadow: none;
-		padding:0;
-		text-align: center;
-		background-color: rgba(244, 244, 244, 1) !important;
-
-		&>li{
-
-			&>a{
-				padding:15px 75px !important;
-
-			}
-		}
-	}
-
-	.dropdown-submenu>.dropdown-menu{
-		margin-top: 0px !important;
-		margin-left: 0;
-	}
-
-	.navbar-collapse{
-		background-color: $white;
-	}
-}
-
-
-//Inner Nav
-.psn-nav{
-	background-color:#fff;
-	height:96px;
-
-	.navbar-nav{
-		padding-top:0;
-		text-align: center;
-
-		&>li{
-			// display: inline-block;
-			float:none;
-
-			&>a{
-				// color:$white;
+				color:$blue;
 				padding:15px 25px 15px 25px;
 
 				&:focus{
@@ -109,11 +44,98 @@
 		}
 
 		.dropdown-menu{
+			left:0;
+			border:none;
+			box-shadow: none;
+			padding:0;
+			text-align: center;
+			background-color: $dropdown-bg-mobile;
+
+			&>li{
+
+				&>a{
+					color:$blue !important;
+					padding:15px 75px !important;
+
+				}
+			}
+		}
+
+		.dropdown.open{
+			&>a{
+				color:$white;
+				background-color: $link-hover;
+			}
+		}
+	}
+
+	.dropdown{
+		@include transition(all .3s ease-in-out);
+
+		&:hover{
+			background-color: $white;
+		}
+	}
+
+
+
+	.psn-dropdown{
+		color:$white;
+	}
+
+
+
+	.dropdown-submenu>.dropdown-menu{
+		margin-top: 0px !important;
+		margin-left: 0;
+	}
+
+	.navbar-collapse{
+		background-color: $white;
+		border:0;
+	}
+}
+
+
+//Inner Nav
+.psn-nav{
+	background-color:#fff;
+	height:96px;
+
+	.navbar-collapse{
+		border:0;
+	}
+
+	.navbar-nav{
+		padding-top:0;
+		text-align: center;
+		margin:0 -15px;
+		top:-1px;
+
+		&>li{
+			// display: inline-block;
+			float:none;
+
+			//mobile styles for first dropdown
+			&>a{
+				color:$blue;
+				padding:15px 25px 15px 25px;
+
+				&:focus{
+					color:$blue;
+				}
+				&:hover{
+					color:$link-hover;
+				}
+			}
+		}
+
+		.dropdown-menu{
 			padding:0;
 			border:none;
 			border-radius:0;
 			text-align: center;
-			background-color: rgba(244, 244, 244, 1) !important;
+			background-color: $dropdown-bg-mobile;
 
 			text-align: center;
 
@@ -121,8 +143,15 @@
 
 				&>a{
 					padding:15px 75px !important;
-
+					color:$blue !important;
 				}
+			}
+		}
+
+		.dropdown.open{
+			&>a{
+				color:$white;
+				background-color: $link-hover;
 			}
 		}
 	}
@@ -249,23 +278,38 @@
 						color:$white;
 					}
 					&:hover{
-						color:#333;
+						color:$link-hover;
 					}
 				}
 			}
-		}
 
-		.dropdown-menu{
-			text-align: left;
-			background-color: $white;
+			.dropdown-menu{
+				text-align: left;
+				background-color: $white;
+				margin-top: 5px;
 
-			&>li{
+				&>li{
 
+					&>a{
+						color:$blue !important;
+						padding:15px 25px !important;
+						&:hover{
+							color:$white !important;
+							background-color: $link-hover;
+						}
+					}
+				}
+			}
+
+			.dropdown.open{
 				&>a{
-					padding:15px 25px !important;
+					color:$link-hover;
+					background-color: $white;
 				}
 			}
 		}
+
+
 
 		.navbar-collapse{
 			background-color: transparent;
@@ -278,6 +322,7 @@
 
 		.navbar-nav{
 			padding-top:41px;
+			margin:0;
 
 			&>li{
 				// display: inline-block;
@@ -287,23 +332,27 @@
 			.dropdown-menu{
 				margin-top: 5px;
 				text-align: left;
+				background-color: $white;
 
 				&>li{
 
 					&>a{
 						padding:15px 25px !important;
+						color:$blue;
+
+						&:hover{
+							background-color: $link-hover;
+							color:$white !important;
+						}
 					}
 				}
-				//Enable Traingle pointer
-				// &:before{
-				// 	content:'';
-				// 	width:5px;
-				// 	height:5px;
-				// 	position:absolute;
-				// 	top:0;
-				// 	left:0;
-				// 	background-color:red;
-				// }
+			}
+
+			.dropdown.open{
+				&>a{
+					color:$blue;
+					background-color: $dropdown-bg-mobile;
+				}
 			}
 		}
 
