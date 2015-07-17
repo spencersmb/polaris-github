@@ -57,7 +57,7 @@ $(function(){
 
         // Doctors
         if (choice == 4) {
-            window.location.href = "team";
+            window.location.href = "team.html";
         }
 
         // Second Opinions
@@ -68,7 +68,7 @@ $(function(){
 
         // Patient Stories
         if (choice == 6) {
-            window.location.href = "patient-stories";
+            window.location.href = "patient-stories.html";
         }
     });
 
