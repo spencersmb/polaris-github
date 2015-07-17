@@ -1943,10 +1943,6 @@ span.selectboxit-arrow-container {
   padding-top: 37px;
 }
 
-.conditions-padding {
-  padding: 40px 80px;
-}
-
 .condition-treatment {
   margin-bottom: 80px;
 }
@@ -2014,9 +2010,18 @@ span.selectboxit-arrow-container {
   padding-top: 10px;
 }
 
+.conditions-padding {
+  padding: 40px 80px;
+}
+
 .conditions-table {
   text-align: center;
   margin-bottom: 30px;
+}
+.conditions-table .row {
+  margin-left: -5px;
+  margin-right: -5px;
+  background-color: #fff;
 }
 .conditions-table h4 {
   font-size: 18px;
@@ -2026,6 +2031,21 @@ span.selectboxit-arrow-container {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   margin: 30px 0;
+}
+.conditions-table .grid-item {
+  padding: 5px;
+}
+.conditions-table .grid-item a {
+  text-align: center;
+  background-color: #d1d1d1;
+  padding: 20px 10px;
+  font-weight: 600;
+  color: #00237d;
+  display: block;
+}
+.conditions-table .grid-item a:hover {
+  color: #00237d;
+  background-color: #e5e5e5;
 }
 .conditions-table th {
   text-align: center;
