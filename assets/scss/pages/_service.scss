@@ -29,7 +29,6 @@
 }
 
 
-
 //SELECT BUTTONS using SELECTBOXIT
 
 
@@ -237,6 +236,18 @@ span.selectboxit-arrow-container{
 
 	a{
 		padding-right:30px;
+	}
+}
+
+.learn-section{
+	margin-bottom:50px;
+
+	.row{
+		background-color: $white !important;
+	}
+
+	h5{
+		margin-top:20px;
 	}
 }
 

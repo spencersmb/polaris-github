@@ -99,6 +99,7 @@ a:hover {
 .blue-border {
   padding-top: 10px;
   border-top: 1px solid #7da1ff;
+  margin-bottom: 35px;
 }
 
 .header-starburst {
@@ -1948,6 +1949,16 @@ span.selectboxit-arrow-container {
 }
 .condition-treatment a {
   padding-right: 30px;
+}
+
+.learn-section {
+  margin-bottom: 50px;
+}
+.learn-section .row {
+  background-color: #fff !important;
+}
+.learn-section h5 {
+  margin-top: 20px;
 }
 
 .office-wrapper {
