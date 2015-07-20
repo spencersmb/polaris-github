@@ -100,7 +100,6 @@ $dropdown-bg-mobile: #E8E8E8;
 	background-color:transparent;
 	height:55px;
 	margin:0 auto;
-	z-index: 1030;
 
 	.navbar-nav{
 		margin: 0 auto;
@@ -404,7 +403,6 @@ $dropdown-bg-mobile: #E8E8E8;
 
 				&>a{
 					color:$white;
-
 
 					&:focus{
 						color:$white;
