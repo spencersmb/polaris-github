@@ -1,15 +1,23 @@
 $(function(){
 
-    
+    var nav0Height = $('#nav_0').height();
+
+    //set container height
+    function setHeight(height){
+      $('#psn-nav-home').children('.container').css('height', height );
+      // console.log(height);
+    }
+
+    setHeight(nav0Height);
+
+
     $("label.btn").on('click',function () {
     	var choice = $(this).find('input:radio').val();
-    	
-        // What am I clicking?
-        console.log(choice);
 
-        // MATCH HEIGHT
-        // getHeight = $(".quiz").height();
-        // console.log(getHeight);
+        // What am I clicking?
+        // console.log(choice);
+
+
         // getHeight;
 
         // setHeight = $("#psn-nav-home").css("height", $(".quiz").height()+387);
@@ -28,6 +36,7 @@ $(function(){
         // }
 
         $('.btn-back').click(function(){
+          setHeight(nav0Height);
             $('#nav_why').fadeOut();
             $('#nav_what').fadeOut();
             $('#nav_visit').fadeOut();
@@ -35,24 +44,36 @@ $(function(){
             $('#nav_opinions').fadeOut();
             $('#nav_stories').fadeOut();
             $('#nav_0').fadeIn();
+
         });
+
+        var getHeight;
 
         // Why Polaris
         if (choice == 1) {
             $('#nav_0').fadeOut();
             $('#nav_why').fadeIn();
+            // MATCH HEIGHT
+            getHeight = $('#nav_why').height();
+            setHeight(getHeight);
         }
 
         // What We Do
         if (choice == 2) {
             $('#nav_0').fadeOut();
             $('#nav_what').fadeIn();
+
+            getHeight = $('#nav_what').height();
+            setHeight(getHeight);
         }
 
         // My First Visit
         if (choice == 3) {
             $('#nav_0').fadeOut();
             $('#nav_visit').fadeIn();
+
+            getHeight = $('#nav_visit').height();
+            setHeight(getHeight);
         }
 
         // Doctors
@@ -64,6 +85,9 @@ $(function(){
         if (choice == 5) {
             $('#nav_0').fadeOut();
             $('#nav_opinions').fadeIn();
+
+            getHeight = $('#nav_opinions').height();
+            setHeight(getHeight);
         }
 
         // Patient Stories
@@ -72,5 +96,5 @@ $(function(){
         }
     });
 
-    
-});	
+
+});

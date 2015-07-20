@@ -105,7 +105,7 @@ function initialize() {
       zoomInButton.style.width = '32px'; 
       zoomInButton.style.height = '32px';
       /* Change this to be the .png image you want to use */
-      zoomInButton.style.backgroundImage = 'url("../assets/images/icons/plus.jpg")';
+      zoomInButton.style.backgroundImage = 'url("plus.jpg")';
       controlWrapper.appendChild(zoomInButton);
         
       // Set CSS for the zoomOut
@@ -114,7 +114,7 @@ function initialize() {
       zoomOutButton.style.height = '32px';
       zoomOutButton.style.marginTop = '2px';
       /* Change this to be the .png image you want to use */
-      zoomOutButton.style.backgroundImage = 'url("../assets/images/icons/minus.jpg")';
+      zoomOutButton.style.backgroundImage = 'url("minus.jpg")';
       controlWrapper.appendChild(zoomOutButton);
 
       // Setup the click event listener - zoomIn

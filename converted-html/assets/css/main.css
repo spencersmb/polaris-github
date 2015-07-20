@@ -99,6 +99,7 @@ a:hover {
 .blue-border {
   padding-top: 10px;
   border-top: 1px solid #7da1ff;
+  margin-bottom: 35px;
 }
 
 .header-starburst {
@@ -214,6 +215,9 @@ p {
 }
 
 .text-white {
+  color: #fff;
+}
+.text-white p {
   color: #fff;
 }
 
@@ -1039,8 +1043,23 @@ footer {
 
 #psn-nav-home {
   background: url("http://www.blogcdn.com/slideshows/images/slides/262/224/1/S2622241/slug/l/portrait-of-beautiful-young-nurse-smiling-holding-clipboard-with-medical-team-in-the-background-2.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   padding: 5.2% 0;
+  position: relative;
+}
+#psn-nav-home .container {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#psn-nav-home .quiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 #psn-nav-home .panel.panel-horizontal {
   display: table;
@@ -1067,31 +1086,57 @@ footer {
   border-top-left-radius: 0;
   border-bottom-right-radius: 4px;
 }
+#psn-nav-home .panel.panel-horizontal > .panel-body {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 #psn-nav-home .panel-group > .panel {
   color: #fff;
   border: none;
 }
-#psn-nav-home .panel-group > .panel:nth-child(odd) {
+#psn-nav-home .panel-group > .panel .panel-body {
   background-color: #a3977f;
+}
+#psn-nav-home .panel-group > .panel .panel-body:hover {
+  background-color: #ddd1c5;
 }
 #psn-nav-home .panel-group > .panel:nth-child(odd) a {
   color: #2a3253;
 }
-#psn-nav-home .panel-group > .panel:nth-child(even) {
-  background-color: #2a3253;
+#psn-nav-home .panel-group > .panel:nth-child(odd) .panel-body {
+  background-color: #a3977f;
+}
+#psn-nav-home .panel-group > .panel:nth-child(odd) .panel-body:hover {
+  background-color: #826c4c;
 }
 #psn-nav-home .panel-group > .panel:nth-child(even) a {
   color: #a3977f;
 }
+#psn-nav-home .panel-group > .panel:nth-child(even) .panel-body {
+  background-color: #2a3253;
+}
+#psn-nav-home .panel-group > .panel:nth-child(even) .panel-body:hover {
+  background-color: #070d3f;
+}
 #psn-nav-home .panel {
   position: relative;
+  background: transparent;
+  border: none;
 }
-#psn-nav-home .panel a {
+#psn-nav-home .panel .readMore {
   font-weight: 400;
   font-size: 1.25em;
   position: absolute;
   bottom: 0;
   padding-bottom: 25px;
+}
+#psn-nav-home .panel a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 #psn-nav-home .panel h3 {
   font-size: 2.25em;
@@ -1110,8 +1155,8 @@ footer {
   cursor: pointer;
 }
 #psn-nav-home .panel .btn-back:hover {
-  background-color: #ddd1c5;
-  color: #a3977f;
+  background-color: #826c4c !important;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -1550,6 +1595,7 @@ label .glyphicon {
 .psn-group .psn-title {
   font-weight: 400;
   letter-spacing: 4px;
+  line-height: 22px;
 }
 .psn-group .psn-title span {
   padding: 0 20px;
@@ -1566,6 +1612,9 @@ label .glyphicon {
 .psn-group .psn-title a:focus {
   text-decoration: none;
   outline: 5px auto #ddd1c5;
+}
+.psn-group .psn-title a:hover {
+  color: #00237d;
 }
 .psn-group .psn-title a::before, .psn-group .psn-title a::after {
   content: '';
@@ -1921,15 +1970,21 @@ span.selectboxit-arrow-container {
   padding-top: 37px;
 }
 
-.conditions-padding {
-  padding: 40px 80px;
-}
-
 .condition-treatment {
   margin-bottom: 80px;
 }
 .condition-treatment a {
   padding-right: 30px;
+}
+
+.learn-section {
+  margin-bottom: 50px;
+}
+.learn-section .row {
+  background-color: #fff !important;
+}
+.learn-section h5 {
+  margin-top: 20px;
 }
 
 .office-wrapper {
@@ -1992,9 +2047,18 @@ span.selectboxit-arrow-container {
   padding-top: 10px;
 }
 
+.conditions-padding {
+  padding: 40px 80px;
+}
+
 .conditions-table {
   text-align: center;
   margin-bottom: 30px;
+}
+.conditions-table .row {
+  margin-left: -5px;
+  margin-right: -5px;
+  background-color: #fff;
 }
 .conditions-table h4 {
   font-size: 18px;
@@ -2004,6 +2068,21 @@ span.selectboxit-arrow-container {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   margin: 30px 0;
+}
+.conditions-table .grid-item {
+  padding: 5px;
+}
+.conditions-table .grid-item a {
+  text-align: center;
+  background-color: #d1d1d1;
+  padding: 20px 10px;
+  font-weight: 600;
+  color: #00237d;
+  display: block;
+}
+.conditions-table .grid-item a:hover {
+  color: #00237d;
+  background-color: #e5e5e5;
 }
 .conditions-table th {
   text-align: center;
