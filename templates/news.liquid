@@ -1,14 +1,97 @@
 {% block content %}
-<!-- logo header -->
-<div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
-	<div class="header-starburst">
-		<img class="img-responsive" src="{{'starburst-header.png' | asset_url'}}" alt="" />
-	</div>
-	<h2>News</h2>
-</div>
 
-<div class="container-fluid white-bg psn-content-wrapper">
- content coming
+<div class="container-fluid psn-fluid-nav tan-bg">
+	<div class="psn-content-wrapper">
+
+			<!-- Feature article -->
+			<div class="col-xs-12 inner-wrapper white-bg no-padding news-wrapper">
+
+				<article class="psn-article">
+
+					<div class="psn-news-wrapper">
+						<div class="psn-entry-content">
+							<div class="feature-image">
+								<a href="#"><img class="img-responsive" src="{{ 'feature-image.jpg' | asset_url }}" alt="" /></a>
+							</div>
+							<h3 class="psn-entry-title">
+								Artificial Disc Replacement
+							</h3>
+							<div class="psn-entry-date">
+								<ul>
+									<li>July 4th, 2015</li>
+								</ul>
+							</div>
+							<div class="psn-entry-desc">
+								<p>Many spinal conditions result in the weakening and destabilization of the spine, such as degenerative disc disease and spinal stenosis. For years, fusion surgery was the best option for restoring support and stability. Unfortunately, this procedure often resulted in a substantial loss of mobility and flexibility.</p>
+								<a class="btn btn-default psn-submit" href="#"> Continue Reading</a>
+							</div>
+						</div>
+					</div>
+
+				</article>
+
+			</div>
+			<!-- end feature article -->
+
+			<!-- Feature article -->
+			<div class="col-xs-12 inner-wrapper no-padding news-wrapper">
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 news-item">
+						<article class="psn-article-sm">
+
+							<div class="psn-news-wrapper">
+								<div class="psn-entry-content">
+
+									<h3 class="psn-entry-title">
+										Artificial Disc Replacement
+									</h3>
+									<div class="psn-entry-date">
+										<ul>
+											<li>July 4th, 2015</li>
+										</ul>
+									</div>
+									<div class="psn-entry-desc">
+										<p>Many spinal conditions result in the weakening and destabilization of the spine, such as degenerative disc disease and spinal stenosis. For years...</p>
+									</div>
+								</div>
+							</div>
+
+						</article>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 news-item">
+						<article class="psn-article-sm">
+
+							<div class="psn-news-wrapper">
+								<div class="psn-entry-content">
+
+									<h3 class="psn-entry-title">
+										Artificial Disc Replacement
+									</h3>
+									<div class="psn-entry-date">
+										<ul>
+											<li>July 4th, 2015</li>
+										</ul>
+									</div>
+									<div class="psn-entry-desc">
+										<p>Many spinal conditions result in the weakening and destabilization of the spine, such as degenerative disc disease and spinal stenosis. For years...</p>
+									</div>
+								</div>
+							</div>
+
+						</article>
+					</div>
+
+				</div><!-- end row -->
+
+			</div><!-- end feature article -->
+
+
+
+	</div>
+	<!-- end content wapper -->
+
 </div>
 <!-- end container fluid -->
 {% endblock %}

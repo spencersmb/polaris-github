@@ -2297,3 +2297,71 @@ span.selectboxit-arrow-container {
 #psn-faq .panel-title > a {
   display: block;
 }
+
+.news-wrapper {
+  margin-bottom: 20px;
+}
+.news-wrapper .row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.news-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.psn-article .feature-image {
+  width: 100%;
+  max-width: 900px;
+}
+.psn-article .psn-entry-title, .psn-article .psn-entry-title {
+  text-align: center;
+}
+.psn-article .psn-entry-title {
+  margin-bottom: 15px;
+}
+.psn-article .psn-entry-date {
+  text-align: center;
+}
+.psn-article .psn-entry-date li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #00237d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.psn-article .btn {
+  margin: 30px auto;
+  width: 200px;
+  display: block;
+}
+.psn-article .psn-entry-desc {
+  padding: 0 60px;
+}
+
+.psn-article-sm {
+  background-color: #fff;
+  padding: 30px;
+}
+.psn-article-sm .psn-entry-title {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+.psn-article-sm .psn-entry-date ul {
+  padding: 0;
+}
+.psn-article-sm .psn-entry-date li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #00237d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.psn-article-sm p {
+  padding: 0;
+}
