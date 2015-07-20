@@ -12,6 +12,11 @@
 	.desc{
 		margin-top:30px;
 	}
+
+	.title{
+		color:$blue;
+		font-weight: bold;
+	}
 }
 
 .service-quote{
@@ -146,7 +151,7 @@ span.selectboxit-arrow-container{
 }
 
 .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor{
-	background-color:$gold;
+	background-color:$link-hover;
 	background-image:none;
 	display: block;
 	width:100%;

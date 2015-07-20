@@ -1,9 +1,9 @@
 {% block styles %}
 	<style type="text/css">
-	  #map-canvas { 
-	  	height: 450px; 
-	  	width: 100%; 
-	  	margin: 0 auto; 
+	  #map-canvas {
+	  	height: 450px;
+	  	width: 100%;
+	  	margin: 0 auto;
 	  	padding: 50px 0;
 	  }
 	  .getDirections {
@@ -20,28 +20,9 @@
 {% endblock %}
 
 {% block content %}
-<!-- logo header -->
-<div class="container-fluid psn-fluid-nav blue-header" style="background-image:url('{{'header-bg.jpg' | asset_url'}}');">
-	<div class="header-starburst">
-		<img class="img-responsive" src="{{'starburst-header.png' | asset_url'}}" alt="" />
-	</div>
-	<h2>Locations</h2>
-	
-	<nav class="navbar navbar-default psn-nav-homepage psn-border">
-		<div class="container">
-			<ul class="nav navbar-nav">
-				<li class="dropdown"><a href="#" class="psn-dropdown" id="locationOne">Atlanta Office</a></li>
-				<li class="dropdown"><a href="#" class="psn-dropdown" id="locationTwo">Cumming Office</a></li>
-				<li class="dropdown"><a href="#" class="psn-dropdown" id="locationThree">Buckhead Office</a></li>
-				<li class="dropdown"><a href="#" class="psn-dropdown" id="locationFour">Canton/Cherokee Office</a></li>
-			</ul>
-		</div>
-	</nav>
-
-</div>
+{% include "blue-header" %}
 
 <!-- Location Controls -->
-
 
 <!-- Google Map -->
 <div id="map-canvas"></div>
