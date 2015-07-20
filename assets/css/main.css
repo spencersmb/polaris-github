@@ -1039,7 +1039,40 @@ footer {
   height: auto;
   line-height: 24px;
 }
+.psn-form-group.date .form-control {
+  width: 80%;
+  display: inline-block;
+}
+.psn-form-group.date .add-on {
+  display: inline-block;
+  position: absolute;
+  top: 34px;
+}
+.psn-form-group.date .add-on i {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+.psn-form-group.date input {
+  background-color: #fff;
+}
+.psn-form-group.time {
+  display: block;
+}
+.psn-form-group.time .time-dots {
+  float: left;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.psn-form-group.time select {
+  float: left;
+  color: #00237d;
+}
+.psn-form-group.time label {
+  display: block;
+}
 .psn-form-group .form-control {
+  padding: 0 12px;
   border: none;
   border-bottom: 1px solid #00237d;
   box-shadow: none;
@@ -1067,6 +1100,15 @@ footer {
   color: #cacddc;
   font-weight: 300;
   font-size: 25px;
+}
+.psn-form-group .form-control.hours {
+  width: 80px;
+  font-size: 18px;
+}
+.psn-form-group .form-control.day {
+  width: 80px;
+  font-size: 18px;
+  margin-left: 20px;
 }
 .psn-form-group .insurance-radio {
   position: absolute;

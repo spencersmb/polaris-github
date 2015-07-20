@@ -1,0 +1,147 @@
+{% block styles %}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+{% endblock %}
+{% block content %}
+{% include "blue-header" %}
+
+<div class="container-fluid white-bg psn-content-wrapper">
+
+	<div class="row">
+		<div class="col-xs-12 psn-fluid-inner">
+
+			<div class="intro-text">
+				<p>Our surgeons are active members of the American Association of Neurological Surgeons, as well as other societies and associations promoting the advancement of methods to treat patients with neurological disorders and illnesses. Our physicians’ assistants are equally as involved and qualified within their field and provide patients with unsurpassed care and treatment support.</p>
+			</div>
+
+			<div class="content-wrapper">
+
+				<div class="row">
+					<!-- form -->
+					<form>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="firstName">First Name</label>
+								<input type="text" class="form-control" id="inputFirstName">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+						    <label for="lastName">Last Name</label>
+						    <input type="text" class="form-control" id="inputLastName">
+						  </div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+								<label for="email">email</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Your email address">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group">
+						    <label for="phone">Phone</label>
+						    <input type="text" class="form-control" id="inputPhone" placeholder="333-333-3333">
+						  </div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+
+							<div class="form-group psn-form-group input-append date" data-date-format="dd-mm-yyyy">
+								<label for="insurance">Choose date</label>
+								<input id="datepicker" class="form-control" size="16" type="text" readonly="">
+								<span class="add-on"><a id="dp-btn" href="#0" ><i class="fa fa-calendar fa-lg"></i></a></span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6">
+							<div class="form-group psn-form-group time">
+								<label for="time">Time</label>
+								<select class="form-control hours" name="hours">
+	                <option>01</option>
+	                <option>02</option>
+	                <option>03</option>
+	                <option>04</option>
+                </select>
+								<div class="time-dots">
+									:
+								</div>
+								<select class="form-control hours" name="min">
+	                <option>00</option>
+	                <option>02</option>
+	                <option>03</option>
+	                <option>04</option>
+                </select>
+
+								<select class="form-control day" name="day">
+	                <option>AM</option>
+	                <option>PM</option>
+                </select>
+
+							</div>
+
+						</div>
+
+						<div class="col-xs-12">
+							<div class="form-group psn-form-group">
+								<label for="comments">Comments</label>
+								<textarea class="form-control" id="inputComments" rows="4"></textarea>
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<button type="submit" class="btn btn-default psn-submit">Submit</button>
+						</div>
+
+					</form>
+					<!-- end form -->
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- end psn fluid inner -->
+</div>
+<!-- end container fluid -->
+{% endblock %}
+{% block scripts %}
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ <script>
+ (function(){
+
+	var form = $('.insurance-type input');
+
+	//remove active from other elements
+	function selectRadio(elem){
+
+		$(elem).parent('label').parent('.insurance-type').children('label').each( function(index, el){
+		 $(el).removeClass('active');
+		});
+		//add class
+		$(elem).parent('label').addClass('active');
+
+	}
+
+	form.change(function(event) {
+		selectRadio(this);
+	});
+
+	//Datepicker
+	// $('#dp2').datepicker("setDate", "10/12/2012");
+	$( "#datepicker" ).datepicker();
+
+	$("#dp-btn").on('click', function(){
+		$('#datepicker').datepicker("show");
+	});
+
+
+
+
+ })();
+</script>
+{% endblock %}
