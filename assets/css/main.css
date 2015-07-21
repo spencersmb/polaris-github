@@ -2324,6 +2324,7 @@ span.selectboxit-arrow-container {
   text-align: center;
 }
 .psn-article .psn-entry-title {
+  margin-top: 60px;
   margin-bottom: 15px;
 }
 .psn-article .psn-entry-date {
@@ -2460,4 +2461,83 @@ span.selectboxit-arrow-container {
   position: fixed;
   width: 100%;
   top: 50%;
+  z-index: 100;
+}
+.news-controls .left, .news-controls .right {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  background-color: #e5e5e5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.news-controls .left.over, .news-controls .right.over {
+  width: 250px;
+  background-color: #00237d;
+  color: #fff;
+}
+.news-controls .left {
+  left: 0;
+  padding: 30px 15px 30px 30px;
+}
+.news-controls .right {
+  right: 0;
+  padding: 30px 30px 30px 15px;
+}
+.news-controls .textRight {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  opacity: 0;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -moz-transform: translateX(200%) translateY(-50%);
+  -ms-transform: translateX(200%) translateY(-50%);
+  -webkit-transform: translateX(200%) translateY(-50%);
+  transform: translateX(200%) translateY(-50%);
+}
+.news-controls .textRight.slideRight {
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -moz-transform: translateX(0) translateY(-50%);
+  -ms-transform: translateX(0) translateY(-50%);
+  -webkit-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+}
+.news-controls .textLeft {
+  position: absolute;
+  width: 80%;
+  text-align: right;
+  padding-right: 20px;
+  top: 50%;
+  padding-left: 20px;
+  opacity: 0;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -moz-transform: translateX(-200%) translateY(-50%);
+  -ms-transform: translateX(-200%) translateY(-50%);
+  -webkit-transform: translateX(-200%) translateY(-50%);
+  transform: translateX(-200%) translateY(-50%);
+}
+.news-controls .textLeft.slideLeft {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -moz-transform: translateX(0) translateY(-50%);
+  -ms-transform: translateX(0) translateY(-50%);
+  -webkit-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+}
+.news-controls a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
