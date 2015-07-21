@@ -2280,22 +2280,63 @@ span.selectboxit-arrow-container {
 }
 #psn-faq .panel .panel-heading {
   border: none;
+  background-color: #fff;
 }
 #psn-faq .panel .panel-heading .panel-title {
-  color: #000;
+  color: #070d3f;
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: initial;
+}
+#psn-faq .panel .panel-heading .panel-title .fa {
+  line-height: 41px;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+#psn-faq .panel .panel-heading .panel-title .fa.faq-close {
+  /* Safari */
+  -webkit-transform: rotate(-45deg);
+  /* Firefox */
+  -moz-transform: rotate(-45deg);
+  /* IE */
+  -ms-transform: rotate(-45deg);
+  /* Opera */
+  -o-transform: rotate(-45deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 #psn-faq .panel .panel-body {
   border: none;
-  background-color: #ddd1c5;
+  background-color: #e8e0d3;
+  font-color: #938876;
+  font-size: 1.125em;
 }
 #psn-faq .panel-active > .panel-heading {
-  background-color: #ddd1c5;
+  background-color: #e8e0d3;
 }
 #psn-faq .panel + .panel {
   margin-top: 0;
 }
 #psn-faq .panel-title > a {
   display: block;
+}
+
+.panel-default {
+  background-color: #fff;
+  border-bottom: 1px solid #938876;
+  border-left: none;
+  border-right: none;
+}
+.panel-default:last-child {
+  border-bottom: none;
 }
 
 .news-wrapper {
