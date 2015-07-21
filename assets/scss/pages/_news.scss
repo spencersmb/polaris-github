@@ -191,6 +191,12 @@
 	}
 }
 
+.news-controls{
+	position: fixed;
+	width:100%;
+	top:50%;
+}
+
 
 @include breakpoint(tablet){
 
