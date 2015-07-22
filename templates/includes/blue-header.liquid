@@ -31,7 +31,7 @@
 	{% if mixture.url == "locations" %}
 	   <h2>Locations</h2>
 
-		 <nav class="navbar navbar-default psn-nav-locations psn-border">
+		 <!-- <nav class="navbar navbar-default psn-nav-locations psn-border">
 	 		<div class="container">
 	 			<ul class="nav navbar-nav">
 	 				<li class="dropdown"><a href="#" class="psn-dropdown" id="locationOne">Atlanta Office</a></li>
@@ -40,7 +40,19 @@
 	 				<li class="dropdown"><a href="#" class="psn-dropdown" id="locationFour">Canton/Cherokee Office</a></li>
 	 			</ul>
 	 		</div>
-	 	</nav>
+	 	</nav> -->
+
+		<div class="locations-navbar psn-nav-locations">
+			<div class="container">
+				<ul id="location-nav" class="nav-locations">
+					<li class="dropdown"><a href="#" class="location-btn" id="locationOne">Atlanta Office</a></li>
+					<li class="dropdown"><a href="#" class="location-btn" id="locationTwo">Cumming Office</a></li>
+					<li class="dropdown"><a href="#" class="location-btn" id="locationThree">Buckhead Office</a></li>
+					<li class="dropdown"><a href="#" class="location-btn" id="locationFour">Canton/Cherokee Office</a></li>
+				</ul>
+			</div>
+		</div>
+
 	{% endif %}
 
 	{% if mixture.url == "insurance-info" %}

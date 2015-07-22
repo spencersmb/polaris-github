@@ -1,19 +1,5 @@
 {% block styles %}
-	<style type="text/css">
-	  #map-canvas {
-	  	height: 450px;
-	  	width: 100%;
-	  	margin: 0 auto;
-	  	padding: 50px 0;
-	  }
-	  .getDirections {
-	  	height: 75px;
-	  	font-size: 20px;
-	  	padding: 24px 0;
-	  	font-weight: bold;
-	  	text-transform: uppercase;
-	  }
-	</style>
+
 	<script type="text/javascript"
 	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHjfEAx3kun_6_SvIHIdSl04ayMBuRRi0">
 	</script>
@@ -27,12 +13,18 @@
 <!-- Google Map -->
 <div id="map-canvas"></div>
 
-<div class="btn btn-block btn-default getDirections">Get Directions</div>
+<div id="getDirections" class="btn btn-block btn-default getDirections">
+		Get Directions
+		<a href="https://maps.google.com?saddr=Current+Location&daddr=33.9195276,-84.3493754" target="_blank">
+			click for directions
+		</a>
+</div>
 
 <!-- end container fluid -->
 {% endblock %}
 
 
 {% block scripts %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
 	{{ "map.js" | asset_url | script_tag }}
 {% endblock %}

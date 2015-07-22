@@ -17,7 +17,7 @@ function initialize() {
       scrollwheel: false,
       panControl: false,
       streetViewControl: true,
-      zoomControl: false, 
+      zoomControl: false,
       minZoom: 10,
       styles: [
         {
@@ -32,12 +32,10 @@ function initialize() {
           featureType: "poi",
           "stylers": [
             { visibility: "off" }
-          ]   
+          ]
         }
       ]
     };
-
-
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -67,24 +65,75 @@ function initialize() {
         title: 'Canton Office'
     });
 
+    //establish link variables
+    // var directionLat = '33.9195276,-84.3493754';
+    var getDirections = document.getElementById('getDirections');
+    var directionLink = getDirections.getElementsByTagName("a");
+    // var myLink = "https://maps.google.com?saddr=Current+Location&daddr=" + directionLat;
+    directionLink[0].setAttribute('href', buildLat(loc1));
+
+    function buildLat( location ){
+      var myLocation = location.A;
+          myLocation += "," + location.F;
+
+      var myLink = "https://maps.google.com?saddr=Current+Location&daddr=" + myLocation;
+          return myLink;
+    }
+
+    var nav = document.getElementById('location-nav');
+    var navElement = nav.getElementsByTagName("li");
+    // console.log(navElement);
+
+    function removeActive(){
+      for(var i = 0; i < navElement.length; i++ ){
+        navElement[i].classList.remove("active");
+        // console.log(  navElement[i].getElementsByTagName("a"));
+      }
+    }
+
+
     $('#locationOne').click(function(){
         map.panTo(loc1);
+        atlanta.open(map,marker1);
+        removeActive();
+        this.parentElement.classList.add('active');
+
+        //build link
+        directionLink[0].setAttribute('href', buildLat(loc1));
     });
 
     $('#locationTwo').click(function(){
         map.panTo(loc2);
+        cumming.open(map,marker2);
+        removeActive();
+        this.parentElement.classList.add('active');
+
+        //build link
+        directionLink[0].setAttribute('href', buildLat(loc2));
     });
 
     $('#locationThree').click(function(){
         map.panTo(loc3);
+        buckhead.open(map,marker3);
+        removeActive();
+        this.parentElement.classList.add('active');
+
+        //build link
+        directionLink[0].setAttribute('href', buildLat(loc3));
     });
 
     $('#locationFour').click(function(){
         map.panTo(loc4);
+        canton.open(map,marker4);
+        removeActive();
+        this.parentElement.classList.add('active');
+
+        //build link
+        directionLink[0].setAttribute('href', buildLat(loc4));
     });
 
     function ZoomControl(controlDiv, map) {
-      
+
       // Creating divs & styles for custom zoom control
       controlDiv.style.padding = '5px';
 
@@ -96,21 +145,21 @@ function initialize() {
       controlWrapper.style.borderWidth = '0px';
       controlWrapper.style.cursor = 'pointer';
       controlWrapper.style.textAlign = 'center';
-      controlWrapper.style.width = '32px'; 
+      controlWrapper.style.width = '32px';
       controlWrapper.style.height = '64px';
       controlDiv.appendChild(controlWrapper);
-      
+
       // Set CSS for the zoomIn
       var zoomInButton = document.createElement('div');
-      zoomInButton.style.width = '32px'; 
+      zoomInButton.style.width = '32px';
       zoomInButton.style.height = '32px';
       /* Change this to be the .png image you want to use */
       zoomInButton.style.backgroundImage = 'url("plus.jpg")';
       controlWrapper.appendChild(zoomInButton);
-        
+
       // Set CSS for the zoomOut
       var zoomOutButton = document.createElement('div');
-      zoomOutButton.style.width = '32px'; 
+      zoomOutButton.style.width = '32px';
       zoomOutButton.style.height = '32px';
       zoomOutButton.style.marginTop = '2px';
       /* Change this to be the .png image you want to use */
@@ -121,12 +170,12 @@ function initialize() {
       google.maps.event.addDomListener(zoomInButton, 'click', function() {
         map.setZoom(map.getZoom() + 1);
       });
-        
+
       // Setup the click event listener - zoomOut
       google.maps.event.addDomListener(zoomOutButton, 'click', function() {
         map.setZoom(map.getZoom() - 1);
-      });  
-        
+      });
+
     }
 
     // Create the DIV to hold the control and call the ZoomControl() constructor
@@ -149,7 +198,7 @@ function initialize() {
       '<br>Suite 400'+
       '<br>Atlanta, GA 30328'+
       '<br>404.445.5581</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 
@@ -163,10 +212,10 @@ function initialize() {
       '<br>Suite 345'+
       '<br>Cumming, GA 30041'+
       '<br>404.445.5581</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
-    
+
 
     // Buckhead Office Details
     var buckheadDetails = '<div id="content">'+
@@ -178,7 +227,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 
@@ -192,7 +241,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 
@@ -209,6 +258,8 @@ function initialize() {
         content: cantonDetails
     });
 
+    atlanta.open(map,marker1);
+
     google.maps.event.addListener(marker1, 'click', function() {
       atlanta.open(map,marker1);
     });
@@ -224,11 +275,8 @@ function initialize() {
     google.maps.event.addListener(marker4, 'click', function() {
       canton.open(map,marker4);
     });
+
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-$(function () {
-
-    
-});
