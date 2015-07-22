@@ -1,5 +1,13 @@
 function initialize() {
 
+    // var locObject =
+    //   {
+    //     location1: [33.9195276,-84.3493754],
+    //     location2: [34.1791226,-84.1391884],
+    //     location3: [33.8076858,-84.3937393],
+    //     location4: [34.1031764,-84.5340736]
+    //   };
+
     var loc1 = new google.maps.LatLng(33.9195276,-84.3493754);
     var loc2 = new google.maps.LatLng(34.1791226,-84.1391884);
     var loc3 = new google.maps.LatLng(33.8076858,-84.3937393);
@@ -40,6 +48,10 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 
+    // var markerObject = {
+    //
+    // };
+
     // Atlanta Office
     var marker1 = new google.maps.Marker({
         position: loc1,
@@ -66,10 +78,11 @@ function initialize() {
     });
 
     //establish link variables
-    // var directionLat = '33.9195276,-84.3493754';
     var getDirections = document.getElementById('getDirections');
     var directionLink = getDirections.getElementsByTagName("a");
-    // var myLink = "https://maps.google.com?saddr=Current+Location&daddr=" + directionLat;
+
+    //Set active on load
+    document.getElementById('locationOne').parentElement.classList.add('active');
     directionLink[0].setAttribute('href', buildLat(loc1));
 
     function buildLat( location ){
@@ -80,6 +93,7 @@ function initialize() {
           return myLink;
     }
 
+    //Loop function to remove active state
     var nav = document.getElementById('location-nav');
     var navElement = nav.getElementsByTagName("li");
     // console.log(navElement);
@@ -90,6 +104,9 @@ function initialize() {
         // console.log(  navElement[i].getElementsByTagName("a"));
       }
     }
+
+
+
 
 
     $('#locationOne').click(function(){
