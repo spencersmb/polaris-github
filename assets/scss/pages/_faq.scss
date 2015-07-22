@@ -7,20 +7,54 @@
 
 		.panel-heading {
 			border: none;
+			background-color: #fff;
 			
 			.panel-title {
-				color: #000;
+				color: $polaris-blue;
+				font-weight: bold;
+				text-transform: none;
+				letter-spacing: initial;
+
+				.fa {
+					line-height: 41px;
+					-webkit-transition: all 0.25s linear;
+					-moz-transition: all 0.25s linear;
+					-ms-transition: all 0.25s linear;
+					-o-transition: all 0.25s linear;
+					transition: all 0.25s linear;
+
+					&.faq-close {
+
+						/* Safari */
+						-webkit-transform: rotate(-45deg);
+						/* Firefox */
+						-moz-transform: rotate(-45deg);
+						/* IE */
+						-ms-transform: rotate(-45deg);
+						/* Opera */
+						-o-transform: rotate(-45deg);
+						/* Internet Explorer */
+						filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+						-webkit-transition: all 0.25s linear;
+						-moz-transition: all 0.25s linear;
+						-ms-transition: all 0.25s linear;
+						-o-transition: all 0.25s linear;
+						transition: all 0.25s linear;
+					}
+				}
 			}
 		}
 
 		.panel-body {
 			border: none;
-			background-color: $light-gold;
+			background-color: $faqBG;
+			font-color: $faqTXT;
+			font-size: em(18px);
 		}
 	}
 
 	.panel-active > .panel-heading {
-		background-color: $light-gold;
+		background-color: $faqBG;
 	}
 
 	.panel+.panel {
@@ -29,5 +63,16 @@
 	// Make the whole panel heading clickable
 	.panel-title > a {
 		display: block;
+	}
+}
+
+.panel-default {
+	background-color: #fff;
+	border-bottom: 1px solid $faqTXT;
+	border-left: none;
+	border-right: none;
+
+	&:last-child {
+		border-bottom: none;
 	}
 }
