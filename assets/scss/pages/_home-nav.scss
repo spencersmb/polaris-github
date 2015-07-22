@@ -108,6 +108,10 @@
           bottom: 0;
           padding-bottom: 25px;
         }
+
+        p{
+          color:$white;
+        }
     }
     .panel a {
         position: absolute;
@@ -115,6 +119,7 @@
         height:100%;
         left:0;
         top:0;
+        text-indent: -9999px;
     }
     .panel h3 {
         font-size: 2.25em;
