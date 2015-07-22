@@ -2285,6 +2285,10 @@ span.selectboxit-arrow-container {
 #psn-faq .panel .panel-heading {
   border: none;
   background-color: #fff;
+  padding: 25px 100px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 #psn-faq .panel .panel-heading .panel-title {
   color: #070d3f;
@@ -2319,12 +2323,19 @@ span.selectboxit-arrow-container {
 }
 #psn-faq .panel .panel-body {
   border: none;
-  background-color: #e8e0d3;
-  font-color: #938876;
+  background-color: #e5e5e5;
+  color: #826c4c;
   font-size: 1.125em;
+  padding-top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 24px;
 }
 #psn-faq .panel-active > .panel-heading {
-  background-color: #e8e0d3;
+  background-color: #e5e5e5;
+}
+#psn-faq .panel-active > .panel-heading > .panel-title {
+  color: #f75b1e;
 }
 #psn-faq .panel + .panel {
   margin-top: 0;
@@ -2332,10 +2343,15 @@ span.selectboxit-arrow-container {
 #psn-faq .panel-title > a {
   display: block;
 }
+#psn-faq .panel-title > a:focus {
+  text-decoration: none;
+}
 
 .panel-default {
   background-color: #fff;
-  border-bottom: 1px solid #938876;
+  border-color: transparent;
+  border-bottom: 1px solid #a99781;
+  border-top: none;
   border-left: none;
   border-right: none;
 }

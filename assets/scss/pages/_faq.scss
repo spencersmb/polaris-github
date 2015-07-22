@@ -8,7 +8,9 @@
 		.panel-heading {
 			border: none;
 			background-color: #fff;
-			
+			padding:25px 100px;;
+			@include transition(all .3s);
+
 			.panel-title {
 				color: $polaris-blue;
 				font-weight: bold;
@@ -47,14 +49,22 @@
 
 		.panel-body {
 			border: none;
-			background-color: $faqBG;
-			font-color: $faqTXT;
+			background-color: $light-gray;
+			color: $dk-gold;
 			font-size: em(18px);
+			padding-top:0;
+			padding-left:100px;
+			padding-right:100px;
+			line-height: 24px;
 		}
 	}
 
 	.panel-active > .panel-heading {
-		background-color: $faqBG;
+		background-color: $light-gray;
+
+		& > .panel-title{
+			color:$link-hover;
+		}
 	}
 
 	.panel+.panel {
@@ -63,12 +73,18 @@
 	// Make the whole panel heading clickable
 	.panel-title > a {
 		display: block;
+
+		&:focus{
+			text-decoration: none;
+		}
 	}
 }
 
 .panel-default {
 	background-color: #fff;
-	border-bottom: 1px solid $faqTXT;
+	border-color:transparent;
+	border-bottom: 1px solid $gold;
+	border-top: none;
 	border-left: none;
 	border-right: none;
 
