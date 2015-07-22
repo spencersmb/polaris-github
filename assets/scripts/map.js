@@ -198,7 +198,7 @@ function initialize() {
       '<br>Suite 400'+
       '<br>Atlanta, GA 30328'+
       '<br>404.445.5581</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 
@@ -212,7 +212,7 @@ function initialize() {
       '<br>Suite 345'+
       '<br>Cumming, GA 30041'+
       '<br>404.445.5581</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 
@@ -227,7 +227,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 
@@ -241,7 +241,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
-      '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
       '</div>'+
       '</div>';
 

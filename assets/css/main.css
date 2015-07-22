@@ -149,7 +149,7 @@ h4 {
   line-height: 41px;
 }
 
-h5 {
+h5, #map-canvas .firstHeading {
   font-size: 18px;
   font-weight: 500;
   color: #00237d;
@@ -1703,7 +1703,7 @@ label .glyphicon {
   display: table;
 }
 
-.office-content h5 {
+.office-content h5, .office-content #map-canvas .firstHeading, #map-canvas .office-content .firstHeading {
   text-align: center;
   font-size: 16px;
   color: #00237d;
@@ -2124,7 +2124,7 @@ span.selectboxit-arrow-container {
 .learn-section .row {
   background-color: #fff !important;
 }
-.learn-section h5 {
+.learn-section h5, .learn-section #map-canvas .firstHeading, #map-canvas .learn-section .firstHeading {
   margin-top: 20px;
 }
 
@@ -2420,7 +2420,7 @@ span.selectboxit-arrow-container {
 .psn-article .psn-entry-desc img {
   margin: 60px 0;
 }
-.psn-article .psn-entry-desc h5 {
+.psn-article .psn-entry-desc h5, .psn-article .psn-entry-desc #map-canvas .firstHeading, #map-canvas .psn-article .psn-entry-desc .firstHeading {
   text-align: center;
   margin: 40px 0 20px;
 }
@@ -2514,7 +2514,7 @@ span.selectboxit-arrow-container {
   padding: 40px;
   background-color: #eeeeee;
 }
-.news-related h5 {
+.news-related h5, .news-related #map-canvas .firstHeading, #map-canvas .news-related .firstHeading {
   font-size: 16px;
   font-weight: 500;
 }
@@ -2615,6 +2615,14 @@ span.selectboxit-arrow-container {
   width: 100%;
   margin: 0 auto;
   padding: 50px 0;
+}
+#map-canvas .firstHeading {
+  margin: 10px 0;
+  font-size: 21px;
+}
+
+#bodyContent p {
+  font-size: 14px;
 }
 
 #getDirections {
