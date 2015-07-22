@@ -1,9 +1,9 @@
 $(function () {
 	$('#psn-faq > .panel').on('show.bs.collapse', function () {
-    $(this).addClass('panel-active').find('i').addClass('faq-close');
+    $(this).addClass('panel-active');
   });
 
   $('#psn-faq > .panel').on('hide.bs.collapse', function () {
-    $(this).removeClass('panel-active').find('i').removeClass('faq-close');
+    $(this).removeClass('panel-active');
   });
 });

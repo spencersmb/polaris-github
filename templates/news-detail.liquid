@@ -124,11 +124,20 @@
 {% block scripts %}
 <script>
 	//init heights on page load
+	var rightHeight = $('.textRight').height();
 	var originalHeight = $('.right').outerHeight();
+	var leftHeight = $('.textLeft').height();
+	console.log(leftHeight);
+	console.log(originalHeight);
 
 	$('.right').mouseenter(function(event) {
 		//check if height is larger than tag
-		$(this).addClass('over').css('height', originalHeight);
+		if(rightHeight > originalHeight){
+			$(this).addClass('over').css('height', rightHeight);
+		}else{
+			$(this).addClass('over');
+		}
+
 		$(this).children('span').addClass('slideRight');
 	});
 
@@ -139,7 +148,12 @@
 
 	$('.left').mouseenter(function(event) {
 		//check if height is larger than tag
-		$(this).addClass('over').css('height', originalHeight);
+		if(rightHeight > originalHeight){
+			$(this).addClass('over').css('height', leftHeight);
+		}else{
+			$(this).addClass('over');
+		}
+
 		$(this).children('span').addClass('slideLeft');
 	});
 
