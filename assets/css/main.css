@@ -2541,3 +2541,6 @@ span.selectboxit-arrow-container {
   top: 0;
   left: 0;
 }
+.news-controls i {
+  margin-top: 2px;
+}
