@@ -5,7 +5,19 @@ function initialize() {
         location1: [33.9195276,-84.3493754],
         title: 'atlanta',
         office: 'Atlanta Office',
-        details: 'html'
+        details: '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Atlanta Office</h1>'+
+          '<div id="bodyContent">'+
+          '<p>Perimeter Town Center' +
+          '<br>1150 Hammond Dr Bldg E'+
+          '<br>Suite 400'+
+          '<br>Atlanta, GA 30328'+
+          '<br>404.445.5581</p>'+
+          // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+          '</div>'+
+          '</div>'
       };
 
     var loc1 = new google.maps.LatLng(33.9195276,-84.3493754);
