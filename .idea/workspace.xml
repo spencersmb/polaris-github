@@ -37,7 +37,7 @@
       <file leaf-file-name="_home-nav-new.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scss/pages/_home-nav-new.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.428571" vertical-offset="1330" max-vertical-offset="7790">
+            <state vertical-scroll-proportion="-6.107143" vertical-offset="1311" max-vertical-offset="7752">
               <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding />
             </state>
@@ -57,7 +57,7 @@
       <file leaf-file-name="news-detail.liquid" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/news-detail.liquid">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.928572" vertical-offset="0" max-vertical-offset="4351">
+            <state vertical-scroll-proportion="-14.928572" vertical-offset="0" max-vertical-offset="3363">
               <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding />
             </state>
@@ -781,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/pages/_home-nav-new.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.428571" vertical-offset="1330" max-vertical-offset="7790">
+        <state vertical-scroll-proportion="-6.107143" vertical-offset="1311" max-vertical-offset="7752">
           <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding />
         </state>
