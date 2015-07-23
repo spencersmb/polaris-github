@@ -6,7 +6,7 @@
 }
 
 .service-overview{
-	padding: 15px 75px 60px 30px;
+	padding: 15px 30px 60px 30px;
 	z-index: 2;
 
 	.desc{
@@ -22,14 +22,15 @@
 .service-quote{
 	background-color: $gold;
 	z-index: 1;
-	padding:40px;
+	padding:30px;
 
 
 	blockquote{
 		border:0;
 		color:$white;
 		margin:0;
-		font-size: 25px;
+		font-size: 22px;
+	  	font-weight: 500;
 	}
 }
 
@@ -217,16 +218,6 @@ span.selectboxit-arrow-container{
 	text-align:left;
 }
 
-
-
-@include breakpoint(tablet){
-
-}
-
-@include breakpoint(laptop){
-
-}
-
 ////////////////////////
 //service-details page
 ///////////////////////
@@ -262,8 +253,20 @@ span.selectboxit-arrow-container{
 
 @include breakpoint(tablet){
 
+
+
 }
 
 @include breakpoint(laptop){
+  .service-overview{
+	padding: 15px 75px 60px 30px;
+  }
 
+  .service-quote{
+	padding:40px;
+
+	blockquote{
+	  font-size: 25px;
+	}
+  }
 }

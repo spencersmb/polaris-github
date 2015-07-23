@@ -275,7 +275,9 @@ function initialize() {
         content: cantonDetails
     });
 
+    map.panTo(loc1);
     atlanta.open(map,marker1);
+
 
     google.maps.event.addListener(marker1, 'click', function() {
       atlanta.open(map,marker1);

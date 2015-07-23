@@ -1,5 +1,6 @@
 .office-wrapper{
 	margin-bottom: 80px;
+  	padding: 0 15px;
 
 	.office-content{
 		width:100%;
@@ -26,7 +27,8 @@
 
 	.office-links{
 		margin-top: 20px;
-		text-align: right;
+		text-align: center;
+	  	margin-bottom:20px;
 
 		i{
 			padding-top: 10px;
@@ -49,7 +51,6 @@
 			}
 		}
 
-
 	}
 
 }
@@ -58,8 +59,41 @@
 
 @include breakpoint(tablet){
 
+  .office-wrapper{
+
+	.office-content{
+	  margin:20px auto 0;
+	  padding-right:0px;
+
+	  .title{
+		text-align: center;
+		padding-left: 0px;
+	  }
+	}
+
+  }
+
 }
 
 @include breakpoint(laptop){
+
+  .office-wrapper{
+	padding: 0px;
+
+	.office-content{
+	  padding-right:40px;
+
+	  .title{
+		text-align: right;
+		padding-left: 40px;
+	  }
+	}
+
+	.office-links{
+	  margin-top: 20px;
+	  text-align: right;
+	}
+
+  }
 
 }

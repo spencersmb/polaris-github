@@ -86,6 +86,10 @@ a{
 	max-width:900px;
 	margin:0 auto;
 	height:100%;
+
+  &.inner{
+	padding:0 15px;
+  }
 }
 
 .inner-wrapper{
@@ -193,15 +197,26 @@ p{
 	}
 
 	.inner-wrapper{
-		margin-bottom:50px;
+	  margin-bottom:50px;
+	  padding:0 15px;
 	}
 
+	.psn-content-wrapper{
+	  position:relative;
+	  width:100%;
+	  max-width:900px;
+	  margin:0 auto;
+	  height:100%;
+	}
 
 
 }
 
 @include breakpoint(laptop){
 
-
+  .inner-wrapper{
+	margin-bottom:50px;
+	padding:0px;
+  }
 
 }

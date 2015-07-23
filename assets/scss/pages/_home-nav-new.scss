@@ -8,6 +8,16 @@
   margin-top: 25px;
 }
 
+.btn.active{
+  background-color: $gold;
+  border:none;
+
+  &:hover{
+    background-color: $polaris-blue;
+    border:none;
+  }
+}
+
 label.btn {
   padding: 18px 60px;
   white-space: normal;
@@ -32,7 +42,7 @@ label.btn {
 label.btn-block {
   text-align: center;
   position: relative;
-  font-size: em(36px);
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 75px;
@@ -61,12 +71,11 @@ label .glyphicon {
   .container {
     @include transition( all .4s);
   }
+
   .quiz {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    @include transform(translateX(-50%) translateY(-50%));
+    position: relative;
   }
+
   // READ MORE PANELS
   .panel.panel-horizontal {
     display: table;
@@ -152,9 +161,9 @@ label .glyphicon {
     top: 0;
   }
   .panel h3 {
-    font-size: 2.25em;
+    font-size: 28px;
     font-weight: 100;
-    line-height: 40px;
+    line-height: 34px;
   }
   .panel-group .panel+.panel {
     margin-top: 25px;
@@ -329,4 +338,66 @@ label .glyphicon {
   -webkit-animation-delay: 4s;
   -moz-animation-delay: 4s;
   animation-delay: 4s;
+}
+
+@include breakpoint(tablet){
+
+  #psn-nav-home{
+
+    .quiz {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translateX(-50%) translateY(-50%));
+    }
+
+    .panel.panel-horizontal {
+      display: table;
+      width: 600px;
+      max-width: 615px;
+      margin: 0 auto;
+    }
+
+    label.btn-block {
+      font-size: em(36px);
+      font-weight: 400;
+      line-height: 75px;
+    }
+
+    .panel h3 {
+      font-size: 2.25em;
+      font-weight: 100;
+      line-height: 40px;
+    }
+
+  }
+
+}
+
+
+@include breakpoint(desktop){
+
+  #psn-nav-home{
+
+    .panel.panel-horizontal {
+      display: table;
+      width: 100%;
+      max-width: 615px;
+      margin: 0 auto;
+    }
+
+    label.btn-block {
+      font-size: em(36px);
+      font-weight: 400;
+      line-height: 75px;
+    }
+
+    .panel h3 {
+      font-size: 2.25em;
+      font-weight: 100;
+      line-height: 40px;
+    }
+
+  }
+
 }

@@ -22,6 +22,7 @@
 
 .sidebar-align-conditions{
   padding-top:10px;
+  padding-bottom:30px;
 }
 
 .conditions-padding{
@@ -30,7 +31,11 @@
 
 .conditions-table {
 	text-align: center;
-  margin-bottom: 30px;
+  	margin-bottom: 30px;
+
+  	&:nth-last-child(1){
+	  margin-bottom: 0;
+	}
 
   .row{
     margin-left:-5px;
@@ -90,4 +95,19 @@
 			}
 		}
 	}
+}
+
+@include breakpoint(tablet){
+
+
+
+}
+
+@include breakpoint(laptop){
+
+  .sidebar-align-conditions{
+	padding-top:10px;
+	padding-bottom:0px;
+  }
+
 }

@@ -121,6 +121,8 @@
     font-size: 18px ;
     font-weight: 400;
     cursor: pointer;
+    margin-bottom: 0;
+    line-height: 25px;
   }
 
   &::before{
@@ -134,17 +136,23 @@
 .btn-insurance{
   color:$blue;
   border:1px solid #D5D5D5;
-  border-left:0;
-  display: inline;
+  width:50%;
+  float:left;
+  display: inline-block;
   border-radius: 0;
   padding:7px 26.75px;
+  text-align: center;
 
 
   &:nth-child(1){
-    border-left:1px solid #D5D5D5;
+
   }
 
-  &:nth-last-child(1){
+  &:nth-last-child(-n+2){
+    border-top:0;
+  }
+
+  &:nth-child(even){
     border-left:0;
   }
 
@@ -173,5 +181,33 @@
 }
 
 @include breakpoint(laptop){
+
+  .insurance-type {
+    margin-bottom:5px;
+    label {
+
+    }
+  }
+
+  .btn-insurance{
+    border:1px solid #D5D5D5;
+    border-left:0;
+    width:100%;
+    float:none;
+    display: inline;
+
+    &:nth-child(1){
+      border-left:1px solid #D5D5D5;
+    }
+
+    &:nth-last-child(-n+2){
+      border-top:1px solid #D5D5D5;
+    }
+
+    &:nth-last-child(1){
+      border-left:0;
+    }
+
+  }
 
 }

@@ -1,6 +1,6 @@
 .hospital-wrapper{
-	padding:0 60px;
-	margin-bottom:40px;
+  padding:0 60px;
+  margin-bottom:40px;
 }
 
 .hospital-desc{
@@ -9,6 +9,12 @@
 
 .hospital-logo-container{
 	width:inherit;
+  	float: none;
+
+  img{
+	margin:0 auto;
+	padding-bottom: 20px;
+  }
 }
 
 @include breakpoint(tablet){
@@ -16,7 +22,21 @@
 }
 
 @include breakpoint(laptop){
+	.hospital-wrapper{
+	 padding:0;
+	  margin-bottom:40px;
+	}
+
 	.hospital-logo-container{
 		width:30%;
+	}
+
+	.hospital-logo-container{
+	  width:inherit;
+	  float: left;
+
+	  img{
+		padding-bottom: 0;
+	  }
 	}
 }

@@ -123,44 +123,49 @@
 {% endblock %}
 {% block scripts %}
 <script>
+
+	var windowW = $(window).width();
+	console.log(windowW);
 	//init heights on page load
 	var rightHeight = $('.textRight').height();
 	var originalHeight = $('.right').outerHeight();
 	var leftHeight = $('.textLeft').height();
-	console.log(leftHeight);
-	console.log(originalHeight);
 
-	$('.right').mouseenter(function(event) {
-		//check if height is larger than tag
-		if(rightHeight > originalHeight){
-			$(this).addClass('over').css('height', rightHeight);
-		}else{
-			$(this).addClass('over');
-		}
+	if(windowW > 768){
 
-		$(this).children('span').addClass('slideRight');
-	});
+		$('.right').mouseenter(function(event) {
+			//check if height is larger than tag
+			if(rightHeight > originalHeight){
+				$(this).addClass('over').css('height', rightHeight);
+			}else{
+				$(this).addClass('over');
+			}
 
-	$('.right').mouseleave(function(event) {
-		$(this).removeClass('over').css('height', originalHeight);
-		$(this).children('span').removeClass('slideRight');
-	});
+			$(this).children('span').addClass('slideRight');
+		});
 
-	$('.left').mouseenter(function(event) {
-		//check if height is larger than tag
-		if(rightHeight > originalHeight){
-			$(this).addClass('over').css('height', leftHeight);
-		}else{
-			$(this).addClass('over');
-		}
+		$('.right').mouseleave(function(event) {
+			$(this).removeClass('over').css('height', originalHeight);
+			$(this).children('span').removeClass('slideRight');
+		});
 
-		$(this).children('span').addClass('slideLeft');
-	});
+		$('.left').mouseenter(function(event) {
+			//check if height is larger than tag
+			if(rightHeight > originalHeight){
+				$(this).addClass('over').css('height', leftHeight);
+			}else{
+				$(this).addClass('over');
+			}
 
-	$('.left').mouseleave(function(event) {
-		$(this).removeClass('over').css('height', originalHeight);
-		$(this).children('span').removeClass('slideLeft');
-	});
+			$(this).children('span').addClass('slideLeft');
+		});
+
+		$('.left').mouseleave(function(event) {
+			$(this).removeClass('over').css('height', originalHeight);
+			$(this).children('span').removeClass('slideLeft');
+		});
+
+	}
 
 </script>
 {% endblock %}

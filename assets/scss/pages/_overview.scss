@@ -29,6 +29,11 @@
 	padding:0 60px;
 	top:0;
 	position:relative;
+
+  .inner-wrapper{
+	padding:0 15px;
+  }
+
 }
 
 .doctor-wrapper{
@@ -190,11 +195,6 @@
 }
 
 @include breakpoint(tablet){
-	.psn-group{
-		.psn-panel-img{
-			display: block;
-		}
-	}
 
 	.overlap-bottom-wrapper{
 		height:auto;
@@ -203,10 +203,11 @@
 	}
 
 	.psn-group{
-		.psn-panel-img{
 
+		.psn-panel-img{
+		  display: block;
 			img{
-				max-width: 167%;
+				max-width: 170%;
 				left:-125px;
 			}
 		}
@@ -236,6 +237,7 @@
 	}
 
 	.psn-group{
+	  padding:0px;
 		.psn-panel-img{
 
 			img{
