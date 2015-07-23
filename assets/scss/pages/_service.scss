@@ -117,9 +117,7 @@ span.selectboxit-arrow-container{
 	border-right:6px solid transparent;
 	border-left:6px solid transparent;
 }
-// .selectboxit-btn.selectboxit-open .selectboxit-options.selectboxit-list{
-// 	@include transform(translateY(-50%));
-// }
+
 .selectboxit-options.selectboxit-list{
 	// @include transition(all 2.4s ease-in-out);
 	@include transform(translateY(-0px));
@@ -222,7 +220,6 @@ span.selectboxit-arrow-container{
 //service-details page
 ///////////////////////
 
-
 .sidebar-align-services{
   padding-top:37px;
 }
@@ -245,11 +242,11 @@ span.selectboxit-arrow-container{
 	h5{
 		margin-top:20px;
 	}
+
+	.learn-item{
+		margin-bottom:30px;
+	}
 }
-
-
-
-
 
 @include breakpoint(tablet){
 
@@ -259,14 +256,14 @@ span.selectboxit-arrow-container{
 
 @include breakpoint(laptop){
   .service-overview{
-	padding: 15px 75px 60px 30px;
+		padding: 15px 75px 60px 30px;
   }
 
-  .service-quote{
-	padding:40px;
+	.service-quote{
+		padding:40px;
 
-	blockquote{
-	  font-size: 25px;
+		blockquote{
+		  font-size: 25px;
+		}
 	}
-  }
 }

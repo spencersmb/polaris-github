@@ -2089,6 +2089,9 @@ span.selectboxit-arrow-container {
 .learn-section h5, .learn-section #map-canvas .firstHeading, #map-canvas .learn-section .firstHeading {
   margin-top: 20px;
 }
+.learn-section .learn-item {
+  margin-bottom: 30px;
+}
 
 @media (min-width: 992px) {
   .service-overview {
