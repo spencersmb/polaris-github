@@ -1,4 +1,5 @@
 .psn-header{
+  position: relative;
 	// needs latest Compass, add '@import "compass"' to your scss
 	background-color: #27459b; // Old browsers
 	@include filter-gradient(#27459b, #121540, horizontal); // IE6-8 fallback on horizontal gradient
@@ -22,5 +23,6 @@
 	img{
 		max-width: 450px;
 		margin:0 auto;
+	  	width:100%;
 	}
 }

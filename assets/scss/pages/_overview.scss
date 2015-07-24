@@ -99,9 +99,10 @@
 		font-weight: 400;
 		letter-spacing: 4px;
 		line-height: 22px;
+	  	font-weight: bold;
 
 		span{
-			padding:0 20px;
+			padding:0 10px 0 15px;
 		}
 
 		a{
@@ -122,18 +123,7 @@
 				color:$blue;
 			}
 
-			&::before, &::after{
-				content:'';
-				color:$white;
-				position:absolute;
-				top:50%;
-				margin-top:-1px;
-				height:1px;
-				width:20px;
-				right:15px;
-				background:$white;
-				@include transition(transform 0.3s 0s);
-			}
+
 		}
 		.collapsed{
 
@@ -204,13 +194,35 @@
 
 	.psn-group{
 
-		.psn-panel-img{
-		  display: block;
-			img{
-				max-width: 170%;
-				left:-125px;
-			}
+	  .psn-title {
+
+		span {
+		  padding: 0 20px;
 		}
+	  }
+
+	  .psn-panel-img{
+		display: block;
+		  img{
+			  max-width: 170%;
+			  left:-125px;
+		  }
+	  }
+
+	  a{
+		&::before, &::after{
+		  content:'';
+		  color:$white;
+		  position:absolute;
+		  top:50%;
+		  margin-top:-1px;
+		  height:1px;
+		  width:20px;
+		  right:15px;
+		  background:$white;
+		  @include transition(transform 0.3s 0s);
+		}
+	  }
 	}
 }
 

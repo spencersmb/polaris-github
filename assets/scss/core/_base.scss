@@ -23,27 +23,19 @@ a{
 }
 
 .psn-container-nav{
-	// margin-top:96px;
-	padding:96px 0 0 0;
+	padding:75px 0 0 0;
 	max-width:1170px;
 	margin:0 auto;
 }
 
 .psn-fluid-nav{
-	// margin-top:96px;
-	padding:96px 0 0 0;
+	padding:75px 0 0 0;
 }
 
 .psn-fluid-inner{
-	margin:60px 0;
+	margin:30px 0;
 	padding:0;
 }
-//
-// .psn-fluid-770{
-// 	max-width: 770px;
-// 	width:100%;
-// 	margin: 0 auto;
-// }
 
 .psn-container-lg{
 	position:relative;
@@ -88,7 +80,7 @@ a{
 	height:100%;
 
   &.inner{
-	padding:0 15px;
+	padding:0px;
   }
 }
 
@@ -133,6 +125,7 @@ a{
 			font-size: 24px;
 			color:$white;
 			font-weight: 400;
+		  	margin: 40px 15px 35px;
 		}
 }
 h2{
@@ -187,6 +180,15 @@ p{
 
 @include breakpoint(tablet){
 
+	.psn-container-nav{
+	  padding:96px 0 0 0;
+	}
+
+	.psn-fluid-inner{
+	  margin:60px 0;
+	  padding:0;
+	}
+
 	.psn-container-inner{
 		padding:0 60px;
 	}
@@ -207,8 +209,15 @@ p{
 	  max-width:900px;
 	  margin:0 auto;
 	  height:100%;
+
+	  &.inner{
+		padding:0 15px;
+	  }
 	}
 
+	.psn-fluid-nav{
+	  padding:96px 0 0 0;
+	}
 
 }
 

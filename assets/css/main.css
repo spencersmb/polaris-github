@@ -28,17 +28,17 @@ a:hover {
 }
 
 .psn-container-nav {
-  padding: 96px 0 0 0;
+  padding: 75px 0 0 0;
   max-width: 1170px;
   margin: 0 auto;
 }
 
 .psn-fluid-nav {
-  padding: 96px 0 0 0;
+  padding: 75px 0 0 0;
 }
 
 .psn-fluid-inner {
-  margin: 60px 0;
+  margin: 30px 0;
   padding: 0;
 }
 
@@ -80,7 +80,7 @@ a:hover {
   height: 100%;
 }
 .psn-content-wrapper.inner {
-  padding: 0 15px;
+  padding: 0px;
 }
 
 .inner-wrapper {
@@ -120,6 +120,7 @@ a:hover {
   font-size: 24px;
   color: #fff;
   font-weight: 400;
+  margin: 40px 15px 35px;
 }
 
 h2 {
@@ -171,6 +172,15 @@ p {
 }
 
 @media (min-width: 768px) {
+  .psn-container-nav {
+    padding: 96px 0 0 0;
+  }
+
+  .psn-fluid-inner {
+    margin: 60px 0;
+    padding: 0;
+  }
+
   .psn-container-inner {
     padding: 0 60px;
   }
@@ -191,6 +201,13 @@ p {
     max-width: 900px;
     margin: 0 auto;
     height: 100%;
+  }
+  .psn-content-wrapper.inner {
+    padding: 0 15px;
+  }
+
+  .psn-fluid-nav {
+    padding: 96px 0 0 0;
   }
 }
 @media (min-width: 992px) {
@@ -224,7 +241,7 @@ p {
 }
 
 .no-headline {
-  padding-top: 63px;
+  padding-top: 33px;
 }
 
 .doc-md {
@@ -338,7 +355,13 @@ p {
   box-shadow: none;
 }
 
+@media (min-width: 768px) {
+  .no-headline {
+    padding-top: 63px;
+  }
+}
 .psn-header {
+  position: relative;
   background-color: #27459b;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF27459B', endColorstr='#FF121540');
@@ -362,10 +385,12 @@ p {
 .psn-logo img {
   max-width: 450px;
   margin: 0 auto;
+  width: 100%;
 }
 
-.navbar-toggle {
-  right: 15px;
+.psn-header .navbar-header {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .psn-nav-home {
@@ -385,6 +410,11 @@ p {
   height: 55px;
   margin: 0 auto;
   z-index: 1030;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  border: none;
+  width: 100%;
 }
 .psn-nav-homepage .navbar-nav {
   margin: 0 auto;
@@ -435,6 +465,7 @@ p {
 .psn-nav-homepage .navbar-collapse {
   background-color: #fff;
   border: 0;
+  margin: 0;
 }
 
 .psn-nav-locations {
@@ -495,7 +526,7 @@ p {
 
 .psn-nav {
   background-color: #fff;
-  height: 96px;
+  height: 75px;
 }
 .psn-nav .navbar-collapse {
   border: 0;
@@ -538,10 +569,10 @@ p {
 .psn-nav .navbar-header {
   padding-left: 20px;
   display: block;
-  height: 96px;
+  height: 75px;
 }
 .psn-nav .navbar-toggle {
-  margin-top: 28px;
+  margin-top: 19px;
   margin-right: 30px;
 }
 .psn-nav .navbar-collapse {
@@ -561,8 +592,12 @@ p {
   border-width: 0 0 5px;
 }
 
+.navbar-brand {
+  width: 180px;
+}
 .navbar-brand img {
   max-width: 200px;
+  width: 100%;
 }
 
 .dropdown-submenu {
@@ -631,6 +666,13 @@ p {
 }
 
 @media (min-width: 768px) {
+  .psn-nav-homepage {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #a99781;
+    border-width: 0 0 5px;
+  }
   .psn-nav-homepage .navbar-nav > li {
     display: inline-block;
   }
@@ -736,6 +778,15 @@ p {
     color: #00237d;
     background-color: #E8E8E8;
   }
+  .psn-nav .navbar-header {
+    padding-left: 20px;
+    display: block;
+    height: 96px;
+  }
+  .psn-nav .navbar-toggle {
+    margin-top: 28px;
+    margin-right: 30px;
+  }
   .psn-nav .navbar-collapse {
     background-color: transparent;
     box-shadow: none;
@@ -743,6 +794,14 @@ p {
 
   .navbar-right {
     margin-right: 0;
+  }
+
+  .navbar-brand {
+    width: 100%;
+  }
+  .navbar-brand img {
+    max-width: 200px;
+    width: 100%;
   }
 }
 footer {
@@ -777,12 +836,13 @@ footer {
 }
 
 .footer-logo {
-  padding: 24px 64px 30px;
+  padding: 24px 0px 30px;
   margin: 0 auto;
 }
 .footer-logo img {
   max-width: 200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .footer-contact {
@@ -818,8 +878,7 @@ footer {
   line-height: 0;
 }
 .footer-contact .fa {
-  display: block;
-  padding-right: 0;
+  padding-right: 10px;
   padding-bottom: 15px;
 }
 .footer-contact .fax {
@@ -857,7 +916,7 @@ footer {
 }
 
 .social-footer-wrapper {
-  margin-top: 50px;
+  margin-top: 15px;
 }
 .social-footer-wrapper a {
   margin: 0 15px;
@@ -875,15 +934,30 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .footer-logo {
+    padding: 24px 64px 30px;
+    margin: 0 auto;
+  }
+  .footer-logo img {
+    max-width: 200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   .footer-wrapper {
     padding: 40px 30px 0;
   }
-  .footer-wrapper .social {
-    text-align: left;
-    margin-bottom: 0;
+
+  .social-footer-wrapper {
+    margin-top: 0px;
   }
-  .footer-wrapper .social a {
-    padding-right: 20px;
+  .social-footer-wrapper .social {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .social-footer-wrapper .social a {
+    margin: 0 15px;
+    padding-right: 0px;
   }
 
   .footer-info-bar {
@@ -1009,6 +1083,7 @@ footer {
     display: inline-block;
     padding-left: 20px;
     padding-right: 0;
+    margin: 0;
   }
 
   .copyright {
@@ -1245,7 +1320,7 @@ footer {
 }
 
 label.btn {
-  padding: 18px 60px;
+  padding: 18px 20px;
   white-space: normal;
   max-width: 615px;
   height: 113px;
@@ -1366,10 +1441,11 @@ label .glyphicon {
 }
 #psn-nav-home .panel .readMore {
   font-weight: 400;
-  font-size: 1.25em;
-  position: absolute;
+  font-size: 16px;
+  position: relative;
   bottom: 0;
-  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 0;
 }
 #psn-nav-home .panel a {
   position: absolute;
@@ -1379,7 +1455,7 @@ label .glyphicon {
   top: 0;
 }
 #psn-nav-home .panel h3 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 100;
   line-height: 34px;
 }
@@ -1566,6 +1642,10 @@ label .glyphicon {
 }
 
 @media (min-width: 768px) {
+  label.btn {
+    padding: 18px 60px;
+  }
+
   #psn-nav-home .quiz {
     position: absolute;
     top: 50%;
@@ -1574,6 +1654,14 @@ label .glyphicon {
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+  }
+  #psn-nav-home .panel .readMore {
+    font-weight: 400;
+    font-size: 1.25em;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 25px;
+    padding-top: 0;
   }
   #psn-nav-home .panel.panel-horizontal {
     display: table;
@@ -1689,9 +1777,10 @@ label .glyphicon {
   font-weight: 400;
   letter-spacing: 4px;
   line-height: 22px;
+  font-weight: bold;
 }
 .psn-group .psn-title span {
-  padding: 0 20px;
+  padding: 0 10px 0 15px;
 }
 .psn-group .psn-title a {
   display: block;
@@ -1708,20 +1797,6 @@ label .glyphicon {
 }
 .psn-group .psn-title a:hover {
   color: #00237d;
-}
-.psn-group .psn-title a::before, .psn-group .psn-title a::after {
-  content: '';
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  height: 1px;
-  width: 20px;
-  right: 15px;
-  background: #fff;
-  -webkit-transition: transform 0.3s 0s;
-  -o-transition: transform 0.3s 0s;
-  transition: transform 0.3s 0s;
 }
 .psn-group .psn-title .collapsed::after {
   -moz-transform: rotate(90deg);
@@ -1774,12 +1849,29 @@ label .glyphicon {
     padding: 0 15px;
   }
 
+  .psn-group .psn-title span {
+    padding: 0 20px;
+  }
   .psn-group .psn-panel-img {
     display: block;
   }
   .psn-group .psn-panel-img img {
     max-width: 170%;
     left: -125px;
+  }
+  .psn-group a::before, .psn-group a::after {
+    content: '';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    height: 1px;
+    width: 20px;
+    right: 15px;
+    background: #fff;
+    -webkit-transition: transform 0.3s 0s;
+    -o-transition: transform 0.3s 0s;
+    transition: transform 0.3s 0s;
   }
 }
 @media (min-width: 992px) {
@@ -1816,7 +1908,7 @@ label .glyphicon {
   left: 0;
   bottom: 0;
   display: block;
-  width: 80%;
+  width: 100%;
   background-color: #ffa519;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFA519', endColorstr='#FFFF1E1E');
@@ -1829,10 +1921,11 @@ label .glyphicon {
 }
 .doctor-name h2 {
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   color: #fff;
-  font-size: 18px;
-  margin-left: 30px;
+  font-size: 16px;
+  margin-left: 15px;
+  letter-spacing: 4px;
 }
 
 .info-block {
@@ -2089,6 +2182,9 @@ span.selectboxit-arrow-container {
 .learn-section h5, .learn-section #map-canvas .firstHeading, #map-canvas .learn-section .firstHeading {
   margin-top: 20px;
 }
+.learn-section .learn-item {
+  margin-bottom: 30px;
+}
 
 @media (min-width: 992px) {
   .service-overview {
@@ -2104,17 +2200,14 @@ span.selectboxit-arrow-container {
 }
 .office-wrapper {
   margin-bottom: 80px;
-  padding: 0 15px;
 }
 .office-wrapper .office-content {
   width: 100%;
   max-width: 970px;
   margin: 20px auto 0;
-  padding-right: 40px;
 }
 .office-wrapper .office-content .title {
-  text-align: right;
-  padding-left: 40px;
+  text-align: center;
 }
 .office-wrapper .office-header img {
   margin: 0 auto;
@@ -2132,7 +2225,7 @@ span.selectboxit-arrow-container {
 }
 .office-wrapper .office-links a {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   border-right: 1px solid #a99781;
   line-height: 45px;
   color: #797e83;
@@ -2143,9 +2236,13 @@ span.selectboxit-arrow-container {
 .office-wrapper .office-links a:nth-last-child(1) {
   border-right: 0;
   padding-right: 0;
+  padding-left: 20px;
 }
 
 @media (min-width: 768px) {
+  .office-wrapper {
+    padding: 0 15px;
+  }
   .office-wrapper .office-content {
     margin: 20px auto 0;
     padding-right: 0px;

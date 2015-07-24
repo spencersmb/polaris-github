@@ -1,16 +1,14 @@
 .office-wrapper{
 	margin-bottom: 80px;
-  	padding: 0 15px;
+
 
 	.office-content{
 		width:100%;
 		max-width: 970px;
 		margin:20px auto 0;
-		padding-right:40px;
 
 		.title{
-			text-align: right;
-			padding-left: 40px;
+			text-align: center;
 		}
 	}
 	.office-header{
@@ -36,7 +34,7 @@
 
 		a{
 			display: inline-block;
-			padding: 0 20px;
+			padding: 0 20px 0 0;
 			border-right: 1px solid $gold;
 			line-height: 45px;
 			color:$grey;
@@ -48,6 +46,7 @@
 			&:nth-last-child(1){
 				border-right: 0;
 				padding-right:0;
+			  	padding-left:20px;
 			}
 		}
 
@@ -60,6 +59,7 @@
 @include breakpoint(tablet){
 
   .office-wrapper{
+	padding: 0 15px;
 
 	.office-content{
 	  margin:20px auto 0;

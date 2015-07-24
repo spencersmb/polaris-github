@@ -26,8 +26,7 @@
 }
 
 .no-headline{
-  padding-top:63px;
-
+  padding-top:33px;
 }
 
 .doc-md{
@@ -162,4 +161,15 @@ $top:-80px;
     border-color: $tan;
     box-shadow: none;
   }
+}
+
+@include breakpoint(tablet){
+  .no-headline{
+    padding-top:63px;
+  }
+
+}
+
+@include breakpoint(laptop){
+
 }
