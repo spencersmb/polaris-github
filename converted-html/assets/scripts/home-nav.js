@@ -36,13 +36,19 @@ $(function(){
         // }
 
         $('.btn-back').click(function(){
-          setHeight(nav0Height);
+            setHeight(nav0Height);
             $('#nav_why').fadeOut();
             $('#nav_what').fadeOut();
             $('#nav_visit').fadeOut();
             $('#nav_doctor').fadeOut();
             $('#nav_opinions').fadeOut();
             $('#nav_stories').fadeOut();
+
+            //remove classes using back btn
+            $('#nav_0').children('label').each(function(index){
+              $(this).removeClass('active');
+            });
+
             $('#nav_0').fadeIn();
 
         });

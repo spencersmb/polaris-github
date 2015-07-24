@@ -1,12 +1,24 @@
 function initialize() {
 
-    // var locObject =
-    //   {
-    //     location1: [33.9195276,-84.3493754],
-    //     location2: [34.1791226,-84.1391884],
-    //     location3: [33.8076858,-84.3937393],
-    //     location4: [34.1031764,-84.5340736]
-    //   };
+    var locObject =
+      {
+        location1: [33.9195276,-84.3493754],
+        title: 'atlanta',
+        office: 'Atlanta Office',
+        details: '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Atlanta Office</h1>'+
+          '<div id="bodyContent">'+
+          '<p>Perimeter Town Center' +
+          '<br>1150 Hammond Dr Bldg E'+
+          '<br>Suite 400'+
+          '<br>Atlanta, GA 30328'+
+          '<br>404.445.5581</p>'+
+          // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+          '</div>'+
+          '</div>'
+      };
 
     var loc1 = new google.maps.LatLng(33.9195276,-84.3493754);
     var loc2 = new google.maps.LatLng(34.1791226,-84.1391884);
@@ -48,9 +60,9 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 
-    // var markerObject = {
-    //
-    // };
+    var markerObject = {
+
+    };
 
     // Atlanta Office
     var marker1 = new google.maps.Marker({
@@ -105,7 +117,31 @@ function initialize() {
       }
     }
 
+    var locations = [];
 
+    function locationLoop(){
+      for(var i = 0; i < navElement.length; i++ ){
+        var zerobased = i+1;
+        var item = navElement[i].children[0];
+        var lat = "location" + zerobased;
+        locations["loc"+ zerobased] =  new google.maps.LatLng(locObject[lat][0], locObject[lat][1]);
+        // console.log(locations);
+        console.log(locations['loc'+zerobased]);
+        locationItems(item.id, locations['loc'+zerobased] );
+      }
+    }
+
+    function locationItems(id, lat){
+      var button = document.getElementById(id);
+        button.onclick = function(){
+          map.panTo(lat);
+          atlanta.open(map,marker1);
+          console.log('for loop');
+        };
+    }
+
+    //build longitude + Latitude Object
+    locationLoop();
 
 
 
@@ -275,9 +311,7 @@ function initialize() {
         content: cantonDetails
     });
 
-    map.panTo(loc1);
     atlanta.open(map,marker1);
-
 
     google.maps.event.addListener(marker1, 'click', function() {
       atlanta.open(map,marker1);
