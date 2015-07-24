@@ -1848,6 +1848,9 @@ label .glyphicon {
     position: relative;
     padding: 0 15px;
   }
+  .overlap-bottom-wrapper .below-content {
+    padding: 0 15px !important;
+  }
 
   .psn-group .psn-title span {
     padding: 0 20px;
@@ -2408,6 +2411,9 @@ span.selectboxit-arrow-container {
 .hospital-logo-container {
   width: inherit;
   float: none;
+}
+.hospital-logo-container a {
+  display: block;
 }
 .hospital-logo-container img {
   margin: 0 auto;

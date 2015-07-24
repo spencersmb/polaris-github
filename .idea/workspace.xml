@@ -77,31 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_service.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/pages/_service.scss">
+      <file leaf-file-name="_hospital.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/pages/_hospital.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.0" vertical-offset="3838" max-vertical-offset="5225">
-              <caret line="258" column="36" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
+            <state vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="988">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locations.liquid" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/locations.liquid">
+      <file leaf-file-name="hospitals.liquid" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/hospitals.liquid">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="703">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/scripts/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.97238374" vertical-offset="1497" max-vertical-offset="5795">
-              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.48939395" vertical-offset="988" max-vertical-offset="1900">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -126,8 +116,6 @@
         <option value="$PROJECT_DIR$/assets/scss/vendor/_index.scss" />
         <option value="$PROJECT_DIR$/assets/scss/vendor/bootstrap-sass/_bootstrap.scss" />
         <option value="$PROJECT_DIR$/templates/layouts/layout.liquid" />
-        <option value="$PROJECT_DIR$/templates/hospitals.liquid" />
-        <option value="$PROJECT_DIR$/assets/scss/pages/_hospital.scss" />
         <option value="$PROJECT_DIR$/templates/news.liquid" />
         <option value="$PROJECT_DIR$/templates/news-detail.liquid" />
         <option value="$PROJECT_DIR$/assets/scss/pages/_news.scss" />
@@ -141,7 +129,6 @@
         <option value="$PROJECT_DIR$/assets/scss/modules/_header.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_footer.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_nav.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/pages/_overview.scss" />
         <option value="$PROJECT_DIR$/assets/scss/core/_base.scss" />
         <option value="$PROJECT_DIR$/assets/scss/pages/_doctor-details.scss" />
         <option value="$PROJECT_DIR$/assets/scss/core/_helpers.scss" />
@@ -154,6 +141,9 @@
         <option value="$PROJECT_DIR$/templates/includes/footer.liquid" />
         <option value="$PROJECT_DIR$/templates/locations.liquid" />
         <option value="$PROJECT_DIR$/assets/scripts/map.js" />
+        <option value="$PROJECT_DIR$/assets/scss/pages/_overview.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/pages/_hospital.scss" />
+        <option value="$PROJECT_DIR$/templates/hospitals.liquid" />
       </list>
     </option>
   </component>
@@ -252,6 +242,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -267,7 +261,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mixture_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polaris-github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,13 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hospitals.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36377025" vertical-offset="247" max-vertical-offset="1843">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/news.liquid">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55964655" vertical-offset="0" max-vertical-offset="3211">
@@ -569,13 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3043478" vertical-offset="475" max-vertical-offset="912">
           <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/pages/_hospital.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29290617" vertical-offset="233" max-vertical-offset="912">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -656,26 +654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/pages/_overview.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.360606" vertical-offset="2019" max-vertical-offset="5073">
-          <caret line="223" column="9" selection-start-line="223" selection-start-column="9" selection-end-line="223" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/core/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7272727" vertical-offset="3325" max-vertical-offset="4503">
           <caret line="180" column="18" selection-start-line="180" selection-start-column="18" selection-end-line="180" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/about-overview.liquid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3378788" vertical-offset="7605" max-vertical-offset="8265">
-          <caret line="323" column="48" selection-start-line="323" selection-start-column="48" selection-end-line="323" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -705,14 +687,6 @@
           <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
           <caret line="182" column="38" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="38" />
           <caret line="201" column="38" selection-start-line="201" selection-start-column="38" selection-end-line="201" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/core/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.642857" vertical-offset="874" max-vertical-offset="1881">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -768,26 +742,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/pages/_service.scss">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.0" vertical-offset="3838" max-vertical-offset="5225">
-          <caret line="258" column="36" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.97238374" vertical-offset="1497" max-vertical-offset="5795">
+          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/locations.liquid">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="703">
+        <state vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="703">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/map.js">
+    <entry file="file://$PROJECT_DIR$/templates/about-overview.liquid">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97238374" vertical-offset="1497" max-vertical-offset="5795">
-          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+        <state vertical-scroll-proportion="9.672728" vertical-offset="1444" max-vertical-offset="8265">
+          <caret line="323" column="48" selection-start-line="323" selection-start-column="48" selection-end-line="323" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/pages/_overview.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7924242" vertical-offset="1183" max-vertical-offset="5149">
+          <caret line="194" column="33" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/pages/_service.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6121212" vertical-offset="3838" max-vertical-offset="5225">
+          <caret line="258" column="36" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/core/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.642857" vertical-offset="874" max-vertical-offset="1881">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/pages/_hospital.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="988">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hospitals.liquid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48939395" vertical-offset="988" max-vertical-offset="1900">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
           <folding />
         </state>
       </provider>
