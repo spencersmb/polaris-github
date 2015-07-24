@@ -78,12 +78,12 @@ function initialize() {
     });
 
     //establish link variables
-    var getDirections = document.getElementById('getDirections');
-    var directionLink = getDirections.getElementsByTagName("a");
+    //var getDirections = document.getElementById('getDirections');
+    //var directionLink = getDirections.getElementsByTagName("a");
 
     //Set active on load
     document.getElementById('locationOne').parentElement.classList.add('active');
-    directionLink[0].setAttribute('href', buildLat(loc1));
+    //directionLink[0].setAttribute('href', buildLat(loc1));
 
     function buildLat( location ){
       var myLocation = location.A;
@@ -96,57 +96,55 @@ function initialize() {
     //Loop function to remove active state
     var nav = document.getElementById('location-nav');
     var navElement = nav.getElementsByTagName("li");
-    // console.log(navElement);
 
     function removeActive(){
       for(var i = 0; i < navElement.length; i++ ){
         navElement[i].classList.remove("active");
-        // console.log(  navElement[i].getElementsByTagName("a"));
       }
     }
 
-
-
-
-
-    $('#locationOne').click(function(){
+    $('#locationOne').click(function(event){
+        event.preventDefault();
         map.panTo(loc1);
         atlanta.open(map,marker1);
         removeActive();
         this.parentElement.classList.add('active');
 
         //build link
-        directionLink[0].setAttribute('href', buildLat(loc1));
+        //directionLink[0].setAttribute('href', buildLat(loc1));
     });
 
-    $('#locationTwo').click(function(){
+    $('#locationTwo').click(function(event){
+        event.preventDefault();
         map.panTo(loc2);
         cumming.open(map,marker2);
         removeActive();
         this.parentElement.classList.add('active');
 
         //build link
-        directionLink[0].setAttribute('href', buildLat(loc2));
+        //directionLink[0].setAttribute('href', buildLat(loc2));
     });
 
-    $('#locationThree').click(function(){
+    $('#locationThree').click(function(event){
+        event.preventDefault();
         map.panTo(loc3);
         buckhead.open(map,marker3);
         removeActive();
         this.parentElement.classList.add('active');
 
         //build link
-        directionLink[0].setAttribute('href', buildLat(loc3));
+        //directionLink[0].setAttribute('href', buildLat(loc3));
     });
 
-    $('#locationFour').click(function(){
+    $('#locationFour').click(function(event){
+        event.preventDefault();
         map.panTo(loc4);
         canton.open(map,marker4);
         removeActive();
         this.parentElement.classList.add('active');
 
         //build link
-        directionLink[0].setAttribute('href', buildLat(loc4));
+        //directionLink[0].setAttribute('href', buildLat(loc4));
     });
 
     function ZoomControl(controlDiv, map) {
@@ -215,7 +213,7 @@ function initialize() {
       '<br>Suite 400'+
       '<br>Atlanta, GA 30328'+
       '<br>404.445.5581</p>'+
-      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      '<a href="' + buildLat(loc1) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
 
@@ -229,7 +227,7 @@ function initialize() {
       '<br>Suite 345'+
       '<br>Cumming, GA 30041'+
       '<br>404.445.5581</p>'+
-      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      '<a href="' + buildLat(loc2) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
 
@@ -244,7 +242,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
-      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      '<a href="' + buildLat(loc3) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
 
@@ -258,7 +256,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
-      // '<p>Directions: Google Map, <a href="#" target="_blank">Click Here</a></p>'+
+      '<a href="' + buildLat(loc4) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
 

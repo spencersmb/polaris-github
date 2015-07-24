@@ -54,7 +54,7 @@ $dark-blue         : #070d3f;
 $light-gold        : #ddd1c5;
 $blue              : #00237d;//warnings
 $navy-blue         : #2b3153;//info
-$elephant	   : #143446;
+$elephant	       : #143446;
 $light-gray        : #e5e5e5;
 $med-gray          : #d1d1d1;
 
@@ -70,6 +70,7 @@ $faqBG             : #e8e0d3;
 $faqTXT            : #938876;
 $blue              : $blue;
 $link-hover        : #f75b1e;
+$light-blue        : lighten($blue, 50%);
 
 $shadow-color      : rgba($black, .2);
 

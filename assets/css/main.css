@@ -2188,7 +2188,7 @@ span.selectboxit-arrow-container {
 
 @media (min-width: 992px) {
   .service-overview {
-    padding: 15px 75px 60px 30px;
+    padding: 40px 75px 40px 80px;
   }
 
   .service-quote {
@@ -2294,7 +2294,6 @@ span.selectboxit-arrow-container {
 
 .conditions-table {
   text-align: center;
-  margin-bottom: 30px;
 }
 .conditions-table:nth-last-child(1) {
   margin-bottom: 0;
@@ -2303,6 +2302,21 @@ span.selectboxit-arrow-container {
   margin-left: -5px;
   margin-right: -5px;
   background-color: #fff;
+}
+.conditions-table .learn-section {
+  margin-bottom: 15px;
+}
+.conditions-table .learn-section .blue-border {
+  margin-bottom: 0;
+}
+.conditions-table h2 {
+  text-align: left;
+  color: #00237d;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.conditions-table h3 {
+  text-align: left;
 }
 .conditions-table h4 {
   font-size: 18px;
@@ -2348,6 +2362,32 @@ span.selectboxit-arrow-container {
 }
 .conditions-table td a:active, .conditions-table td a:focus {
   text-decoration: none;
+}
+
+.blocks-service {
+  padding-bottom: 20px;
+}
+.blocks-service .grid-item a {
+  color: #fff;
+  background-color: #00237d;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.blocks-service .grid-item a:hover {
+  color: #fff;
+  background-color: #f75b1e;
+}
+
+.blocks-conditions .grid-item a {
+  color: #fff;
+  background-color: #a99781;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.blocks-conditions .grid-item a:hover {
+  background-color: #ddd1c5;
 }
 
 @media (min-width: 768px) {
