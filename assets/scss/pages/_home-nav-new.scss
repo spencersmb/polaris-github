@@ -169,6 +169,10 @@ label .glyphicon {
     font-weight: 100;
     line-height: 34px;
   }
+
+  .panel p{
+    color:$white;
+  }
   .panel-group .panel+.panel {
     margin-top: 25px;
   }

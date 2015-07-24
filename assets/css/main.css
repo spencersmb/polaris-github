@@ -1301,6 +1301,15 @@ footer {
     border-left: 0;
   }
 }
+.popover .popover-title {
+  margin: 0;
+  padding: 5px 0 5px 15px;
+}
+.popover h3 {
+  margin: 0;
+  padding: 0;
+}
+
 #nav_why, #nav_what, #nav_visit,
 #nav_doctor, #nav_opinions, #nav_stories {
   display: none;
@@ -1458,6 +1467,9 @@ label .glyphicon {
   font-size: 24px;
   font-weight: 100;
   line-height: 34px;
+}
+#psn-nav-home .panel p {
+  color: #fff;
 }
 #psn-nav-home .panel-group .panel + .panel {
   margin-top: 25px;
