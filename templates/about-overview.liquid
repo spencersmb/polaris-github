@@ -319,12 +319,14 @@
 {% block scripts %}
  <script>
 
-	(function(){
+	 $(window).on('load', function() {
 
 		//change height of content to set offset paragraph correctly
 		var belowContent = $('.below-content');
 		var contentHeight = belowContent.height();
 		var offset = parseInt(belowContent.css('top'));
+		console.log(contentHeight);
+		console.log(offset);
 
 		//Use addition here because the offset is negative value
 		var overlapHeight = contentHeight + offset;
@@ -332,7 +334,7 @@
 		//Set overlap height
 		$('.overlap-bottom-wrapper').height(overlapHeight);
 
-	})();
+	});
 
 </script>
 {% endblock %}
