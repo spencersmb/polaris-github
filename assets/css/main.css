@@ -2253,10 +2253,10 @@ span.selectboxit-arrow-container {
   text-decoration: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .sidebar-align-conditions {
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
   }
 }
 .hospital-wrapper {

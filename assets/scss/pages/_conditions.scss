@@ -99,15 +99,14 @@
 
 @include breakpoint(tablet){
 
+  .sidebar-align-conditions{
+	padding-top:10px;
+	padding-bottom:30px;
+  }
 
 
 }
 
 @include breakpoint(laptop){
-
-  .sidebar-align-conditions{
-	padding-top:10px;
-	padding-bottom:0px;
-  }
 
 }
