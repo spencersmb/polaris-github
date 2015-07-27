@@ -1399,6 +1399,84 @@ footer {
   padding: 0;
 }
 
+h1 {
+  font-size: 95%;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 125%;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 150%;
+  }
+}
+
+p#intro {
+  font-size: 73%;
+}
+@media (min-width: 768px) {
+  p#intro {
+    font-size: 95%;
+  }
+}
+@media (min-width: 992px) {
+  p#intro {
+    font-size: 100%;
+  }
+}
+
+a {
+  color: #fff;
+  display: block;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.modal, .modal-footer {
+  text-align: center;
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+
 #nav_why, #nav_what, #nav_visit,
 #nav_doctor, #nav_opinions, #nav_stories {
   display: none;
