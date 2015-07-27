@@ -42,6 +42,7 @@ $dropdown-bg-mobile: #E8E8E8;
 		margin: 0 auto;
 		float:none;
 		text-align: center;
+    padding-top:0;
 
 		&>li{
 			// display: inline-block;
@@ -397,13 +398,13 @@ $dropdown-bg-mobile: #E8E8E8;
 	  border-width: 0 0 5px;
 
 		.navbar-nav{
+      padding-top:1px;
 
 			&>li{
 				display: inline-block;
 
 				&>a{
 					color:$white;
-
 
 					&:focus{
 						color:$white;
@@ -417,7 +418,7 @@ $dropdown-bg-mobile: #E8E8E8;
 			.dropdown-menu{
 				text-align: left;
 				background-color: $white;
-				margin-top: 5px;
+				margin-top: 0;
 
 				&>li{
 
@@ -532,7 +533,7 @@ $dropdown-bg-mobile: #E8E8E8;
 		height:96px;
 
 		.navbar-nav{
-			padding-top:41px;
+			padding-top:42px;
 			margin:0;
 
 			&>li{
@@ -541,9 +542,8 @@ $dropdown-bg-mobile: #E8E8E8;
 			}
 
 			.dropdown-menu{
-				margin-top: 5px;
+				margin-top: 0;
 				text-align: left;
-				background-color: $white;
 
 				&>li{
 
