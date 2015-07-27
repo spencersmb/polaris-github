@@ -131,10 +131,10 @@ a:hover {
 
 .blue-header h2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   font-weight: 400;
-  margin: 40px 15px 35px;
+  margin: 25px 15px 25px;
 }
 
 h2 {
@@ -196,6 +196,14 @@ p {
 
   h4 {
     font-size: 34px;
+  }
+
+  .blue-header h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin: 40px 15px 35px;
   }
 
   .psn-container-nav {
@@ -644,6 +652,7 @@ p {
 }
 .psn-nav .navbar-header {
   padding-left: 20px;
+  padding-top: 4px;
   display: block;
   height: 75px;
 }
@@ -1017,6 +1026,7 @@ footer {
   margin-top: 15px;
 }
 .social-footer-wrapper a {
+  display: inline-block;
   margin: 0 15px;
 }
 .social-footer-wrapper .social {
