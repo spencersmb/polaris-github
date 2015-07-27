@@ -3,9 +3,6 @@
   margin-bottom:40px;
 }
 
-.hospital-desc{
-	padding-left:25px;
-}
 
 .hospital-logo-container{
 	width:inherit;
@@ -22,7 +19,9 @@
 }
 
 @include breakpoint(tablet){
-
+  .hospital-desc{
+	padding-left:25px;
+  }
 }
 
 @include breakpoint(laptop){

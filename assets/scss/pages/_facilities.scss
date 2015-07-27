@@ -1,6 +1,5 @@
 .office-wrapper{
-	margin-bottom: 80px;
-
+	margin-bottom: 40px;
 
 	.office-content{
 		width:100%;
@@ -24,7 +23,7 @@
 	}
 
 	.office-links{
-		margin-top: 20px;
+		margin-top: 10px;
 		text-align: center;
 	  	margin-bottom:20px;
 
@@ -59,7 +58,13 @@
 @include breakpoint(tablet){
 
   .office-wrapper{
+	margin-bottom: 80px;
 	padding: 0 15px;
+
+	.office-links {
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}
 
 	.office-content{
 	  margin:20px auto 0;

@@ -8,7 +8,7 @@
 		.panel-heading {
 			border: none;
 			background-color: #fff;
-			padding:25px 100px;;
+			padding:25px 20px;
 			@include transition(all .3s);
 
 			.panel-title {
@@ -53,8 +53,8 @@
 			color: $dk-gold;
 			font-size: em(18px);
 			padding-top:0;
-			padding-left:100px;
-			padding-right:100px;
+			padding-left:20px;
+			padding-right:20px;
 			line-height: 24px;
 		}
 	}
@@ -91,4 +91,28 @@
 	&:last-child {
 		border-bottom: none;
 	}
+}
+
+@include breakpoint(tablet){
+
+  #psn-faq {
+
+	// Accordion Styles
+	.panel {
+
+	  .panel-heading {
+		padding: 25px 100px;
+	  }
+
+	  .panel-body {
+		padding-left:100px;
+		padding-right:100px;
+	  }
+	}
+  }
+
+}
+
+@include breakpoint(laptop){
+
 }

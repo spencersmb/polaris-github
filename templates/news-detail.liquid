@@ -2,23 +2,10 @@
 
 <div class="container-fluid psn-fluid-nav tan-bg">
 
-	<div class="news-controls">
-		<div class="left">
-			<i class="fa fa-arrow-left pull-left"></i>
-			<span class="textLeft">Prev Article</span>
-			<a href="#"></a>
-		</div>
-		<div class="right ">
-			<i class="fa fa-arrow-right pull-right"></i>
-			<span class="textRight">Next Article</span>
-			<a href="#"></a>
-		</div>
-	</div>
-
 	<div class="psn-content-wrapper">
-
+		<!-- TODO: Remove no-padding on inner-wrapper div
 			<!-- Feature article -->
-			<div class="col-xs-12 inner-wrapper white-bg no-padding news-wrapper">
+			<div class="col-xs-12 inner-wrapper white-bg news-wrapper">
 
 				<article class="psn-article">
 
@@ -87,32 +74,50 @@
 				</article>
 				<!-- end article -->
 
-				<!-- Start Related Articles -->
-				<div class="news-related">
-					<h5>Similar Articles</h5>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<a href="#">Anatomy of the Spine</a>
-							<a href="#">Nervous System</a>
-							<a href="#">Different types of Spinal Stenosis</a>
-							<a href="#">The most common Symptoms of a spinal injury</a>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<a href="#">Different types of Spinal Stenosis</a>
-							<a href="#">The most common Symptoms of a spinal injury</a>
-							<a href="#">Anatomy of the Spine</a>
-							<a href="#">Nervous System</a>
-						</div>
-					</div>
 
-				</div>
 
 
 			</div>
 			<!-- end feature article -->
 
+
+
 	</div>
 	<!-- end content wapper -->
+
+	<!-- TODO: edit umbraco to change places of arrows and related articles -->
+	<div class="news-controls">
+		<div class="left">
+			<i class="fa fa-arrow-left pull-left"></i>
+			<span class="textLeft">Prev Article</span>
+			<a href="#"></a>
+		</div>
+		<div class="right ">
+			<i class="fa fa-arrow-right pull-right"></i>
+			<span class="textRight">Next Article</span>
+			<a href="#"></a>
+		</div>
+	</div>
+
+	<!-- Start Related Articles -->
+	<div class="news-related">
+		<h5>Similar Articles</h5>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<a href="#">Anatomy of the Spine</a>
+				<a href="#">Nervous System</a>
+				<a href="#">Different types of Spinal Stenosis</a>
+				<a href="#">The most common Symptoms of a spinal injury</a>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<a href="#">Different types of Spinal Stenosis</a>
+				<a href="#">The most common Symptoms of a spinal injury</a>
+				<a href="#">Anatomy of the Spine</a>
+				<a href="#">Nervous System</a>
+			</div>
+		</div>
+
+	</div>
 
 </div>
 <!-- end container fluid -->
@@ -132,7 +137,7 @@
 		$('.right').mouseenter(function(event) {
 			//check if height is larger than tag
 			if(rightHeight > originalHeight){
-				$(this).addClass('over').css('height', rightHeight);
+				$(this).addClass('over');
 			}else{
 				$(this).addClass('over');
 			}
@@ -141,14 +146,14 @@
 		});
 
 		$('.right').mouseleave(function(event) {
-			$(this).removeClass('over').css('height', originalHeight);
+			$(this).removeClass('over');
 			$(this).children('span').removeClass('slideRight');
 		});
 
 		$('.left').mouseenter(function(event) {
 			//check if height is larger than tag
 			if(rightHeight > originalHeight){
-				$(this).addClass('over').css('height', leftHeight);
+				$(this).addClass('over');
 			}else{
 				$(this).addClass('over');
 			}
@@ -157,7 +162,7 @@
 		});
 
 		$('.left').mouseleave(function(event) {
-			$(this).removeClass('over').css('height', originalHeight);
+			$(this).removeClass('over');
 			$(this).children('span').removeClass('slideLeft');
 		});
 

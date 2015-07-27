@@ -57,9 +57,17 @@ a{
 	padding:0 30px;
 
 	.desc{
-		h2{
-			color:$blue;
-			margin: 30px 0 10px;
+		h2:first-of-type{
+		  color:$blue;
+		  letter-spacing: initial;
+		  margin: 10px 0 15px;
+		}
+
+	  	h2{
+		  color:$blue;
+		  letter-spacing: initial;
+		  margin-bottom: 10px;
+		  line-height: 24px;
 		}
 
 		a{
@@ -69,6 +77,14 @@ a{
 				color:$link-hover;
 			}
 		}
+
+	  	h3:first-child {
+		  font-size:28px;
+		  margin-top: 0;
+		  margin-bottom: 0;
+		  line-height: 32px;
+		}
+
 	}
 }
 
@@ -78,6 +94,7 @@ a{
 	max-width:900px;
 	margin:0 auto;
 	height:100%;
+  	display: table;
 
   &.inner{
 	padding:0px;
@@ -128,28 +145,28 @@ a{
 		  	margin: 40px 15px 35px;
 		}
 }
+
 h2{
 	text-transform:uppercase;
-	letter-spacing:2px;
 	color:$polaris-blue;
 	font-size:18px;
 	letter-spacing:$letterspace;
 	font-weight:600;
 	margin-top:35px;
-	margin-bottom:40px;
+	margin-bottom:20px;
 	line-height:28px;
 }
 
 h3{
-	font-size:36px;
+	font-size:28px;
 	font-weight:300;
 	margin-bottom:25px;
-	line-height: 44px;
+	line-height: 32px;
 	color:$gold;
 }
 
 h4{
-	font-size: 34px;
+	font-size: 24px;
 	font-weight: 300;
 	color:$gold;
 	text-transform: uppercase;
@@ -173,12 +190,25 @@ p{
 }
 
 .intro-text{
-	padding:0 30px;
+	padding:0 15px;
 	margin-bottom:60px;
 }
 
 
 @include breakpoint(tablet){
+
+  h2{
+	margin-bottom:40px;
+  }
+
+  h3{
+	font-size:36px;
+	line-height: 44px;
+  }
+
+  h4{
+	font-size: 34px;
+  }
 
 	.psn-container-nav{
 	  padding:96px 0 0 0;
@@ -191,11 +221,21 @@ p{
 
 	.psn-container-inner{
 		padding:0 60px;
+
+	  .desc{
+		& h2:first-of-type {
+		  margin: 30px 0 10px;
+		}
+
+		& h3:first-of-type {
+		  font-size:36px;
+		  line-height: 44px;
+		}
+	  }
 	}
 
 	.intro-text{
-		padding:0 60px;
-		margin-bottom:60px;
+		padding:0 30px;
 	}
 
 	.inner-wrapper{
@@ -222,6 +262,10 @@ p{
 }
 
 @include breakpoint(laptop){
+
+  .intro-text{
+	padding:0 60px;
+  }
 
   .inner-wrapper{
 	margin-bottom:50px;

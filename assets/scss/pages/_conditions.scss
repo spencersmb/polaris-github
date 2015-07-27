@@ -10,23 +10,13 @@
  }
 }
 
-.desc{
-	h2 {
-		letter-spacing: initial;
-		margin: 0;
-	}
-	h3 {
-		margin-top: 0;
-	}
-}
-
 .sidebar-align-conditions{
   padding-top:10px;
   padding-bottom:30px;
 }
 
 .conditions-padding{
-	padding:40px 80px;
+	padding:40px 20px;
 }
 
 .conditions-table {
@@ -54,8 +44,9 @@
 	  text-align: center;
 	  color:$blue;
 	  margin-top:0;
-    margin-top:30px;
+	  margin-top:30px;
 	  margin-bottom: 20px;
+	  padding:0 20px;
 	}
 
   	h3{
@@ -120,6 +111,17 @@
 }
 
 @include breakpoint(tablet){
+
+
+  .conditions-padding{
+	padding:40px 80px;
+  }
+
+  .conditions-table{
+	h2{
+	  padding:0;
+	}
+  }
 
   .sidebar-align-conditions{
 	padding-top:10px;

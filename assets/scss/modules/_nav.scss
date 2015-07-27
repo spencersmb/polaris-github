@@ -1,3 +1,5 @@
+
+
 $dropdown-bg-mobile: #E8E8E8;
 
 .psn-header{
@@ -116,62 +118,88 @@ $dropdown-bg-mobile: #E8E8E8;
 	background-color:transparent;
 	margin:0 auto;
 
-	.nav-locations{
-		margin: 0 auto;
-		float:none;
-		text-align: center;
-		list-style: none;
+  .mobile-address{
+	color:$white;
+	padding:0;
+	float:left;
 
-		&>li{
-			// display: inline-block;
-			float:none;
-
-			&>a{
-				color:$blue;
-				padding:15px 25px 15px 25px;
-
-				&:focus{
-					// color:$white;
-				}
-				&:hover{
-					color:#333;
-				}
-			}
-		}
-
-		.dropdown-menu{
-			left:0;
-			border:none;
-			box-shadow: none;
-			padding:0;
-			text-align: center;
-			background-color: $dropdown-bg-mobile;
-
-			&>li{
-
-				&>a{
-					color:$blue !important;
-					padding:15px 75px !important;
-
-				}
-			}
-		}
-
-		.dropdown.open{
-			&>a{
-				color:$white;
-				background-color: $link-hover;
-			}
-		}
+	li{
+	  list-style: none;
+	  line-height: 24px;
+	  padding:2.5px 0;
+	}
+	a{
+	  color:$white;
 	}
 
-	.dropdown{
-		@include transition(all .3s ease-in-out);
+  }
 
+  .btn{
+	top:18px;
+	right:0;
+	position: absolute;
+  }
+
+  .nav-locations{
+	margin: 0 auto;
+	float:none;
+	text-align: left;
+	list-style: none;
+	padding:0;
+
+	clear: both;
+
+	&>li{
+	  // display: inline-block;
+	  display: table;
+	  float:none;
+	  width:100%;
+	  border-bottom:1px solid #fff;
+	  margin-bottom:20px;
+	  padding-bottom:20px;
+
+	  &>a{
+		color:$white;
+		padding:15px 25px 15px 0;
+		display: block;
+		font-size: 21px;
+		width:100%;
+		max-width: 75%;
+
+		&:focus{
+		  // color:$white;
+		}
 		&:hover{
-			background-color: $white;
+		  color:#333;
 		}
+	  }
 	}
+
+	.dropdown-menu{
+	  left:0;
+	  border:none;
+	  box-shadow: none;
+	  padding:0;
+	  text-align: center;
+	  background-color: $dropdown-bg-mobile;
+
+	  &>li{
+
+		&>a{
+		  color:$blue !important;
+		  padding:15px 75px !important;
+
+		}
+	  }
+	}
+
+	.dropdown.open{
+	  &>a{
+		color:$white;
+		background-color: $link-hover;
+	  }
+	}
+  }
 
 
 
@@ -420,13 +448,27 @@ $dropdown-bg-mobile: #E8E8E8;
 	.psn-nav-locations{
 
 		.nav-locations{
+		  text-align: center;
+		  margin: 0 auto;
+		  float:none;
+		  list-style: none;
+		  padding:0;
 
 			&>li{
 				display: inline-block;
+				float:none;
+				width:auto;
+				border-bottom:none;
+				margin-bottom:0;
+				padding-bottom:0;
 
 				&>a{
 					color:$white;
+				  	padding:15px 25px 15px 25px;
 					display: block;
+				  	font-size: 16px;
+					width:100%;
+					max-width: 100%;
 
 					&:focus{
 						color:$white;
@@ -437,7 +479,9 @@ $dropdown-bg-mobile: #E8E8E8;
 					}
 
 				}
-
+			  &:hover{
+				background-color: $white;
+			  }
 			}
 
 			.dropdown-menu{

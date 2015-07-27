@@ -77,13 +77,13 @@ function initialize() {
         title: 'Canton Office'
     });
 
-    //establish link variables
-    //var getDirections = document.getElementById('getDirections');
-    //var directionLink = getDirections.getElementsByTagName("a");
-
     //Set active on load
-    document.getElementById('locationOne').parentElement.classList.add('active');
-    //directionLink[0].setAttribute('href', buildLat(loc1));
+    function activeLoad(){
+      document.getElementById('locationOne').parentElement.classList.add('active');
+
+      atlanta.open(map,marker1);
+    }
+
 
     function buildLat( location ){
       var myLocation = location.A;
@@ -102,6 +102,9 @@ function initialize() {
         navElement[i].classList.remove("active");
       }
     }
+
+
+    map.panTo(loc1);
 
     $('#locationOne').click(function(event){
         event.preventDefault();
@@ -273,9 +276,9 @@ function initialize() {
         content: cantonDetails
     });
 
-    map.panTo(loc1);
-    atlanta.open(map,marker1);
-
+    //map.panTo(loc1);
+    //atlanta.open(map,marker1);
+    activeLoad();
 
     google.maps.event.addListener(marker1, 'click', function() {
       atlanta.open(map,marker1);
