@@ -51,9 +51,10 @@
 	}
 
   	h2{
-	  text-align: left;
+	  text-align: center;
 	  color:$blue;
 	  margin-top:0;
+    margin-top:30px;
 	  margin-bottom: 20px;
 	}
 
@@ -75,44 +76,19 @@
 
     a{
       text-align: center;
-      background-color: $med-gray;
+      background-color:$gold;
       padding:20px 10px;
       font-weight: 600;
-      color:$blue;
+      color:$white;
       display: block;
+      @include transition(all .3s);
 
       &:hover{
-        color:$blue;
-        background-color: $light-gray;
+        color:$white;
+        background-color: $tan;
       }
     }
   }
-
-	th {
-		text-align: center;
-		text-transform: uppercase;
-	}
-
-	td {
-		background-color: $med-gray;
-		border: 10px solid $white;
-		color: $blue;
-		font-weight: bold;
-		line-height: 40px !important;
-
-		&:hover {
-			background-color: $light-gray;
-		}
-
-		a {
-			color: $blue;
-			display: block;
-
-			&:active, &:focus {
-				text-decoration: none;
-			}
-		}
-	}
 }
 
 .blocks-service{

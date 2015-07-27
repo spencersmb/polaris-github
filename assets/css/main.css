@@ -2325,9 +2325,10 @@ span.selectboxit-arrow-container {
   margin-bottom: 0;
 }
 .conditions-table h2 {
-  text-align: left;
+  text-align: center;
   color: #00237d;
   margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 .conditions-table h3 {
@@ -2347,36 +2348,18 @@ span.selectboxit-arrow-container {
 }
 .conditions-table .grid-item a {
   text-align: center;
-  background-color: #d1d1d1;
+  background-color: #a99781;
   padding: 20px 10px;
   font-weight: 600;
-  color: #00237d;
+  color: #fff;
   display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .conditions-table .grid-item a:hover {
-  color: #00237d;
-  background-color: #e5e5e5;
-}
-.conditions-table th {
-  text-align: center;
-  text-transform: uppercase;
-}
-.conditions-table td {
-  background-color: #d1d1d1;
-  border: 10px solid #fff;
-  color: #00237d;
-  font-weight: bold;
-  line-height: 40px !important;
-}
-.conditions-table td:hover {
-  background-color: #e5e5e5;
-}
-.conditions-table td a {
-  color: #00237d;
-  display: block;
-}
-.conditions-table td a:active, .conditions-table td a:focus {
-  text-decoration: none;
+  color: #fff;
+  background-color: #ddd1c5;
 }
 
 .blocks-service {

@@ -1,5 +1,6 @@
 {% block content %}
-<div class="psn-container-nav">
+{% include "blue-header" %}
+<div class="psn-container">
 	<div class="header-image">
 		<img class="img-responsive" src="{{ 'doctor-lg.jpg' | asset_url }}" alt="">
 		<div class="doctor-name">
@@ -33,9 +34,9 @@
 
 			<!-- Conditions Table -->
 			<div class="conditions-table white-bg sidebar-align-conditions">
-
+				<!-- TODO: Change h2 in umbraco -->
 				<!-- Table Title -->
-				<h4>Spine-related conditions</h4>
+				<h2>Spine-related conditions</h2>
 
 				<div class="row">
 
