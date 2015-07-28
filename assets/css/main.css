@@ -103,7 +103,7 @@ a:hover {
 }
 
 .content-wrapper {
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 .content-wrapper-970 {
@@ -224,6 +224,10 @@ p {
   .psn-container-inner .desc h3:first-of-type {
     font-size: 36px;
     line-height: 44px;
+  }
+
+  .content-wrapper {
+    padding: 0 60px;
   }
 
   .intro-text {
@@ -538,7 +542,8 @@ p {
 .psn-nav-locations .mobile-address {
   color: #fff;
   padding: 0;
-  float: left;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .psn-nav-locations .mobile-address li {
   list-style: none;
@@ -549,14 +554,12 @@ p {
   color: #fff;
 }
 .psn-nav-locations .btn {
-  top: 18px;
-  right: 0;
-  position: absolute;
+  width: 100%;
 }
 .psn-nav-locations .nav-locations {
   margin: 0 auto;
   float: none;
-  text-align: left;
+  text-align: center;
   list-style: none;
   padding: 0;
   clear: both;
@@ -571,11 +574,12 @@ p {
 }
 .psn-nav-locations .nav-locations > li > a {
   color: #fff;
-  padding: 15px 25px 15px 0;
+  padding: 15px 25px 15px 25px;
   display: block;
   font-size: 21px;
   width: 100%;
-  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
 }
 .psn-nav-locations .nav-locations > li > a:hover {
   color: #333;
@@ -662,7 +666,6 @@ p {
 }
 .psn-nav .navbar-collapse {
   margin: auto 0;
-  max-height: 100%;
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.175) 0 6px 12px;
   box-shadow: rgba(0, 0, 0, 0.175) 0 6px 12px;
@@ -1336,6 +1339,8 @@ footer {
 .insurance-type {
   position: relative;
   padding-top: 40px;
+  margin-bottom: 20px;
+  display: table;
 }
 .insurance-type label {
   color: #826c4c;
@@ -1355,19 +1360,13 @@ footer {
 
 .btn-insurance {
   color: #00237d;
-  border: 1px solid #D5D5D5;
   width: 50%;
   float: left;
   display: inline-block;
   border-radius: 0;
   padding: 7px 26.75px;
   text-align: center;
-}
-.btn-insurance:nth-last-child(-n+2) {
-  border-top: 0;
-}
-.btn-insurance:nth-child(even) {
-  border-left: 0;
+  background-color: #e5e5e5;
 }
 .btn-insurance.active {
   background-color: #d5dcff;
@@ -1389,33 +1388,35 @@ footer {
 
 @media (min-width: 992px) {
   .insurance-type {
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 40px;
   }
 
   .btn-insurance {
-    border: 1px solid #D5D5D5;
     border-left: 0;
     width: 100%;
     float: none;
     display: inline;
   }
-  .btn-insurance:nth-child(1) {
-    border-left: 1px solid #D5D5D5;
-  }
-  .btn-insurance:nth-last-child(-n+2) {
-    border-top: 1px solid #D5D5D5;
-  }
-  .btn-insurance:nth-last-child(1) {
-    border-left: 0;
-  }
+}
+.popover {
+  padding: 0;
+  border-color: #00237d;
 }
 .popover .popover-title {
-  margin: 0;
-  padding: 5px 0 5px 15px;
+  padding: 5px 15px;
+  background-color: #00237d;
+  color: #fff;
 }
 .popover h3 {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.popover .popover-content {
+  color: #826c4c;
 }
 
 h1 {
@@ -2661,11 +2662,15 @@ span.selectboxit-arrow-container {
   display: table;
 }
 .todo-item .img {
-  width: 12%;
+  width: 14%;
   float: left;
 }
+.todo-item img {
+  max-width: 27px;
+  width: 100%;
+}
 .todo-item .content {
-  width: 85%;
+  width: 80%;
   float: left;
 }
 .todo-item li {
@@ -2673,6 +2678,18 @@ span.selectboxit-arrow-container {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .todo-item .img {
+    width: 12%;
+  }
+  .todo-item img {
+    max-width: 47px;
+    width: 100%;
+  }
+  .todo-item .content {
+    width: 85%;
+  }
+}
 #psn-faq {
   margin-bottom: 0 !important;
 }

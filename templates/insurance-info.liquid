@@ -57,33 +57,35 @@
 								<input type="text" class="form-control" id="inputID">
 							</div>
 						</div>
-
-						<div class="col-xs-12 col-sm-6">
-							<div class="form-group psn-form-group insurance-type">
-								<label id="tooltip1" class="btn-insurance" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio1" value="PPO">
-									PPO
-								</label>
-								<label id="tooltip2" class="btn-insurance" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom2">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio2" value="PPO">
-									POS
-								</label>
-								<label id="tooltip3" class="btn-insurance" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom3">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio3" value="PPO">
-									EPO
-								</label>
-								<label id="tooltip4" class="btn-insurance" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom4">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio4" value="PPO">
-									HMO
-								</label>
-							</div>
-						</div>
-
+						<!-- TODO: reorder DOB and insurance type -->
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-group psn-form-group">
 								<label for="DOB">Date of birth</label>
 								<input type="text" class="form-control" id="inputDOB" placeholder="09/16/1981">
 							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-12">
+							<div class="form-group psn-form-group insurance-type">
+								<label id="tooltip1" class="btn-insurance" tabindex="0" role="button" data-toggle="popover1" data-trigger="focus" title="PPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio1" value="PPO">
+									PPO
+								</label>
+								<label id="tooltip2" class="btn-insurance" tabindex="0" role="button" data-toggle="popover2" data-trigger="focus" title="POS" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio2" value="PPO">
+									POS
+								</label>
+								<label id="tooltip3" class="btn-insurance" tabindex="0" role="button" data-toggle="popover3" data-trigger="focus" title="EPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio3" value="PPO">
+									EPO
+								</label>
+								<label id="tooltip4" class="btn-insurance" tabindex="0" role="button" data-toggle="popover4" data-trigger="focus" title="EPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio4" value="PPO">
+									HMO
+								</label>
+
+							</div>
+
 						</div>
 
 						<div class="col-xs-12">
@@ -118,17 +120,33 @@
 	var form = $('.insurance-type input');
 
 	//Tooltips
-	$('#tooltip2, #tooltip3, #tooltip4').tooltip();
+	 var windowWidth = $(window).width();
+	 var width = 767;
+	 if( windowWidth > width){
+		 var tipLength = 0;
 
-	 $('[data-toggle="popover"]').popover('show');
-	 //popover
-//	 $('#tooltip1').mouseenter(function(){
-//		 $('[data-toggle="popover"]').popover('show');
-//	 });
-//
-//	 $('#tooltip1').mouseleave(function(){
-//		 $('[data-toggle="popover"]').popover('hide');
-//	 });
+		 $('.insurance-type').children('label').each(function(){
+			 tipLength += 1;
+		 });
+
+		 for(var i= 1;i <= tipLength; i++){
+			 mouseEnter(i);
+			 mouseLeave(i);
+		 }
+
+		 function mouseEnter(i){
+			 return $('#tooltip' + i).mouseenter(function(){
+				 $('[data-toggle="popover' + i + '"]').popover('show');
+			 });
+		 }
+
+		 function mouseLeave(i){
+			 return $('#tooltip' + i).mouseleave(function(){
+				 $('[data-toggle="popover' + i + '"]').popover('hide');
+			 });
+		 }
+	 }
+
 
 	//remove active from other elements
 	function selectRadio(elem){

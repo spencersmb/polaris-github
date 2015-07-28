@@ -115,6 +115,8 @@
 .insurance-type{
   position: relative;
   padding-top:40px;
+  margin-bottom: 20px;
+  display: table;
 
   label{
     color:$dk-gold ;
@@ -135,26 +137,22 @@
 }
 .btn-insurance{
   color:$blue;
-  border:1px solid #D5D5D5;
+//  border:1px solid #D5D5D5;
   width:50%;
   float:left;
   display: inline-block;
   border-radius: 0;
   padding:7px 26.75px;
   text-align: center;
+  background-color: $light-gray;
 
-
-  &:nth-child(1){
-
-  }
-
-  &:nth-last-child(-n+2){
-    border-top:0;
-  }
-
-  &:nth-child(even){
-    border-left:0;
-  }
+//  &:nth-last-child(-n+2){
+//    border-top:0;
+//  }
+//
+//  &:nth-child(even){
+//    border-left:0;
+//  }
 
   &.active{
     background-color: #d5dcff;
@@ -183,46 +181,53 @@
 @include breakpoint(laptop){
 
   .insurance-type {
-    margin-bottom:5px;
-    label {
-
-    }
+    display: block;
+    margin-bottom:40px;
   }
 
   .btn-insurance{
-    border:1px solid #D5D5D5;
+//    border:1px solid #D5D5D5 !important;
     border-left:0;
     width:100%;
     float:none;
     display: inline;
 
-    &:nth-child(1){
-      border-left:1px solid #D5D5D5;
-    }
-
-    &:nth-last-child(-n+2){
-      border-top:1px solid #D5D5D5;
-    }
-
-    &:nth-last-child(1){
-      border-left:0;
-    }
+//    &:nth-child(3){
+//      border-top:#00237d !important;
+//    }
+//
+//    &:nth-child(even){
+//      border-left:1px solid #D5D5D5 !important;
+//    }
+//
+//    &:nth-last-child(odd){
+//      border-right:0 !important;
+//    }
 
   }
 
 }
 
 .popover{
-
+  padding:0;
+  border-color: $blue;
 
   .popover-title{
-    margin:0;
-    padding:5px 0 5px 15px;
+    padding:5px 15px;
+    background-color: $blue;
+    color:$white;
   }
 
   h3{
     margin:0;
     padding:0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .popover-content{
+    color:$dk-gold;
   }
 
 }

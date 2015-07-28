@@ -4,12 +4,17 @@
 	display:table;
 
 	.img{
-		width:12%;
+		width:14%;
 		float:left;
 	}
 
+  	img{
+	  max-width: 27px;
+	  width:100%;
+	}
+
 	.content{
-		width:85%;
+		width:80%;
 		float:left;
 	}
 
@@ -20,6 +25,22 @@
 }
 
 @include breakpoint(tablet){
+
+  .todo-item{
+
+	.img{
+	  width:12%;
+	}
+	img{
+	  max-width: 47px;
+	  width:100%;
+	}
+
+	.content{
+	  width:85%;
+	}
+
+  }
 
 }
 
