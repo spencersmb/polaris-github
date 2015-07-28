@@ -32,6 +32,7 @@
       top:34px;
 
       i{
+        color:$blue;
         padding:15px;
         width:100%;
         height:100%;
@@ -44,10 +45,10 @@
   }
 
   &.time{
-    display: block;
+    display: table;
     .time-dots{
       float:left;
-      padding:0 10px;
+      padding:0 2px;
       font-weight: bold;
     }
     select{
@@ -98,7 +99,7 @@
     &.day{
       width:80px;
       font-size: 18px;
-      margin-left:20px;
+      margin-left:10px;
     }
 
     //AutoFIll styles
@@ -174,8 +175,24 @@
   }
 }
 
-@include breakpoint(tablet){
+@include breakpoint(tablet) {
+  .psn-form-group{
 
+    &.time {
+      .time-dots {
+        padding: 0 10px;
+      }
+    }
+
+
+    .form-control {
+      &.day {
+        width: 80px;
+        font-size: 18px;
+        margin-left: 20px;
+      }
+    }
+  }
 }
 
 @include breakpoint(laptop){
