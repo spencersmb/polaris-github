@@ -45,5 +45,7 @@
 }
 
 @include breakpoint(laptop){
-
+	#map-canvas {
+		height: 800px;
+	}
 }

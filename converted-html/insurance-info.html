@@ -29,7 +29,8 @@
 
             <!-- Include -->
             <header>
-	<nav class="navbar navbar-default navbar-fixed-top psn-nav psn-border">
+	<!-- TODO: Remove PSN-border class -->
+	<nav class="navbar navbar-default navbar-fixed-top psn-nav">
 		<div class="container-fluid psn-container no-padding">
 
 
@@ -205,29 +206,29 @@
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6">
-							<div class="form-group psn-form-group insurance-type">
-								<label id="tooltip1" class="btn-insurance" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio1" value="PPO">
-									PPO
-								</label>
-								<label id="tooltip2" class="btn-insurance" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom2">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio2" value="PPO">
-									POS
-								</label>
-								<label id="tooltip3" class="btn-insurance" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom3">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio3" value="PPO">
-									EPO
-								</label>
-								<label id="tooltip4" class="btn-insurance" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom4">
-									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio4" value="PPO">
-									HMO
-								</label>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6">
 							<div class="form-group psn-form-group">
 								<label for="DOB">Date of birth</label>
 								<input type="text" class="form-control" id="inputDOB" placeholder="09/16/1981">
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12">
+							<div class="form-group psn-form-group insurance-type">
+								<label id="tooltip1" class="btn-insurance" tabindex="0" role="button" data-toggle="popover1" data-trigger="focus" title="PPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio1" value="PPO">
+									PPO
+								</label>
+								<label id="tooltip2" class="btn-insurance" tabindex="0" role="button" data-toggle="popover2" data-trigger="focus" title="POS" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio2" value="PPO">
+									POS
+								</label>
+								<label id="tooltip3" class="btn-insurance" tabindex="0" role="button" data-toggle="popover3" data-trigger="focus" title="EPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio3" value="PPO">
+									EPO
+								</label>
+								<label id="tooltip4" class="btn-insurance" tabindex="0" role="button" data-toggle="popover4" data-trigger="focus" title="EPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio4" value="PPO">
+									HMO
+								</label>
 							</div>
 						</div>
 						<div class="col-xs-12">
@@ -328,7 +329,6 @@
 					<a href="http://www.youtube.com/user/atlantaspinesurgery" target="blank"><img src="assets/images/icons/youtube.png" alt=""></a>
 				</div>
 			</div>
-			<!--TODO: Add social links -->
 			<div class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-lg-pull-6">
 				<div class="copyright">
 					&copy; Copyright 2015 Polaris
@@ -354,16 +354,28 @@
  (function(){
 	var form = $('.insurance-type input');
 	//Tooltips
-	$('#tooltip2, #tooltip3, #tooltip4').tooltip();
-	 $('[data-toggle="popover"]').popover('show');
-	 //popover
-//	 $('#tooltip1').mouseenter(function(){
-//		 $('[data-toggle="popover"]').popover('show');
-//	 });
-//
-//	 $('#tooltip1').mouseleave(function(){
-//		 $('[data-toggle="popover"]').popover('hide');
-//	 });
+	 var windowWidth = $(window).width();
+	 var width = 767;
+	 if( windowWidth > width){
+		 var tipLength = 0;
+		 $('.insurance-type').children('label').each(function(){
+			 tipLength += 1;
+		 });
+		 for(var i= 1;i <= tipLength; i++){
+			 mouseEnter(i);
+			 mouseLeave(i);
+		 }
+		 function mouseEnter(i){
+			 return $('#tooltip' + i).mouseenter(function(){
+				 $('[data-toggle="popover' + i + '"]').popover('show');
+			 });
+		 }
+		 function mouseLeave(i){
+			 return $('#tooltip' + i).mouseleave(function(){
+				 $('[data-toggle="popover' + i + '"]').popover('hide');
+			 });
+		 }
+	 }
 	//remove active from other elements
 	function selectRadio(elem){
 		$(elem).parent('label').parent('.insurance-type').children('label').each( function(index, el){

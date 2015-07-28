@@ -63,7 +63,7 @@
 //Facilities section - aka office
 .office-thumb-wrapper{
 	padding: 35px 40px 0;
-	display: table;
+	display: block;
 }
 
 .office-content{
@@ -183,6 +183,7 @@
 	img{
 		margin:0 auto;
 		margin-bottom: 30px;
+		width:100%;
 	}
 }
 

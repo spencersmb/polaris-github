@@ -91,7 +91,7 @@ a:hover {
   max-width: 900px;
   margin: 0 auto;
   height: 100%;
-  display: table;
+  display: block;
 }
 .psn-content-wrapper.inner {
   padding: 0px;
@@ -1169,7 +1169,7 @@ footer {
   }
   .footer-contact .contact-wrapper {
     padding: 0;
-    text-align: right;
+    text-align: center;
   }
   .footer-contact .phone, .footer-contact .location, .footer-contact .fax {
     display: inline-block;
@@ -1268,6 +1268,7 @@ footer {
   top: 34px;
 }
 .psn-form-group.date .add-on i {
+  color: #00237d;
   padding: 15px;
   width: 100%;
   height: 100%;
@@ -1276,11 +1277,11 @@ footer {
   background-color: #fff;
 }
 .psn-form-group.time {
-  display: block;
+  display: table;
 }
 .psn-form-group.time .time-dots {
   float: left;
-  padding: 0 10px;
+  padding: 0 2px;
   font-weight: bold;
 }
 .psn-form-group.time select {
@@ -1328,7 +1329,7 @@ footer {
 .psn-form-group .form-control.day {
   width: 80px;
   font-size: 18px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .psn-form-group .insurance-radio {
   position: absolute;
@@ -1386,6 +1387,16 @@ footer {
   background-color: #f75b1e;
 }
 
+@media (min-width: 768px) {
+  .psn-form-group.time .time-dots {
+    padding: 0 10px;
+  }
+  .psn-form-group .form-control.day {
+    width: 80px;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
 @media (min-width: 992px) {
   .insurance-type {
     display: block;
@@ -1946,7 +1957,7 @@ label .glyphicon {
 
 .office-thumb-wrapper {
   padding: 35px 40px 0;
-  display: table;
+  display: block;
 }
 
 .office-content {
@@ -2042,6 +2053,7 @@ label .glyphicon {
 .affiliate-wrapper img {
   margin: 0 auto;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -2147,7 +2159,7 @@ label .glyphicon {
 .info-block {
   border-top: 1px solid #b0c6ff;
   margin-bottom: 30px;
-  display: table;
+  display: block;
 }
 .info-block .desc {
   margin-bottom: 30px;
@@ -2202,10 +2214,13 @@ label .glyphicon {
 }
 .service-quote blockquote {
   border: 0;
-  color: #fff;
   margin: 0;
+}
+.service-quote p {
+  color: #fff;
   font-size: 22px;
   font-weight: 500;
+  line-height: 28px;
 }
 
 .selectboxit-filters {
@@ -2425,8 +2440,10 @@ span.selectboxit-arrow-container {
   .service-quote {
     padding: 40px;
   }
-  .service-quote blockquote {
+  .service-quote p {
+    color: #fff;
     font-size: 25px;
+    line-height: 32px;
   }
 }
 .office-wrapper {
@@ -2708,7 +2725,7 @@ span.selectboxit-arrow-container {
   color: #070d3f;
   font-weight: bold;
   text-transform: none;
-  letter-spacing: initial;
+  letter-spacing: 0;
 }
 #psn-faq .panel .panel-heading .panel-title .fa {
   line-height: 41px;
@@ -2755,10 +2772,18 @@ span.selectboxit-arrow-container {
   margin-top: 0;
 }
 #psn-faq .panel-title > a {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   display: block;
 }
 #psn-faq .panel-title > a:focus {
   text-decoration: none;
+  color: #f75b1e;
+  outline: 0;
+}
+#psn-faq .panel-title > a:hover {
+  color: #f75b1e;
 }
 
 .panel-default {
@@ -3214,8 +3239,8 @@ span.selectboxit-arrow-container {
     margin-bottom: 0;
   }
   .news-wrapper-list > .row {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 #map-canvas {
@@ -3231,6 +3256,9 @@ span.selectboxit-arrow-container {
 
 #bodyContent p {
   font-size: 14px;
+}
+#bodyContent a {
+  color: #f75b1e;
 }
 
 #getDirections {
@@ -3253,4 +3281,10 @@ span.selectboxit-arrow-container {
   width: 100%;
   height: 100%;
   text-indent: -9999px;
+}
+
+@media (min-width: 992px) {
+  #map-canvas {
+    height: 800px;
+  }
 }

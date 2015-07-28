@@ -15,7 +15,7 @@
 				color: $polaris-blue;
 				font-weight: bold;
 				text-transform: none;
-				letter-spacing: initial;
+				letter-spacing: 0;
 
 				.fa {
 					line-height: 41px;
@@ -72,10 +72,17 @@
 	}
 	// Make the whole panel heading clickable
 	.panel-title > a {
+		@include transition(all .3s);
 		display: block;
 
 		&:focus{
 			text-decoration: none;
+			color:$link-hover;
+			outline: 0;
+		}
+
+		&:hover{
+			color:$link-hover;
 		}
 	}
 }
