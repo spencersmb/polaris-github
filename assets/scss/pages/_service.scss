@@ -24,14 +24,18 @@
 	z-index: 1;
 	padding:30px;
 
-
 	blockquote{
 		border:0;
-		color:$white;
 		margin:0;
-		font-size: 22px;
-	  	font-weight: 500;
 	}
+
+	p{
+		color:$white;
+		font-size: 22px;
+	  font-weight: 500;
+		line-height: 28px;
+	}
+
 }
 
 
@@ -281,8 +285,10 @@ span.selectboxit-arrow-container{
 	.service-quote{
 		padding:40px;
 
-		blockquote{
-		  font-size: 25px;
+		p{
+			color:$white;
+			font-size: 25px;
+			line-height: 32px;
 		}
 	}
 }
