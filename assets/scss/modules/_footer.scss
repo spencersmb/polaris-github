@@ -228,67 +228,6 @@ footer{
 
 @include breakpoint(laptop){
 
-	.footer-wrapper{
-		padding:40px 0 0;
-
-		.social{
-			text-align:left;
-			margin-bottom:0;
-
-			a{
-				display: block;
-				padding-bottom: 10px;
-			}
-		}
-	}
-
-	.footer-logo{
-		padding:24px 64px 15px;
-	}
-
-	.footer-contact{
-		margin:0;
-
-		.contact-wrapper{
-			padding:15px 0 0 80px;
-			text-align: left;
-		}
-
-		.phone, .location, .fax{
-			display:block;
-			text-align: left;
-			padding: 0 20px;
-			margin-bottom:15px;
-			border-right:0;
-		}
-
-		.fa{
-			display: inline-block;
-			padding-right:10px;
-			padding-bottom:0;
-		}
-
-	}
-
-	.newsletter-signup{
-		text-align: left;
-		margin-top:33px;
-		padding-left: 100px;
-
-		input{
-			text-align: left;
-		}
-	}
-
-	.copyright{
-		text-align:center;
-		margin: 20px 0 0;
-	}
-
-
-}
-
-@include breakpoint(desktop){
 	.footer-contact{
 		margin-top:54px;
 
@@ -316,7 +255,6 @@ footer{
 
 	.footer-wrapper{
 		.social{
-			text-align:right;
 			margin-top:20px;
 			a{
 				display: inline-block;
@@ -327,10 +265,13 @@ footer{
 		}
 	}
 
-
-
 	.copyright{
-		text-align:left;
 		margin-top:36px;
 	}
+
+
+}
+
+@include breakpoint(desktop){
+
 }

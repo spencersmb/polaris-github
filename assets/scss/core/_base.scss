@@ -197,6 +197,18 @@ p{
 }
 
 
+///////////////////////
+//404 page
+//////////////////////
+.link-404{
+	display: table;
+	margin:0 auto;
+	&:hover{
+		color:$link-hover;
+	}
+}
+
+
 @include breakpoint(tablet){
 
   h2{
@@ -277,6 +289,9 @@ p{
   }
 
 }
+
+
+
 
 @include breakpoint(laptop){
 
