@@ -1169,7 +1169,7 @@ footer {
   }
   .footer-contact .contact-wrapper {
     padding: 0;
-    text-align: right;
+    text-align: center;
   }
   .footer-contact .phone, .footer-contact .location, .footer-contact .fax {
     display: inline-block;
