@@ -12,6 +12,8 @@ Version: 1.0.0
 @import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic");
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("../../images/pattern/polaris-pattern-1k.png");
+  background-color: #ddd1c5;
 }
 
 a {
@@ -184,6 +186,14 @@ p {
   margin-bottom: 60px;
 }
 
+.link-404 {
+  display: table;
+  margin: 0 auto;
+}
+.link-404:hover {
+  color: #f75b1e;
+}
+
 @media (min-width: 768px) {
   h2 {
     margin-bottom: 40px;
@@ -295,6 +305,13 @@ p {
 .doc-md {
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.text-blue {
+  color: #00237d;
+}
+.text-blue p {
+  color: #00237d;
 }
 
 .text-white {
@@ -1113,57 +1130,6 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .footer-wrapper {
-    padding: 40px 0 0;
-  }
-  .footer-wrapper .social {
-    text-align: left;
-    margin-bottom: 0;
-  }
-  .footer-wrapper .social a {
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  .footer-logo {
-    padding: 24px 64px 15px;
-  }
-
-  .footer-contact {
-    margin: 0;
-  }
-  .footer-contact .contact-wrapper {
-    padding: 15px 0 0 80px;
-    text-align: left;
-  }
-  .footer-contact .phone, .footer-contact .location, .footer-contact .fax {
-    display: block;
-    text-align: left;
-    padding: 0 20px;
-    margin-bottom: 15px;
-    border-right: 0;
-  }
-  .footer-contact .fa {
-    display: inline-block;
-    padding-right: 10px;
-    padding-bottom: 0;
-  }
-
-  .newsletter-signup {
-    text-align: left;
-    margin-top: 33px;
-    padding-left: 100px;
-  }
-  .newsletter-signup input {
-    text-align: left;
-  }
-
-  .copyright {
-    text-align: center;
-    margin: 20px 0 0;
-  }
-}
-@media (min-width: 1200px) {
   .footer-contact {
     margin-top: 54px;
   }
@@ -1187,7 +1153,6 @@ footer {
   }
 
   .footer-wrapper .social {
-    text-align: right;
     margin-top: 20px;
   }
   .footer-wrapper .social a {
@@ -1198,7 +1163,6 @@ footer {
   }
 
   .copyright {
-    text-align: left;
     margin-top: 36px;
   }
 }
@@ -1517,6 +1481,15 @@ a:hover {
   margin-top: 25px;
 }
 
+.btn-primary {
+  background-color: #a99781;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #070d3f;
+  border: none;
+}
+
 .btn.active {
   background-color: #a99781;
   border: none;
@@ -1540,7 +1513,6 @@ label.btn {
   -o-transition-duration: .3s;
 }
 label.btn:hover {
-  text-shadow: 0 3px 2px rgba(0, 0, 0, 0.4);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -2062,9 +2034,6 @@ label .glyphicon {
     position: relative;
     padding: 0 15px;
   }
-  .overlap-bottom-wrapper .below-content {
-    padding: 0 15px !important;
-  }
 
   .psn-group .psn-title span {
     padding: 0 20px;
@@ -2122,8 +2091,8 @@ label .glyphicon {
     padding: 0px;
   }
   .psn-group .psn-panel-img img {
-    max-width: 131%;
-    left: -54px;
+    max-width: 154%;
+    left: -112px;
   }
 }
 .header-image {
@@ -2233,6 +2202,7 @@ label .glyphicon {
   display: block;
   margin-bottom: 20px;
   z-index: 500;
+  margin-top: 10px;
 }
 .selectboxit-container .fa {
   font: normal normal normal 14px/1 FontAwesome;
@@ -2246,6 +2216,8 @@ label .glyphicon {
   /* Width of the dropdown button */
   height: 55px;
   border-radius: 0;
+  background-color: #ddd1c5;
+  padding-left: 10px;
 }
 
 .selectboxit-container .selectboxit-options {
@@ -2342,10 +2314,10 @@ span.selectboxit-arrow-container {
 }
 
 .selectboxit-btn.selectboxit-enabled:hover {
-  background-color: #fff;
+  background-color: #f75b1e;
 }
 .selectboxit-btn.selectboxit-enabled:hover .selectboxit-text, .selectboxit-btn.selectboxit-enabled:hover .selectboxit-arrow-container {
-  color: #f75b1e;
+  color: #fff;
 }
 
 .selectboxit-btn.selectboxit-enabled:active {
@@ -2356,10 +2328,10 @@ span.selectboxit-arrow-container {
 }
 
 .selectboxit-btn.selectboxit-enabled:focus {
-  background-color: #fff;
+  background-color: #f75b1e;
 }
 .selectboxit-btn.selectboxit-enabled:focus .selectboxit-text, .selectboxit-btn.selectboxit-enabled:focus .selectboxit-arrow-container {
-  color: #f75b1e;
+  color: #fff;
 }
 
 #studio-applySelectBoxIt, #studio-selectSelectBoxIt {
@@ -2634,16 +2606,18 @@ span.selectboxit-arrow-container {
   }
 }
 .hospital-wrapper {
-  padding: 0 60px;
+  padding: 0 20px;
   margin-bottom: 40px;
+  display: inline-block;
 }
 
 .hospital-logo-container {
   width: inherit;
   float: none;
+  text-align: center;
 }
 .hospital-logo-container a {
-  display: block;
+  display: inline-block;
 }
 .hospital-logo-container img {
   margin: 0 auto;
@@ -2651,26 +2625,15 @@ span.selectboxit-arrow-container {
 }
 
 @media (min-width: 768px) {
-  .hospital-desc {
-    padding-left: 25px;
-  }
-}
-@media (min-width: 992px) {
   .hospital-wrapper {
-    padding: 0;
+    padding: 0 30px;
     margin-bottom: 40px;
   }
-
-  .hospital-logo-container {
-    width: 30%;
-  }
-
-  .hospital-logo-container {
-    width: inherit;
-    float: left;
-  }
-  .hospital-logo-container img {
-    padding-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .hospital-wrapper {
+    padding: 0 60px;
+    margin-bottom: 40px;
   }
 }
 .todo-item {
@@ -2678,8 +2641,12 @@ span.selectboxit-arrow-container {
   margin-bottom: 20px;
   display: table;
 }
+.todo-item i {
+  color: #826c4c;
+  font-size: 16px;
+}
 .todo-item .img {
-  width: 14%;
+  width: 10%;
   float: left;
 }
 .todo-item img {
@@ -2696,8 +2663,11 @@ span.selectboxit-arrow-container {
 }
 
 @media (min-width: 768px) {
+  .todo-item i {
+    font-size: 32px;
+  }
   .todo-item .img {
-    width: 12%;
+    width: 8%;
   }
   .todo-item img {
     max-width: 47px;
