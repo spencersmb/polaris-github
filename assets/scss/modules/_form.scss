@@ -209,18 +209,6 @@
     float:none;
     display: inline;
 
-//    &:nth-child(3){
-//      border-top:#00237d !important;
-//    }
-//
-//    &:nth-child(even){
-//      border-left:1px solid #D5D5D5 !important;
-//    }
-//
-//    &:nth-last-child(odd){
-//      border-right:0 !important;
-//    }
-
   }
 
 }
@@ -233,6 +221,12 @@
     padding:5px 15px;
     background-color: $blue;
     color:$white;
+  }
+
+  &.right{
+    & > .arrow{
+      border-right-color:$blue;
+    }
   }
 
   h3{

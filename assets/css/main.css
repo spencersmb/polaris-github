@@ -83,7 +83,6 @@ a:hover {
 .psn-container-inner .desc h3:first-child {
   font-size: 28px;
   margin-top: 0;
-  margin-bottom: 0;
   line-height: 32px;
 }
 
@@ -1382,6 +1381,9 @@ footer {
   padding: 5px 15px;
   background-color: #00237d;
   color: #fff;
+}
+.popover.right > .arrow {
+  border-right-color: #00237d;
 }
 .popover h3 {
   margin: 0;
