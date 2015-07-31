@@ -88,6 +88,14 @@ $top:-80px;
   z-index: 3;
   background-color: rgb( 255, 255, 255 );
   box-shadow: 6px 6px 32px 0px rgba( 0, 0, 0, .3 );
+
+  svg{
+    path{
+      fill:$gold;
+    }
+
+  }
+
 }
 
 .float-box-2{

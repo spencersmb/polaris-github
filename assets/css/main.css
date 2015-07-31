@@ -14,6 +14,7 @@ body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url("../../images/pattern/polaris-pattern-1k.png");
   background-color: #ddd1c5;
+  background-attachment: fixed;
 }
 
 a {
@@ -80,7 +81,7 @@ a:hover {
 .psn-container-inner .desc a:hover {
   color: #f75b1e;
 }
-.psn-container-inner .desc h3:first-child {
+.psn-container-inner .desc h3:first-child, .psn-container-inner .desc .modal-title:first-child {
   font-size: 28px;
   margin-top: 0;
   line-height: 32px;
@@ -149,7 +150,7 @@ h2 {
   line-height: 28px;
 }
 
-h3 {
+h3, .modal-title {
   font-size: 28px;
   font-weight: 300;
   margin-bottom: 25px;
@@ -198,7 +199,7 @@ p {
     margin-bottom: 40px;
   }
 
-  h3 {
+  h3, .modal-title {
     font-size: 36px;
     line-height: 44px;
   }
@@ -230,7 +231,7 @@ p {
   .psn-container-inner .desc h2:first-of-type {
     margin: 30px 0 10px;
   }
-  .psn-container-inner .desc h3:first-of-type {
+  .psn-container-inner .desc h3:first-of-type, .psn-container-inner .desc .modal-title:first-of-type {
     font-size: 36px;
     line-height: 44px;
   }
@@ -346,6 +347,9 @@ p {
   z-index: 3;
   background-color: white;
   box-shadow: 6px 6px 32px 0px rgba(0, 0, 0, 0.3);
+}
+.float-box-1 svg path {
+  fill: #a99781;
 }
 
 .float-box-2 {
@@ -1350,6 +1354,18 @@ footer {
   background-color: #f75b1e;
 }
 
+.modal-header {
+  padding-top: 40px;
+  border: none;
+}
+
+.modal-body {
+  padding: 0 60px 40px;
+}
+.modal-body #intro {
+  padding: 0 40px 20px;
+}
+
 @media (min-width: 768px) {
   .psn-form-group.time .time-dots {
     padding: 0 10px;
@@ -1385,7 +1401,7 @@ footer {
 .popover.right > .arrow {
   border-right-color: #00237d;
 }
-.popover h3 {
+.popover h3, .popover .modal-title {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -1635,7 +1651,7 @@ label .glyphicon {
   left: 0;
   top: 0;
 }
-#psn-nav-home .panel h3 {
+#psn-nav-home .panel h3, #psn-nav-home .panel .modal-title {
   font-size: 24px;
   font-weight: 100;
   line-height: 34px;
@@ -1858,7 +1874,7 @@ label .glyphicon {
     font-weight: 400;
     line-height: 75px;
   }
-  #psn-nav-home .panel h3 {
+  #psn-nav-home .panel h3, #psn-nav-home .panel .modal-title {
     font-size: 2.25em;
     font-weight: 100;
     line-height: 40px;
@@ -1876,7 +1892,7 @@ label .glyphicon {
     font-weight: 400;
     line-height: 75px;
   }
-  #psn-nav-home .panel h3 {
+  #psn-nav-home .panel h3, #psn-nav-home .panel .modal-title {
     font-size: 2.25em;
     font-weight: 100;
     line-height: 40px;
@@ -2250,7 +2266,7 @@ label .glyphicon {
   position: relative;
   text-align: left;
   width: auto;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 300;
   margin-bottom: 25px;
   line-height: 44px;
@@ -2394,6 +2410,10 @@ span.selectboxit-arrow-container {
 }
 
 @media (min-width: 768px) {
+  .selectboxit-text {
+    font-size: 24px;
+  }
+
   .condition-treatment {
     margin-bottom: 80px;
   }
@@ -2536,7 +2556,7 @@ span.selectboxit-arrow-container {
   margin-bottom: 20px;
   padding: 0 20px;
 }
-.conditions-table h3 {
+.conditions-table h3, .conditions-table .modal-title {
   text-align: left;
 }
 .conditions-table h4 {

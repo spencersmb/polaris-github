@@ -147,14 +147,6 @@
   text-align: center;
   background-color: $light-gray;
 
-//  &:nth-last-child(-n+2){
-//    border-top:0;
-//  }
-//
-//  &:nth-child(even){
-//    border-left:0;
-//  }
-
   &.active{
     background-color: #d5dcff;
     color:$polaris-blue;
@@ -175,7 +167,29 @@
   }
 }
 
+///////////////////////////
+//Modal Popups
+//////////////////////////
+.modal-title{
+    @extend h3;
+  }
+.modal-header{
+  padding-top:40px;
+  border:none;
+}
+.modal-body{
+  padding: 0 60px 40px;
+
+  #intro{
+    padding:0 40px 20px;
+  }
+}
+
 @include breakpoint(tablet) {
+
+  .modal-body{
+
+  }
   .psn-form-group{
 
     &.time {

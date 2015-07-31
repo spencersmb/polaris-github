@@ -54,7 +54,7 @@
 	margin-bottom: 20px;
 	z-index:500;
 	margin-top:10px;
-	
+
 
 	.fa{
 		font:normal normal normal 14px/1 FontAwesome;
@@ -99,7 +99,7 @@
 	position:relative;
 	text-align:left;
 	width:auto;
-	font-size:36px;
+	font-size:18px;
 	font-weight:300;
 	margin-bottom:25px;
 	line-height: 44px;
@@ -263,6 +263,10 @@ span.selectboxit-arrow-container{
 }
 
 @include breakpoint(tablet){
+
+	.selectboxit-text{
+		font-size:24px;
+	}
 
   .condition-treatment{
 	margin-bottom:80px;
