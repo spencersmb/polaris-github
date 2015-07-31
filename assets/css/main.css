@@ -2069,8 +2069,8 @@ label .glyphicon {
     display: block;
   }
   .psn-group .psn-panel-img img {
-    max-width: 170%;
-    left: -125px;
+    max-width: 206%;
+    left: -250px;
   }
   .psn-group a::before, .psn-group a::after {
     content: '';
