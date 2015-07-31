@@ -341,12 +341,21 @@ p {
   background-color: #070d3f;
 }
 
+.icon {
+  width: 75px;
+  height: 75px;
+}
+
 .float-box-1 {
   top: -80px;
   left: 0;
   z-index: 3;
   background-color: white;
   box-shadow: 6px 6px 32px 0px rgba(0, 0, 0, 0.3);
+}
+.float-box-1 svg {
+  width: 100%;
+  height: 100%;
 }
 .float-box-1 svg path {
   fill: #a99781;
@@ -2329,6 +2338,10 @@ span.selectboxit-arrow-container {
   display: block;
   width: 100%;
   text-indent: 10px;
+}
+
+.selectboxit-arrow-container {
+  float: right;
 }
 
 .selectboxit-btn.selectboxit-enabled:hover {

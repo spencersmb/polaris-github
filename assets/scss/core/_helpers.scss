@@ -82,6 +82,12 @@
 
 $top:-80px;
 
+.icon{
+  width:75px;
+  height: 75px;
+
+}
+
 .float-box-1{
   top:$top;
   left:0;
@@ -89,7 +95,12 @@ $top:-80px;
   background-color: rgb( 255, 255, 255 );
   box-shadow: 6px 6px 32px 0px rgba( 0, 0, 0, .3 );
 
+  .icon{
+  }
+
   svg{
+    width:100%;
+    height:100%;
     path{
       fill:$gold;
     }

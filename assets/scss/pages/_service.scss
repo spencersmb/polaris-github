@@ -165,6 +165,10 @@ span.selectboxit-arrow-container{
 	text-indent: 10px;
 }
 
+.selectboxit-arrow-container{
+	float:right;
+}
+
 //hover state
 .selectboxit-btn.selectboxit-enabled:hover{
 	background-color: $link-hover;
