@@ -74,10 +74,13 @@ label .glyphicon {
 
 // Background Image
 #psn-nav-home {
-  background: url('http://www.blogcdn.com/slideshows/images/slides/262/224/1/S2622241/slug/l/portrait-of-beautiful-young-nurse-smiling-holding-clipboard-with-medical-team-in-the-background-2.jpg');
+  background: url('http://www.polarisspine.com/images/background/option5.jpg');
+  background-size:cover;
+  background-position: center center;
   background-repeat: no-repeat;
   padding: 5.2% 0;
   position: relative;
+
 
   .container {
     @include transition( all .4s);
