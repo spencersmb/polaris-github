@@ -215,7 +215,7 @@ function initialize() {
       '<br>1150 Hammond Dr Bldg E'+
       '<br>Suite 400'+
       '<br>Atlanta, GA 30328'+
-      '<br>404.445.5581</p>'+
+      '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc1) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
@@ -229,7 +229,7 @@ function initialize() {
       '<p>1100 Northside Forsyth Drive' +
       '<br>Suite 345'+
       '<br>Cumming, GA 30041'+
-      '<br>404.445.5581</p>'+
+      '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc2) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
@@ -245,6 +245,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
+      '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc3) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';
@@ -259,6 +260,7 @@ function initialize() {
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
       '<br>Woodstock, Georgia 30189</p>'+
+      '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc4) + '" target="_blank">Get Directions</a>'+
       '</div>'+
       '</div>';

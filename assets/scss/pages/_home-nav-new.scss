@@ -81,7 +81,6 @@ label .glyphicon {
   padding: 5.2% 0;
   position: relative;
 
-
   .container {
     @include transition( all .4s);
   }
@@ -399,7 +398,7 @@ label .glyphicon {
     }
 
     label.btn-block {
-      font-size: em(36px);
+      font-size: 24px;
       font-weight: 400;
       line-height: 75px;
     }
