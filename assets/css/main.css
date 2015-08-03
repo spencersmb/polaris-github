@@ -1569,7 +1569,9 @@ label .glyphicon {
 }
 
 #psn-nav-home {
-  background: url("http://www.blogcdn.com/slideshows/images/slides/262/224/1/S2622241/slug/l/portrait-of-beautiful-young-nurse-smiling-holding-clipboard-with-medical-team-in-the-background-2.jpg");
+  background: url("http://www.polarisspine.com/images/background/option5.jpg");
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   padding: 5.2% 0;
   position: relative;
@@ -2198,6 +2200,9 @@ label .glyphicon {
 .service-overview .desc {
   margin-top: 30px;
 }
+.service-overview h5, .service-overview #map-canvas .firstHeading, #map-canvas .service-overview .firstHeading {
+  line-height: 24px;
+}
 .service-overview .title {
   color: #00237d;
   font-weight: bold;
@@ -2398,6 +2403,7 @@ span.selectboxit-arrow-container {
 
 .sidebar-align-services {
   padding-top: 37px;
+  padding-bottom: 30px;
 }
 
 .condition-treatment {
