@@ -18,6 +18,7 @@ function initialize() {
     weight_value = 1.5,
     brightness_value= 30;
 
+
     var mapOptions = {
       center: loc1,
       zoom: 15,
@@ -244,7 +245,7 @@ function initialize() {
       '<p>Effective February 3rd our Cherokee office will be located at:</p>' +
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
-      '<br>Woodstock, Georgia 30189</p>'+
+      '<br>Woodstock, Georgia 30189'+
       '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc3) + '" target="_blank">Get Directions</a>'+
       '</div>'+
@@ -259,7 +260,7 @@ function initialize() {
       '<p>Effective February 3rd our Cherokee office will be located at:</p>' +
       '<p>Northside Towne Lake'+
       '<br>900 Towne Lake Parkway, Suite 302'+
-      '<br>Woodstock, Georgia 30189</p>'+
+      '<br>Woodstock, Georgia 30189'+
       '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc4) + '" target="_blank">Get Directions</a>'+
       '</div>'+

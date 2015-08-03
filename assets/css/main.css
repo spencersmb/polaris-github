@@ -2848,6 +2848,9 @@ span.selectboxit-arrow-container {
   margin-bottom: 30px;
   padding: 0;
 }
+.news-item:nth-child(2n+1) {
+  clear: both;
+}
 
 .psn-article .feature-image {
   width: 100%;

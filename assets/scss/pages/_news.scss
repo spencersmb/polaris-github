@@ -24,6 +24,10 @@
 .news-item{
 	margin-bottom:30px;
   	padding:0;
+
+		&:nth-child(2n+1){
+			clear:both;
+		}
 }
 
 .psn-article{
@@ -287,6 +291,10 @@
 
   .news-controls{
 	position: fixed;
+	// position: -webkit-sticky;
+	// position: -moz-sticky;
+	// position: -ms-sticky;
+	// position: -o-sticky;
 	width:100%;
 	top:90%;
 	z-index: 100;
