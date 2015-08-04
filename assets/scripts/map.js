@@ -212,10 +212,9 @@ function initialize() {
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">Atlanta Office</h1>'+
       '<div id="bodyContent">'+
-      '<p>Perimeter Town Center' +
-      '<br>1150 Hammond Dr Bldg E'+
-      '<br>Suite 400'+
+      '<p>1150E Hammond Drive' +
       '<br>Atlanta, GA 30328'+
+      '<br>Suites 400, 600 & 650'+
       '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc1) + '" target="_blank">Get Directions</a>'+
       '</div>'+
@@ -242,10 +241,9 @@ function initialize() {
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">Buckhead Office</h1>'+
       '<div id="bodyContent">'+
-      '<p>Effective February 3rd our Cherokee office will be located at:</p>' +
-      '<p>Northside Towne Lake'+
-      '<br>900 Towne Lake Parkway, Suite 302'+
-      '<br>Woodstock, Georgia 30189'+
+      '<p>1938 Peachtree Rd.' +
+      '<br>Suite 408'+
+      '<br>Atlanta, GA 30309'+
       '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc3) + '" target="_blank">Get Directions</a>'+
       '</div>'+
@@ -255,11 +253,10 @@ function initialize() {
     var cantonDetails = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Canton/Cherokee Office</h1>'+
+      '<h1 id="firstHeading" class="firstHeading">Woodstock Office</h1>'+
       '<div id="bodyContent">'+
-      '<p>Effective February 3rd our Cherokee office will be located at:</p>' +
-      '<p>Northside Towne Lake'+
-      '<br>900 Towne Lake Parkway, Suite 302'+
+      '<p>900 Towne Lake Pkwy.'+
+      '<br>Suite 302'+
       '<br>Woodstock, Georgia 30189'+
       '<br>404-256-2633</p>'+
       '<a href="' + buildLat(loc4) + '" target="_blank">Get Directions</a>'+

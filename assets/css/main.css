@@ -1321,6 +1321,7 @@ footer {
   padding-top: 40px;
   margin-bottom: 20px;
   display: table;
+  width: 100%;
 }
 .insurance-type label {
   color: #826c4c;
@@ -1386,6 +1387,21 @@ footer {
     width: 80px;
     font-size: 18px;
     margin-left: 20px;
+  }
+
+  .btn-insurance {
+    color: #00237d;
+    width: 25%;
+    float: left;
+    display: inline-block;
+    border-radius: 0;
+    padding: 7px 26.75px;
+    text-align: center;
+    background-color: #e5e5e5;
+  }
+  .btn-insurance.active {
+    background-color: #d5dcff;
+    color: #070d3f;
   }
 }
 @media (min-width: 992px) {
@@ -2495,6 +2511,7 @@ span.selectboxit-arrow-container {
   border-right: 1px solid #a99781;
   line-height: 45px;
   color: #797e83;
+  margin-right: 20px;
 }
 .office-wrapper .office-links a:hover {
   color: #a99781;
@@ -2502,7 +2519,7 @@ span.selectboxit-arrow-container {
 .office-wrapper .office-links a:nth-last-child(1) {
   border-right: 0;
   padding-right: 0;
-  padding-left: 20px;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -2536,6 +2553,7 @@ span.selectboxit-arrow-container {
   }
   .office-wrapper .office-links {
     margin-top: 20px;
+    margin-right: 10px;
     text-align: right;
   }
 }
@@ -3019,11 +3037,13 @@ span.selectboxit-arrow-container {
 .news-controls .left {
   left: 0;
   padding: 20px 0 0 20px;
+  float: left;
 }
 .news-controls .right {
   right: 0;
   text-align: right;
   padding: 20px 20px 0 0;
+  float: right;
 }
 .news-controls .textRight {
   position: relative;
@@ -3070,31 +3090,17 @@ span.selectboxit-arrow-container {
   }
 
   .news-controls {
-    position: fixed;
     width: 100%;
-    top: 90%;
+    max-width: 900px;
+    margin: 0 auto;
     z-index: 100;
-    -moz-transform: translateY(-90%);
-    -ms-transform: translateY(-90%);
-    -webkit-transform: translateY(-90%);
-    transform: translateY(-90%);
   }
   .news-controls .left, .news-controls .right {
-    position: absolute;
     height: 55px;
     background-color: #e5e5e5;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    width: 150px;
-  }
-  .news-controls .left.over, .news-controls .right.over {
-    width: 250px;
-    background-color: #00237d;
-    color: #fff;
-  }
-  .news-controls .left.over .textLeft, .news-controls .left.over .textRight, .news-controls .right.over .textLeft, .news-controls .right.over .textRight {
-    color: #fff;
   }
   .news-controls .left {
     left: 0;
@@ -3103,44 +3109,6 @@ span.selectboxit-arrow-container {
   .news-controls .right {
     right: 0;
     padding: 20px;
-    text-align: left;
-  }
-  .news-controls .textRight {
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    opacity: 1;
-    color: #0b0b0b;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .news-controls .textRight.over {
-    color: #fff;
-  }
-  .news-controls .textLeft {
-    position: absolute;
-    width: 80%;
-    text-align: right;
-    padding-right: 20px;
-    top: 50%;
-    padding-left: 20px;
-    opacity: 1;
-    color: #0b0b0b;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .news-controls .textLeft.over {
-    color: #fff;
   }
   .news-controls a {
     position: absolute;
@@ -3182,23 +3150,37 @@ span.selectboxit-arrow-container {
 }
 @media (min-width: 992px) {
   .news-controls {
+    position: fixed;
     top: 50%;
+    width: 100%;
+    max-width: 100%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .news-controls .left, .news-controls .right {
+    position: absolute;
     width: 70px;
     height: 80px;
+  }
+  .news-controls .left.over, .news-controls .right.over {
+    width: 250px;
+    background-color: #00237d;
+    color: #fff;
+  }
+  .news-controls .left.over .textLeft, .news-controls .left.over .textRight, .news-controls .right.over .textLeft, .news-controls .right.over .textRight {
+    color: #fff;
   }
   .news-controls .left {
     padding: 30px 15px 30px 30px;
   }
   .news-controls .right {
     padding: 30px 30px 30px 15px;
+    text-align: left;
   }
   .news-controls .textRight {
+    position: absolute;
     width: 80%;
     top: 50%;
     opacity: 0;
@@ -3220,7 +3202,11 @@ span.selectboxit-arrow-container {
     -webkit-transform: translateX(0) translateY(-50%);
     transform: translateX(0) translateY(-50%);
   }
+  .news-controls .textRight.over {
+    color: #fff;
+  }
   .news-controls .textLeft {
+    position: absolute;
     width: 80%;
     text-align: right;
     padding-right: 20px;
@@ -3244,6 +3230,9 @@ span.selectboxit-arrow-container {
     -ms-transform: translateX(0) translateY(-50%);
     -webkit-transform: translateX(0) translateY(-50%);
     transform: translateX(0) translateY(-50%);
+  }
+  .news-controls .textLeft.over {
+    color: #fff;
   }
 
   .news-margin {
