@@ -122,7 +122,8 @@
 			}
 
 			&:hover{
-				color:$blue;
+				background-color: $blue;
+				color:$white;
 			}
 
 
@@ -158,6 +159,7 @@
 	.psn-panel-desc{
 		background-color:$white;
 		padding:0 15px;
+		min-height: 461px;
 
 		.title{
 			color:$gold;

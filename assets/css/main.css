@@ -2029,7 +2029,8 @@ label .glyphicon {
   outline: 5px auto #ddd1c5;
 }
 .psn-group .psn-title a:hover {
-  color: #00237d;
+  background-color: #00237d;
+  color: #fff;
 }
 .psn-group .psn-title .collapsed::after {
   -moz-transform: rotate(90deg);
@@ -2054,6 +2055,7 @@ label .glyphicon {
 .psn-group .psn-panel-desc {
   background-color: #fff;
   padding: 0 15px;
+  min-height: 461px;
 }
 .psn-group .psn-panel-desc .title {
   color: #a99781;

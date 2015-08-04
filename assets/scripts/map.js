@@ -87,10 +87,11 @@ function initialize() {
 
 
     function buildLat( location ){
-      var myLocation = location.A;
-          myLocation += "," + location.F;
+      var myLocation = location.G;
+          myLocation += "," + location.K;
 
       var myLink = "https://maps.google.com?saddr=Current+Location&daddr=" + myLocation;
+
           return myLink;
     }
 
