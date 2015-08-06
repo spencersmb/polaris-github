@@ -1619,14 +1619,10 @@ label .glyphicon {
   vertical-align: middle;
 }
 #psn-nav-home .panel.panel-horizontal > .panel-heading {
-  border-right: 1px solid #ddd;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 4px;
 }
 #psn-nav-home .panel.panel-horizontal > .panel-footer {
-  border-left: 1px solid #ddd;
   border-top-left-radius: 0;
-  border-bottom-right-radius: 4px;
 }
 #psn-nav-home .panel.panel-horizontal > .panel-body {
   -webkit-transition: all 0.3s;
