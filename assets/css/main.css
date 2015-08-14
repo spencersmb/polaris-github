@@ -1332,7 +1332,7 @@ footer {
   line-height: 25px;
 }
 .insurance-type::before {
-  content: "Type";
+  content: "Insurance Type";
   position: absolute;
   font-weight: 300;
   top: 0;
