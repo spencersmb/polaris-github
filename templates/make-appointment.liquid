@@ -48,42 +48,36 @@
 						</div>
 
 						<div class="col-xs-12 col-sm-6">
-
-							<div class="form-group psn-form-group input-append date" data-date-format="dd-mm-yyyy">
-								<label for="insurance">Choose date</label>
-								<input id="datepicker" class="form-control" size="16" type="text" readonly="">
-								<span class="add-on"><a id="dp-btn" href="#0" ><i class="fa fa-calendar fa-lg"></i></a></span>
+							<div class="form-group psn-form-group">
+								<label for="DOB">Date of birth</label>
+								<input type="text" class="form-control" id="inputDOB" placeholder="09/16/1981">
 							</div>
 						</div>
 
-						<div class="col-xs-12 col-sm-6">
-							<div class="form-group psn-form-group time">
-								<label for="time">Time</label>
-								<select class="form-control hours" name="hours">
-	                <option>01</option>
-	                <option>02</option>
-	                <option>03</option>
-	                <option>04</option>
-                </select>
-								<div class="time-dots">
-									:
-								</div>
-								<select class="form-control hours" name="min">
-	                <option>00</option>
-	                <option>02</option>
-	                <option>03</option>
-	                <option>04</option>
-                </select>
-
-								<select class="form-control day" name="day">
-	                <option>AM</option>
-	                <option>PM</option>
-                </select>
+						<div class="col-xs-12 col-sm-12">
+							<div class="form-group psn-form-group insurance-type">
+								<label id="tooltip1" class="btn-insurance" tabindex="0" role="button" data-toggle="popover1" data-trigger="focus" title="PPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio1" value="PPO">
+									PPO
+								</label>
+								<label id="tooltip2" class="btn-insurance" tabindex="1" role="button" data-toggle="popover2" data-trigger="focus" title="POS" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio2" value="PPO">
+									POS
+								</label>
+								<label id="tooltip3" class="btn-insurance" tabindex="2" role="button" data-toggle="popover3" data-trigger="focus" title="EPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio3" value="PPO">
+									EPO
+								</label>
+								<label id="tooltip4" class="btn-insurance" tabindex="3" role="button" data-toggle="popover4" data-trigger="focus" title="EPO" data-content="A health maintenance organization (HMO) is an organization that provides or arranges managed care for health insurance, self-funded health care benefit plans, individuals, and other entities in the United States and acts as a liaison with health care providers (hospitals, doctors, etc.) on a prepaid basis.">
+									<input class="insurance-radio" type="radio" name="typePPO" id="optionsRadio4" value="PPO">
+									HMO
+								</label>
 
 							</div>
 
 						</div>
 
+						<!-- Comments -->
 						<div class="col-xs-12">
 							<div class="form-group psn-form-group">
 								<label for="comments">Comments</label>
