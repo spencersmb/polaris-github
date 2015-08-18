@@ -147,9 +147,37 @@ footer{
 	font-weight:300;
 }
 
+.mailTo{
+	margin-top:10px;
+	margin-bottom:20px;
+	padding-top:15px;
+	display: block;
+	position: relative;
+
+	.address{
+		&::before{
+			content:'Mailing Address';
+			display: block;
+			position: absolute;
+			top:0;
+			width:100%;
+			left:0;
+			text-align: center;
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 13px;
+		}
+	}
+}
 
 
 @include breakpoint(tablet){
+
+	.mailTo{
+		margin-top:40px;
+		padding-top:15px;
+		margin-bottom:0;
+	}
 
 	.footer-logo{
 	  padding:24px 64px 30px;
@@ -195,7 +223,7 @@ footer{
 
 	.footer-contact{
 		display:block;
-		margin:35px 0 50px 0;
+		margin:35px 0 25px 0;
 
 		.phone, .location, .fax{
 			display: inline-block;
@@ -229,7 +257,7 @@ footer{
 @include breakpoint(laptop){
 
 	.footer-contact{
-		margin-top:54px;
+		margin-top:25px;
 
 		.contact-wrapper{
 			padding:0;
