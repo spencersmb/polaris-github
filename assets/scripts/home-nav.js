@@ -14,27 +14,6 @@ $(function(){
     $("label.btn").on('click',function () {
     	var choice = $(this).find('input:radio').val();
 
-        // What am I clicking?
-        // console.log(choice);
-
-
-        // getHeight;
-
-        // setHeight = $("#psn-nav-home").css("height", $(".quiz").height()+387);
-        // // getHeight = $('.quiz').height();
-        // // findContainer = $('#psn-nav-home').height();
-
-        // // console.log(getHeight);
-        // // console.log(findContainer);
-        // console.log(setHeight);
-
-        // Go back to Home
-        // if (choice == 0) {
-        //     getHeight;
-        //     $('#nav_why').fadeOut();
-        //     $('#nav_0').fadeIn();
-        // }
-
         $('.btn-back').click(function(){
             setHeight(nav0Height);
             $('#nav_why').fadeOut();

@@ -28,10 +28,10 @@
 
       //check if element is hovered or not
       var isHovered = $(".navbar-nav").find("li:hover").length;
-      console.log(isHovered);
+      // console.log(isHovered);
 
 
-      if($('.navbar-nav').children('li').hasClass('open') && isHovered != 0 ){
+      if($('.navbar-nav').children('li').hasClass('open') && isHovered !== 0 ){
           //do nothing because the user is hovering over an item
       }else{
         closeNav();
