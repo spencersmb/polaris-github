@@ -48,19 +48,6 @@ footer{
 
 .footer-contact{
 	color:$white;
-
-	a{
-		color:$white;
-	}
-	p{
-		color:$white;
-	}
-	.contact-wrapper{
-		text-align: center;
-	}
-}
-
-.footer-contact{
 	display:block;
 	padding-top:0;
 
@@ -75,11 +62,16 @@ footer{
 		}
 	}
 
+	a{
+		color:$white;
+	}
+
 	p{
+		color:$white;
 		display: inline-block;
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 0;
+		line-height: 1.4;
 	}
 
 	.fa{
@@ -89,6 +81,10 @@ footer{
 
 	.fax{
 		border-right:0;
+	}
+
+	.contact-wrapper{
+		text-align: center;
 	}
 }
 
@@ -159,7 +155,7 @@ footer{
 			content:'Mailing Address';
 			display: block;
 			position: absolute;
-			top:0;
+			top:-10px;
 			width:100%;
 			left:0;
 			text-align: center;
